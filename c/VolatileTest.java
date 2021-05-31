@@ -5,7 +5,7 @@ public class VolatileTest {
         race++;
     }
 
-    private static final int THREADS_COUNT = 1;
+    private static final int THREADS_COUNT = 20;
 
     public static void main(String[] args){
         Thread[] threads = new Thread[THREADS_COUNT];
