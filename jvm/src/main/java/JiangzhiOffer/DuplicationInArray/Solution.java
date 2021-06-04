@@ -14,7 +14,7 @@ public class Solution {
      */
     private static int solution1(int[] ints) {
         if (ints == null || ints.length == 0) {
-            return 0;
+            return -1;
         }
         Arrays.sort(ints);
         for (int i = 0; i < ints.length - 1; i++) {
@@ -22,7 +22,7 @@ public class Solution {
                 return ints[i];
             }
         }
-        return 0;
+        return -1;
     }
 
     /**
@@ -32,7 +32,7 @@ public class Solution {
      */
     private static int solution2(int[] ints) {
         if (ints == null || ints.length == 0) {
-            return 0;
+            return -1;
         }
         HashMap<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
         for (int i = 0; i < ints.length; i++) {
@@ -43,7 +43,7 @@ public class Solution {
             }
 
         }
-        return 0;
+        return -1;
     }
 
     /**
@@ -58,7 +58,7 @@ public class Solution {
      */
     private static int solution3(int[] ints) {
         if (ints == null || ints.length == 0) {
-            return 0;
+            return -1;
         }
         for (int i = 0; i < ints.length; i++) {
             if (ints[i] == ints[ints[i]]){
@@ -69,7 +69,7 @@ public class Solution {
                 ints[ints[i]] = tem;
             }
         }
-        return 0;
+        return -1;
     }
 
     public static void main(String[] args) {

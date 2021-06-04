@@ -4,158 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="add c 语音">
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/DuplicationInArray/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/DuplicationInArray/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/doc/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/03_01_DuplicationInArray/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/03_01_DuplicationInArray/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/03_02_DuplicationInArrayNoEdit/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/03_02_DuplicationInArrayNoEdit/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/04_FindInPartiallySortedMatrix/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/04_FindInPartiallySortedMatrix/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/05_ReplaceSpaces/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/05_ReplaceSpaces/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/06_PrintListInReversedOrder/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/06_PrintListInReversedOrder/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/07_ConstructBinaryTree/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/07_ConstructBinaryTree/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/08_NextNodeInBinaryTrees/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/08_NextNodeInBinaryTrees/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/09_01_QueueWithTwoStacks/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/09_01_QueueWithTwoStacks/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/09_02_StackWithTwoQueues/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/09_02_StackWithTwoQueues/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_01_Fibonacci/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_01_Fibonacci/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_02_JumpFloor/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_02_JumpFloor/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_03_JumpFloorII/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_03_JumpFloorII/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_04_RectCover/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_04_RectCover/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/11_MinNumberInRotatedArray/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/11_MinNumberInRotatedArray/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/12_StringPathInMatrix/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/12_StringPathInMatrix/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/13_RobotMove/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/13_RobotMove/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/14_CuttingRope/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/14_CuttingRope/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/15_NumberOf1InBinary/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/15_NumberOf1InBinary/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/16_Power/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/16_Power/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/17_Print1ToMaxOfNDigits/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/17_Print1ToMaxOfNDigits/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/18_01_DeleteNodeInList/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/18_01_DeleteNodeInList/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/18_02_DeleteDuplicatedNode/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/18_02_DeleteDuplicatedNode/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/19_RegularExpressionsMatching/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/19_RegularExpressionsMatching/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/20_NumericStrings/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/20_NumericStrings/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/20_NumericStrings/Solution1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/21_ReorderArray/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/21_ReorderArray/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/22_KthNodeFromEnd/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/22_KthNodeFromEnd/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/23_EntryNodeInListLoop/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/23_EntryNodeInListLoop/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/24_ReverseList/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/24_ReverseList/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/25_MergeSortedLists/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/25_MergeSortedLists/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/26_SubstructureInTree/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/26_SubstructureInTree/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/27_MirrorOfBinaryTree/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/27_MirrorOfBinaryTree/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/28_SymmetricalBinaryTree/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/28_SymmetricalBinaryTree/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/29_PrintMatrix/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/29_PrintMatrix/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/30_MinInStack/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/30_MinInStack/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/31_StackPushPopOrder/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/31_StackPushPopOrder/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/32_01_PrintTreeFromTopToBottom/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/32_01_PrintTreeFromTopToBottom/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/32_02_PrintTreesInLines/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/32_02_PrintTreesInLines/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/32_03_PrintTreesInZigzag/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/32_03_PrintTreesInZigzag/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/33_SquenceOfBST/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/33_SquenceOfBST/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/34_PathInTree/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/34_PathInTree/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/35_CopyComplexList/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/35_CopyComplexList/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/36_ConvertBinarySearchTree/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/36_ConvertBinarySearchTree/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/37_SerializeBinaryTrees/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/37_SerializeBinaryTrees/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/38_StringPermutation/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/38_StringPermutation/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/39_MoreThanHalfNumber/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/39_MoreThanHalfNumber/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/40_KLeastNumbers/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/40_KLeastNumbers/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/41_StreamMedian/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/41_StreamMedian/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/42_GreatestSumOfSubarrays/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/42_GreatestSumOfSubarrays/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/43_NumberOf1/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/43_NumberOf1/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/44_DigitsInSequence/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/44_DigitsInSequence/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/45_SortArrayForMinNumber/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/45_SortArrayForMinNumber/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/46_TranslateNumbersToStrings/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/46_TranslateNumbersToStrings/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/47_MaxValueOfGifts/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/47_MaxValueOfGifts/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/48_LongestSubstringWithoutDup/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/48_LongestSubstringWithoutDup/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/49_UglyNumber/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/49_UglyNumber/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/50_01_FirstNotRepeatingChar/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/50_01_FirstNotRepeatingChar/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/50_02_FristCharacterInStream/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/50_02_FristCharacterInStream/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/52_FirstCommonNodesInLists/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/52_FirstCommonNodesInLists/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/53_01_NumberOfK/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/53_01_NumberOfK/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/53_02_MissingNumber/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/53_02_MissingNumber/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/53_03_IntegerIdenticalToIndex/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/53_03_IntegerIdenticalToIndex/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/54_KthNodeInBST/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/54_KthNodeInBST/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/55_01_TreeDepth/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/55_01_TreeDepth/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/55_02_BalancedBinaryTree/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/55_02_BalancedBinaryTree/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/56_01_NumbersAppearOnce/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/56_01_NumbersAppearOnce/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/56_02_NumberAppearingOnce/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/56_02_NumberAppearingOnce/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/57_01_TwoNumbersWithSum/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/57_01_TwoNumbersWithSum/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/57_02_ContinuousSquenceWithSum/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/57_02_ContinuousSquenceWithSum/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/58_01_ReverseWordsInSentence/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/58_01_ReverseWordsInSentence/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/58_02_LeftRotateString/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/58_02_LeftRotateString/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/59_01_MaxInSlidingWindow/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/59_01_MaxInSlidingWindow/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/61_ContinousCards/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/61_ContinousCards/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jvm/src/main/resources/offer/剑指offer.pdf" afterDir="false" />
+    <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/DuplicationInArrayNoEdit/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/DuplicationInArrayNoEdit/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/DuplicationInArray/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/DuplicationInArray/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/doc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/DuplicationInArrayNoEdit" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -202,16 +55,31 @@
       <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\03_01_DuplicationInArray" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="JiangzhiOffer.DuplicationInArrayNoEdit" />
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\DuplicationInArrayNoEdit" />
       <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\doc" />
       <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\03_01_DuplicationInArray" />
       <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer" />
       <recent name="D:\github\codelist" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="Application.Solution (1)">
+    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JiangzhiOffer.DuplicationInArrayNoEdit.Solution" />
+      <module name="jvm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JiangzhiOffer.DuplicationInArrayNoEdit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JiangzhiOffer.DuplicationInArray.Solution" />
       <module name="jvm" />
@@ -301,6 +169,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.VolatileTest" />
       </list>
@@ -316,7 +185,7 @@
       <updated>1621587738542</updated>
       <workItem from="1621587740138" duration="5154000" />
       <workItem from="1622167546237" duration="11195000" />
-      <workItem from="1622605569087" duration="6646000" />
+      <workItem from="1622605569087" duration="9143000" />
     </task>
     <task id="LOCAL-00001" summary="delete code">
       <created>1621587794225</created>
@@ -353,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622456590871</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add code">
+      <created>1622798241265</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622798241265</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,9 +237,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="delete code" />
-    <MESSAGE value="add code" />
     <MESSAGE value="add c 语音" />
-    <option name="LAST_COMMIT_MESSAGE" value="add c 语音" />
+    <MESSAGE value="add code" />
+    <option name="LAST_COMMIT_MESSAGE" value="add code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1622539765107">
@@ -383,10 +259,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622188758004" />
-    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1622456623957">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="558" y="86" key="CommitChangelistDialog2" timestamp="1622798239821">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621846615640" />
+    <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622798239821" />
     <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622456623957" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1621846604537">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -396,25 +272,25 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2521" y="235" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622538783668" />
-    <state width="1877" height="324" key="GridCell.Tab.0.bottom" timestamp="1622797661434">
+    <state width="1877" height="324" key="GridCell.Tab.0.bottom" timestamp="1622799650825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622797661434" />
+    <state width="1877" height="324" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622799650825" />
     <state width="1877" height="442" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622456551155" />
-    <state width="1877" height="324" key="GridCell.Tab.0.center" timestamp="1622797661433">
+    <state width="1877" height="324" key="GridCell.Tab.0.center" timestamp="1622799650825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622797661433" />
+    <state width="1877" height="324" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622799650825" />
     <state width="1877" height="442" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622456551155" />
-    <state width="1877" height="324" key="GridCell.Tab.0.left" timestamp="1622797661432">
+    <state width="1877" height="324" key="GridCell.Tab.0.left" timestamp="1622799650825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622797661432" />
+    <state width="1877" height="324" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622799650825" />
     <state width="1877" height="442" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622456551155" />
-    <state width="1877" height="324" key="GridCell.Tab.0.right" timestamp="1622797661433">
+    <state width="1877" height="324" key="GridCell.Tab.0.right" timestamp="1622799650825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622797661433" />
+    <state width="1877" height="324" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622799650825" />
     <state width="1877" height="442" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622456551155" />
     <state x="2460" y="254" key="IDE.errors.dialog" timestamp="1622455446888">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -424,10 +300,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622189482059" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1622456592280">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1622798456511">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621846618104" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622798456511" />
     <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622456592280" />
     <state x="2254" y="180" key="new project wizard" timestamp="1622455335025">
       <screen x="1920" y="0" width="1920" height="1040" />
