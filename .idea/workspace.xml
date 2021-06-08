@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/ConstructBinaryTree/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/ConstructBinaryTree/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/ConstructBinaryTree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/PrintListInReversedOrder/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/PrintListInReversedOrder/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/PrintListInReversedOrder/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/ReplaceSpaces/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/ReplaceSpaces/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/FindInPartiallySortedMatrix/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/FindInPartiallySortedMatrix/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/FindInPartiallySortedMatrix" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/ConstructBinaryTree" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -53,19 +60,21 @@
       <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\03_01_DuplicationInArray" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="JiangzhiOffer.ConstructBinaryTree" />
+      <recent name="JiangzhiOffer.PrintListInReversedOrder" />
+      <recent name="JiangzhiOffer.ReplaceSpaces" />
       <recent name="JiangzhiOffer.FindInPartiallySortedMatrix" />
       <recent name="JiangzhiOffer.DuplicationInArrayNoEdit" />
-      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\ConstructBinaryTree" />
+      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\PrintListInReversedOrder" />
+      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\ReplaceSpaces" />
       <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\FindInPartiallySortedMatrix" />
       <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\DuplicationInArrayNoEdit" />
-      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\doc" />
-      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\03_01_DuplicationInArray" />
-      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution (2)">
+  <component name="RunManager" selected="Application.Solution (4)">
     <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JiangzhiOffer.DuplicationInArrayNoEdit.Solution" />
       <module name="jvm" />
@@ -92,6 +101,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Solution (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JiangzhiOffer.ReplaceSpaces.Solution" />
+      <module name="jvm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JiangzhiOffer.ReplaceSpaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JiangzhiOffer.PrintListInReversedOrder.Solution" />
+      <module name="jvm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JiangzhiOffer.PrintListInReversedOrder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JiangzhiOffer.DuplicationInArray.Solution" />
       <module name="jvm" />
@@ -101,13 +136,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VolatileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="VolatileTest" />
-      <module name="jvm" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,10 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution (4)" />
+        <item itemvalue="Application.Solution (3)" />
         <item itemvalue="Application.Solution (2)" />
         <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.VolatileTest" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +227,7 @@
       <updated>1621587738542</updated>
       <workItem from="1621587740138" duration="5154000" />
       <workItem from="1622167546237" duration="11195000" />
-      <workItem from="1622605569087" duration="12927000" />
+      <workItem from="1622605569087" duration="22315000" />
     </task>
     <task id="LOCAL-00001" summary="delete code">
       <created>1621587794225</created>
@@ -256,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623032357533</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add code">
+      <created>1623033763828</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1623033763828</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,10 +326,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="221" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622802793759" />
-    <state x="558" y="86" key="CommitChangelistDialog2" timestamp="1623032356480">
+    <state x="558" y="86" key="CommitChangelistDialog2" timestamp="1623033762712">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623032356480" />
+    <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623033762712" />
     <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622456623957" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1621846604537">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -303,25 +339,25 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2521" y="235" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622538783668" />
-    <state width="1877" height="324" key="GridCell.Tab.0.bottom" timestamp="1623033045122">
+    <state width="1877" height="207" key="GridCell.Tab.0.bottom" timestamp="1623055865490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623033045122" />
+    <state width="1877" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623055865490" />
     <state width="1877" height="442" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622456551155" />
-    <state width="1877" height="324" key="GridCell.Tab.0.center" timestamp="1623033045122">
+    <state width="1877" height="207" key="GridCell.Tab.0.center" timestamp="1623055865490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623033045122" />
+    <state width="1877" height="207" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623055865490" />
     <state width="1877" height="442" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622456551155" />
-    <state width="1877" height="324" key="GridCell.Tab.0.left" timestamp="1623033045122">
+    <state width="1877" height="207" key="GridCell.Tab.0.left" timestamp="1623055865490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623033045122" />
+    <state width="1877" height="207" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623055865490" />
     <state width="1877" height="442" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622456551155" />
-    <state width="1877" height="324" key="GridCell.Tab.0.right" timestamp="1623033045122">
+    <state width="1877" height="207" key="GridCell.Tab.0.right" timestamp="1623055865490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="324" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623033045122" />
+    <state width="1877" height="207" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623055865490" />
     <state width="1877" height="442" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622456551155" />
     <state width="1877" height="338" key="GridCell.Tab.1.bottom" timestamp="1622803169231">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -347,11 +383,15 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622189482059" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1623032358966">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1623033954906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623032358966" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623033954906" />
     <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622456592280" />
+    <state x="2077" y="55" width="1483" height="839" maximized="true" key="dock-window-1" timestamp="1623052938470">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2077" y="55" width="1483" height="839" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623052938470" />
     <state x="2254" y="180" key="new project wizard" timestamp="1622455335025">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
