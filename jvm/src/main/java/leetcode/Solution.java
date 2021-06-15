@@ -156,18 +156,50 @@ public class Solution {
 
     /**
      * 给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
+     *
      * @param nums
      * @param target
      * @return
      */
     public static int searchInsert(int[] nums, int target) {
-        int i;
-        for ( i = 0;i< nums.length;i++){
-            if (nums[i] >= target){
-                return i;
+//        int i;
+//        for ( i = 0;i< nums.length;i++){
+//            if (nums[i] >= target){
+//                return i;
+//            }
+//        }
+//        return i;
+        int start = 0;
+        int end = nums.length - 1;
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] == target) {
+                return target;
+            } else if (nums[mid] > target) {
+                end = mid;
+            } else {
+                start = mid + 1;
             }
         }
-        return i;
+        return start;
+    }
+
+    private static String isWin(){
+        int homeScore = 6;
+        int awayScore = 10;
+        if ( homeScore - 2.5 > awayScore) {
+          return "Home -2.5";
+        }
+        if ( homeScore + 2.5 > awayScore) {
+          return "Home +2.5";
+        }
+        if (awayScore - 2.5 > homeScore) {
+            return "Away -2.5";
+        }
+        if (awayScore + 2.5 > homeScore) {
+            return "Away +2.5";
+        }
+        return "false";
     }
 
     public static void main(String[] args) {
@@ -181,6 +213,7 @@ public class Solution {
         }
         System.out.println();
         System.out.println(strStr("", ""));
-        System.out.println(searchInsert(new int[]{1, 2, 3, 4, 4, 5, 6, 6, 7},0));
+//        System.out.println(searchInsert(new int[]{1, 2, 3, 4, 4, 5, 6, 6, 7}, 0));
+        System.out.println(isWin());
     }
 }
