@@ -184,14 +184,14 @@ public class Solution {
         return start;
     }
 
-    private static String isWin(){
+    private static String isWin() {
         int homeScore = 6;
         int awayScore = 10;
-        if ( homeScore - 2.5 > awayScore) {
-          return "Home -2.5";
+        if (homeScore - 2.5 > awayScore) {
+            return "Home -2.5";
         }
-        if ( homeScore + 2.5 > awayScore) {
-          return "Home +2.5";
+        if (homeScore + 2.5 > awayScore) {
+            return "Home +2.5";
         }
         if (awayScore - 2.5 > homeScore) {
             return "Away -2.5";
@@ -200,6 +200,102 @@ public class Solution {
             return "Away +2.5";
         }
         return "false";
+    }
+
+    /**
+     * 给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
+     *
+     * @param nums
+     * @return
+     */
+    public static int maxSubArray(int[] nums) {
+//        int res = nums[0];
+//        int sum = 0;
+//        for (int num:nums){
+//            if (sum + num > num){
+//                sum = sum + num;
+//            }else {
+//                sum = num;
+//            }
+//            res = Math.max(res,sum);
+//        }
+//        return res;
+        // Kadane算法扫描一次整个数列的所有数值，
+        // 在每一个扫描点计算以该点数值为结束点的子数列的最大和（正数和）。
+        // 该子数列由两部分组成：以前一个位置为结束点的最大子数列、该位置的数值。
+        // 因为该算法用到了“最佳子结构”（以每个位置为终点的最大子数列都是基于其前一位置的最大子数列计算得出,
+        // 该算法可看成动态规划的一个例子。
+        // 状态转移方程：sum[i] = max{sum[i-1]+a[i],a[i]}
+        // 其中(sum[i]记录以a[i]为子序列末端的最大序子列连续和)
+        int max_ending_here = nums[0];
+        int max_so_far = nums[0];
+
+        for (int i = 1; i < nums.length; i++) {
+            // 以每个位置为终点的最大子数列 都是基于其前一位置的最大子数列计算得出,
+            max_ending_here = Math.max(nums[i], max_ending_here + nums[i]);
+            max_so_far = Math.max(max_so_far, max_ending_here);
+        }
+        return max_so_far;
+    }
+
+    /**
+     * 给你一个字符串 s，由若干单词组成，单词之间用空格隔开。返回字符串中最后一个单词的长度。如果不存在最后一个单词，请返回 0。
+     * <p>
+     * 单词 是指仅由字母组成、不包含任何空格字符的最大子字符串。
+     *
+     * @param s
+     * @return
+     */
+    public static int lengthOfLastWord(String s) {
+//        if (" ".equals(s)){
+//            return 0;
+//        }
+//        if (!s.contains(" ")){
+//            return s.length();
+//        }
+//        int le = 0;
+//        for (int i=0;i<s.length();i++){
+//            if (s.charAt(i) == ' '){
+//                le = i;
+//            }
+//        }
+//        if (le == s.length()){
+//            return s.length();
+//        }
+//        return s.length() -1 - le;
+        int length = 0;
+        for (int i = s.length() - 1; i >= 0; i--) {
+            if (length != 0 && s.charAt(i) == ' ') {
+                break;
+            } else if (s.charAt(i) == ' ') {
+            } else {
+                length++;
+            }
+        }
+        return length;
+    }
+
+    /**
+     * 给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。
+     *
+     * 最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。
+     *
+     * 你可以假设除了整数 0 之外，这个整数不会以零开头。
+     *
+     * @param digits
+     * @return
+     */
+    public static  int[] plusOne(int[] digits) {
+        for(int i = digits.length-1;i>=0;i--){
+            digits[i]++;
+            digits[i]=digits[i]%10;
+            if(digits[i]%10!=0){
+                return digits;
+            }
+        }
+        digits= new int[digits.length+1];
+        digits[0] = 1;
+        return digits;
     }
 
     public static void main(String[] args) {
@@ -215,5 +311,10 @@ public class Solution {
         System.out.println(strStr("", ""));
 //        System.out.println(searchInsert(new int[]{1, 2, 3, 4, 4, 5, 6, 6, 7}, 0));
         System.out.println(isWin());
+        System.out.println(maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
+        System.out.println(lengthOfLastWord("iii ssss lllle"));
+        System.out.println(lengthOfLastWord("         "));
+        System.out.println(lengthOfLastWord("iii "));
+        System.out.println(lengthOfLastWord("iiir"));
     }
 }
