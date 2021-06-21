@@ -1,5 +1,8 @@
 package leetcode;
 
+import JiangzhiOffer.PrintListInReversedOrder.ListNode;
+
+import java.util.Arrays;
 import java.util.Stack;
 
 public class Solution {
@@ -297,6 +300,81 @@ public class Solution {
         digits[0] = 1;
         return digits;
     }
+
+    /**
+     * 定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表的头节点。
+     * @param head
+     * @return
+     */
+    public static ListNode reverseList(ListNode head) {
+        ListNode curr = head;
+        ListNode pre = null;
+        while (curr.next != null){
+            ListNode next = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = next;
+        }
+        return pre;
+    }
+
+    /**
+     *
+     * @param n
+     * @return
+     */
+    public static int[] printNumbers(int n) {
+        int length = 1;
+        for (int i =0;i<n;i++){
+            length *= 10;
+        }
+        int[] ints = new int[length-1];
+        for (int i=0;i< ints.length;i++){
+            ints[i] = i +1 ;
+        }
+        return ints;
+    }
+
+    /**
+     * 给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。
+     *
+     * 返回删除后的链表的头节点。
+     * @param head
+     * @param val
+     * @return
+     */
+    public static ListNode deleteNode(ListNode head, int val) {
+        if (head.val == val){
+            return head.next;
+        }
+        ListNode n = head;
+        while (head !=null){
+            if (head.next.val == val){
+                head.next = head.next.next;
+                break;
+            }else {
+                head = head.next;
+            }
+
+        }
+        return n;
+    }
+
+    /**
+     * 输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。
+     * @param arr
+     * @param k
+     * @return
+     */
+    public static int[] getLeastNumbers(int[] arr, int k) {
+        Arrays.sort(arr);
+        int[] res = new int[k];
+        for (int i =0;i<k;i++){
+            res[i] = arr[i];
+        }
+        return res;
+    }
+
 
     public static void main(String[] args) {
         System.out.println(isValid("{}[]()"));
