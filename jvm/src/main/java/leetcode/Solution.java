@@ -2,8 +2,7 @@ package leetcode;
 
 import JiangzhiOffer.PrintListInReversedOrder.ListNode;
 
-import java.util.Arrays;
-import java.util.Stack;
+import java.util.*;
 
 public class Solution {
     /**
@@ -280,36 +279,37 @@ public class Solution {
 
     /**
      * 给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。
-     *
+     * <p>
      * 最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。
-     *
+     * <p>
      * 你可以假设除了整数 0 之外，这个整数不会以零开头。
      *
      * @param digits
      * @return
      */
-    public static  int[] plusOne(int[] digits) {
-        for(int i = digits.length-1;i>=0;i--){
+    public static int[] plusOne(int[] digits) {
+        for (int i = digits.length - 1; i >= 0; i--) {
             digits[i]++;
-            digits[i]=digits[i]%10;
-            if(digits[i]%10!=0){
+            digits[i] = digits[i] % 10;
+            if (digits[i] % 10 != 0) {
                 return digits;
             }
         }
-        digits= new int[digits.length+1];
+        digits = new int[digits.length + 1];
         digits[0] = 1;
         return digits;
     }
 
     /**
      * 定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表的头节点。
+     *
      * @param head
      * @return
      */
     public static ListNode reverseList(ListNode head) {
         ListNode curr = head;
         ListNode pre = null;
-        while (curr.next != null){
+        while (curr.next != null) {
             ListNode next = curr.next;
             curr.next = pre;
             pre = curr;
@@ -319,40 +319,40 @@ public class Solution {
     }
 
     /**
-     *
      * @param n
      * @return
      */
     public static int[] printNumbers(int n) {
         int length = 1;
-        for (int i =0;i<n;i++){
+        for (int i = 0; i < n; i++) {
             length *= 10;
         }
-        int[] ints = new int[length-1];
-        for (int i=0;i< ints.length;i++){
-            ints[i] = i +1 ;
+        int[] ints = new int[length - 1];
+        for (int i = 0; i < ints.length; i++) {
+            ints[i] = i + 1;
         }
         return ints;
     }
 
     /**
      * 给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。
-     *
+     * <p>
      * 返回删除后的链表的头节点。
+     *
      * @param head
      * @param val
      * @return
      */
     public static ListNode deleteNode(ListNode head, int val) {
-        if (head.val == val){
+        if (head.val == val) {
             return head.next;
         }
         ListNode n = head;
-        while (head !=null){
-            if (head.next.val == val){
+        while (head != null) {
+            if (head.next.val == val) {
                 head.next = head.next.next;
                 break;
-            }else {
+            } else {
                 head = head.next;
             }
 
@@ -362,6 +362,7 @@ public class Solution {
 
     /**
      * 输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。
+     *
      * @param arr
      * @param k
      * @return
@@ -369,12 +370,110 @@ public class Solution {
     public static int[] getLeastNumbers(int[] arr, int k) {
         Arrays.sort(arr);
         int[] res = new int[k];
-        for (int i =0;i<k;i++){
+        for (int i = 0; i < k; i++) {
             res[i] = arr[i];
         }
         return res;
     }
 
+    /**
+     * 输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。
+     *
+     * @param arr
+     * @param k
+     * @return
+     */
+    public static int[] getLeastNumbers1(int[] arr, int k) {
+        // 保持堆的大小为K，然后遍历数组中的数字，遍历的时候做如下判断：
+        // 1. 若目前堆的大小小于K，将当前数字放入堆中。
+        // 2. 否则判断当前数字与大根堆堆顶元素的大小关系，如果当前数字比大根堆堆顶还大，这个数就直接跳过；
+        // 反之如果当前数字比大根堆堆顶小，先poll掉堆顶，再将该数字放入堆中。
+        if (k == 0 || arr.length == 0) {
+            return new int[0];
+        }
+        // 默认是小根堆，实现大根堆需要重写一下比较器
+        Queue<Integer> pq = new PriorityQueue<Integer>((v1,v2) -> v2 - v1);
+        for (int num:arr){
+            if (pq.size() < k){
+                pq.offer(num);
+            }else if (num < pq.peek()){
+                pq.poll();
+                pq.offer(num);
+            }
+        }
+        // 返回堆中元素
+        int[] res = new int[pq.size()];
+        int idx = 0;
+        for (int num:pq){
+            res[idx++] = num;
+        }
+        return res;
+    }
+
+    /**
+     * 输入整数数组 arr ，找出其中最小的 k 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。
+     *
+     * @param arr
+     * @param k
+     * @return
+     */
+    public static int[] getLeastNumbers2(int[] arr, int k) {
+        if (k == 0 || arr.length == 0) {
+            return new int[0];
+        }
+        // 最后一个参数表示我们要找的是下标为k-1的数
+        // 最后一个参数表示我们要找的是下标为k-1的数
+        return quickSearch(arr, 0, arr.length - 1, k - 1);
+
+    }
+    private static int[] quickSearch(int[] nums,int lo,int hi,int k){
+        // 每快排切分1次，找到排序后下标为j的元素，如果j恰好等于k就返回j以及j左边所有的数；
+        int j = partition(nums,lo,hi);
+        if (j == k){
+            return Arrays.copyOf(nums,j+1);
+        }
+        // 否则根据下标j与k的大小关系来决定继续切分左段还是右段。
+        return j > k? quickSearch(nums, lo, j - 1, k): quickSearch(nums, j + 1, hi, k);
+    }
+    // 快排切分，返回下标j，使得比nums[j]小的数都在j的左边，比nums[j]大的数都在j的右边
+    private static int partition(int[] nums,int lo,int hi){
+        int v = nums[0];
+        int i = lo,j = hi+1;
+        while (true){
+            while (++i <= hi && nums[i] < v){
+
+            }
+            while (--j>=lo && nums[j] > v){
+
+            }
+            if (i>j){
+                break;
+            }
+            int t = nums[j];
+            nums[j] = nums[i];
+            nums[i] = t;
+        }
+        nums[lo] = nums[j];
+        nums[j] = v;
+        return j;
+    }
+
+    /**
+     * 输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。
+     * @param nums
+     * @return
+     */
+    public String minNumber(int[] nums) {
+        //此题求拼接起来的最小数字，本质上是一个排序问题。设数组 numsnums 中任意两数字的字符串为 xx 和 yy ，则规定 排序判断规则 为：
+        //若拼接字符串 x + y > y + xx+y>y+x ，则 xx “大于” yy；
+        //反之，若 x + y < y + xx+y<y+x ，则 xx “小于” yy；
+        List<String> list = new ArrayList<>();
+        for (int num : nums) {
+            list.add(String.valueOf(num));
+        }
+        list.sort((o1, o2) -> (o1 + o2).compareTo(o2 + o1));
+        return String.join("", list);
+    }
 
     public static void main(String[] args) {
         System.out.println(isValid("{}[]()"));
