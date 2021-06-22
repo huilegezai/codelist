@@ -1,5 +1,6 @@
 package leetcode;
 
+import JiangzhiOffer.ConstructBinaryTree.TreeNode;
 import JiangzhiOffer.PrintListInReversedOrder.ListNode;
 
 import java.util.*;
@@ -599,6 +600,7 @@ public class Solution {
             nums1[k] = temp[k];
         }
     }
+
     public void merge1(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1;
         int j = n - 1;
@@ -610,31 +612,237 @@ public class Solution {
 
     /**
      * 给定一个字符串，验证它是否是回文串，只考虑字母和数字字符，可以忽略字母的大小写。
+     *
      * @param s
      * @return
      */
     public static boolean isPalindrome(String s) {
         //这题没什么难度，最简单的就是使用双指针，一个指向前，一个指向后，遇到空格以及特殊字符要跳过，然后判断，画个图来看下
-        if (s.length() ==0){
+        if (s.length() == 0) {
             return true;
         }
-        int left =0,right = s.length()-1;
-        while (left<right){
+        int left = 0, right = s.length() - 1;
+        while (left < right) {
             //因为题中说了，只考虑字母和数字，所以不是字母和数字的先过滤掉
-            while (left < right && !Character.isLetterOrDigit(s.charAt(left))){
+            while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
                 left++;
             }
-            while (left < right && !Character.isLetterOrDigit(s.charAt(right))){
+            while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
                 right--;
             }
             //然后把两个字符变为小写，在判断是否一样，如果不一样，直接返回false
-            if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))){
+            if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) {
                 return false;
             }
             left++;
             right--;
         }
         return true;
+    }
+
+    /**
+     * 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+     * <p>
+     * 假设一个二叉搜索树具有如下特征：
+     * 节点的左子树只包含小于当前节点的数。
+     * 节点的右子树只包含大于当前节点的数。
+     * 所有左子树和右子树自身必须也是二叉搜索树。
+     *
+     * @param root
+     * @return
+     */
+    public boolean isValidBST(TreeNode root) {
+        return validate(root, Long.MIN_VALUE, Long.MAX_VALUE);
+    }
+
+    public boolean validate(TreeNode node, long min, long max) {
+        if (node == null) {
+            return true;
+        }
+        if (node.val <= min || node.val >= max) {
+            return false;
+        }
+        return validate(node.left, min, node.val) && validate(node.right, node.val, max);
+    }
+
+    /**
+     * 给定二叉搜索树（BST）的根节点和一个值。 你需要在BST中找到节点值等于给定值的节点。 返回以该节点为根的子树。 如果节点不存在，则返回 NULL。
+     *
+     * @param root
+     * @param val
+     * @return
+     */
+    public TreeNode searchBST(TreeNode root, int val) {
+        if (root == null) {
+            return null;
+        }
+        if (root.val == val) {
+            return root;
+        } else if (root.val < val) {
+            return searchBST(root.right, val);
+        } else {
+            return searchBST(root.left, val);
+        }
+    }
+
+    /**
+     * 给定二叉搜索树（BST）的根节点和要插入树中的值，将值插入二叉搜索树。 返回插入后二叉搜索树的根节点。 输入数据 保证 ，新值和原始二叉搜索树中的任意节点值都不同。
+     * <p>
+     * 注意，可能存在多种有效的插入方式，只要树在插入后仍保持为二叉搜索树即可。 你可以返回 任意有效的结果 。
+     * <p>
+     * 作者：力扣 (LeetCode)
+     * 链接：https://leetcode-cn.com/leetbook/read/introduction-to-data-structure-binary-search-tree/xp1llt/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param root
+     * @param val
+     * @return
+     */
+    public TreeNode insertIntoBST(TreeNode root, int val) {
+        TreeNode newNode = new TreeNode(val);
+        TreeNode curr = root;
+        if (curr == null) {
+            return newNode;
+        }
+        while (true) {
+            if (val < curr.val) {
+                if (curr.left == null) {
+                    curr.left = newNode;
+                    return root;
+                } else {
+                    curr = curr.left;
+                }
+            } else {
+                if (curr.right == null) {
+                    curr.right = newNode;
+                    return root;
+                } else {
+                    curr = curr.right;
+                }
+            }
+        }
+        /**
+         * if (root == null) {
+         *             return new TreeNode(val);
+         *         }
+         *
+         *         if (val < root.val) {
+         *             root.left = insertIntoBST(root.left, val);
+         *         } else {
+         *             root.right = insertIntoBST(root.right, val);
+         *         }
+         *         return root;
+         */
+    }
+
+    /**
+     * 给定一个二叉搜索树的根节点 root 和一个值 key，删除二叉搜索树中的key对应的节点，并保证二叉搜索树的性质不变。返回二叉搜索树（有可能被更新）的根节点的引用。
+     * <p>
+     * 一般来说，删除节点可分为两个步骤：
+     * <p>
+     * 首先找到需要删除的节点；
+     * 如果找到了，删除它。
+     * <p>
+     * 作者：力扣 (LeetCode)
+     * 链接：https://leetcode-cn.com/leetbook/read/introduction-to-data-structure-binary-search-tree/xpcnds/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param root
+     * @param key
+     * @return
+     */
+    public TreeNode deleteNode(TreeNode root, int key) {
+        if (root == null) {
+            return null;
+        }
+        if (key < root.val) {
+            root.left = deleteNode(root.left, key);
+            return root;
+        } else if (key > root.val) {
+            root.right = deleteNode(root.right, key);
+            return root;
+        } else {
+            if (root.left == null) {
+                return root.right;
+            } else if (root.right == null) {
+                return root.left;
+            } else {
+                // 左右子树都存在，返回后继节点（右子树最左叶子）作为新的根
+                TreeNode successor = min(root.right);
+                successor.right = deleteMin(root.right);
+                successor.left = root.left;
+                return successor;
+            }
+        }
+    }
+
+    private TreeNode min(TreeNode node) {
+        if (node.left == null) {
+            return node;
+        }
+        return min(node.left);
+    }
+
+    private TreeNode deleteMin(TreeNode node) {
+        if (node.left == null) {
+            return node.right;
+        }
+        node.left = deleteMin(node.left);
+        return node;
+    }
+
+    /**
+     * 从点(x, y)可以转换到(x, x+y) 或者(x+y, y)。
+     * <p>
+     * 给定一个起点(sx, sy)和一个终点(tx, ty)，如果通过一系列的转换可以从起点到达终点，则返回 True，否则返回False。
+     * <p>
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/reaching-points
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
+     * @param sx
+     * @param sy
+     * @param tx
+     * @param ty
+     * @return
+     */
+    public static boolean reachingPoints(int sx, int sy, int tx, int ty) {
+        while (tx >= sx && ty >= sy) {
+            if (tx == ty) {
+                break;
+            }
+            if (tx > ty) {
+                if (ty > sy) {
+                    tx %= ty;
+                } else {
+                    return (tx - sx) % ty == 0;
+                }
+            } else {
+                if (tx > sx) {
+                    ty %= tx;
+                } else {
+                    return (ty - sy) % tx == 0;
+                }
+            }
+        }
+        return (tx == sx && ty == sy);
+    }
+
+    public static Boolean isequals(int a, int b, int tx) {
+        if (a == tx) {
+            return true;
+        } else if (a < tx) {
+            int ta = a + b;
+            if (isequals(ta, b, tx)) {
+                return true;
+            } else {
+                return isequals(a, ta, tx);
+            }
+        } else {
+            return false;
+        }
     }
 
     public static void main(String[] args) {
@@ -658,5 +866,6 @@ public class Solution {
         System.out.println(singleNumber(new int[]{-2, -2, 1, -3, -1, -3, 1, 4, 4}));
         System.out.println(majorityElement(new int[]{-2, -2, -2, -2, -2, -2, 1, 4, 4}));
         System.out.println(isPalindrome("qwwq"));
+        System.out.println(reachingPoints(1, 1, 3, 5));
     }
 }
