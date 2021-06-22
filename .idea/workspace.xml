@@ -222,7 +222,7 @@
       <workItem from="1622167546237" duration="11195000" />
       <workItem from="1622605569087" duration="38901000" />
       <workItem from="1623288807517" duration="3803000" />
-      <workItem from="1623722418223" duration="29739000" />
+      <workItem from="1623722418223" duration="30710000" />
     </task>
     <task id="LOCAL-00001" summary="delete code">
       <created>1621587794225</created>
@@ -343,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624325373873</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。">
+      <created>1624329872792</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1624329872792</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,11 +385,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="221" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623306858708" />
-    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1624325372750">
+    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1624329871748">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623116060315" />
-    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624325372750" />
+    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624329871748" />
     <state x="2104" y="85" key="DiffContextDialog" timestamp="1623754126814">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -392,26 +399,26 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2521" y="235" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622538783668" />
-    <state width="1877" height="315" key="GridCell.Tab.0.bottom" timestamp="1624270070821">
+    <state width="1877" height="104" key="GridCell.Tab.0.bottom" timestamp="1624330505622">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623307144210" />
-    <state width="1877" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624270070821" />
-    <state width="1877" height="315" key="GridCell.Tab.0.center" timestamp="1624270070821">
+    <state width="1877" height="104" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624330505622" />
+    <state width="1877" height="104" key="GridCell.Tab.0.center" timestamp="1624330505622">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="195" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623307144210" />
-    <state width="1877" height="315" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624270070821" />
-    <state width="1877" height="315" key="GridCell.Tab.0.left" timestamp="1624270070821">
+    <state width="1877" height="104" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624330505622" />
+    <state width="1877" height="104" key="GridCell.Tab.0.left" timestamp="1624330505622">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="195" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623307144210" />
-    <state width="1877" height="315" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624270070821" />
-    <state width="1877" height="315" key="GridCell.Tab.0.right" timestamp="1624270070821">
+    <state width="1877" height="104" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624330505622" />
+    <state width="1877" height="104" key="GridCell.Tab.0.right" timestamp="1624330505622">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="195" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623307144210" />
-    <state width="1877" height="315" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624270070821" />
+    <state width="1877" height="104" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624330505622" />
     <state width="1877" height="338" key="GridCell.Tab.1.bottom" timestamp="1624268904648">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -440,11 +447,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622189482059" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1624325407282">
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1624329874349">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623116166956" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624325407282" />
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624329874349" />
     <state x="2077" y="55" width="1483" height="839" maximized="true" key="dock-window-1" timestamp="1623052938470">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -502,7 +509,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/jvm/src/main/java/leetcode/Solution.java</url>
-          <line>627</line>
+          <line>652</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
