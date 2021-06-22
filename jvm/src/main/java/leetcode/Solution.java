@@ -392,11 +392,11 @@ public class Solution {
             return new int[0];
         }
         // 默认是小根堆，实现大根堆需要重写一下比较器
-        Queue<Integer> pq = new PriorityQueue<Integer>((v1,v2) -> v2 - v1);
-        for (int num:arr){
-            if (pq.size() < k){
+        Queue<Integer> pq = new PriorityQueue<Integer>((v1, v2) -> v2 - v1);
+        for (int num : arr) {
+            if (pq.size() < k) {
                 pq.offer(num);
-            }else if (num < pq.peek()){
+            } else if (num < pq.peek()) {
                 pq.poll();
                 pq.offer(num);
             }
@@ -404,7 +404,7 @@ public class Solution {
         // 返回堆中元素
         int[] res = new int[pq.size()];
         int idx = 0;
-        for (int num:pq){
+        for (int num : pq) {
             res[idx++] = num;
         }
         return res;
@@ -426,27 +426,29 @@ public class Solution {
         return quickSearch(arr, 0, arr.length - 1, k - 1);
 
     }
-    private static int[] quickSearch(int[] nums,int lo,int hi,int k){
+
+    private static int[] quickSearch(int[] nums, int lo, int hi, int k) {
         // 每快排切分1次，找到排序后下标为j的元素，如果j恰好等于k就返回j以及j左边所有的数；
-        int j = partition(nums,lo,hi);
-        if (j == k){
-            return Arrays.copyOf(nums,j+1);
+        int j = partition(nums, lo, hi);
+        if (j == k) {
+            return Arrays.copyOf(nums, j + 1);
         }
         // 否则根据下标j与k的大小关系来决定继续切分左段还是右段。
-        return j > k? quickSearch(nums, lo, j - 1, k): quickSearch(nums, j + 1, hi, k);
+        return j > k ? quickSearch(nums, lo, j - 1, k) : quickSearch(nums, j + 1, hi, k);
     }
+
     // 快排切分，返回下标j，使得比nums[j]小的数都在j的左边，比nums[j]大的数都在j的右边
-    private static int partition(int[] nums,int lo,int hi){
+    private static int partition(int[] nums, int lo, int hi) {
         int v = nums[0];
-        int i = lo,j = hi+1;
-        while (true){
-            while (++i <= hi && nums[i] < v){
+        int i = lo, j = hi + 1;
+        while (true) {
+            while (++i <= hi && nums[i] < v) {
 
             }
-            while (--j>=lo && nums[j] > v){
+            while (--j >= lo && nums[j] > v) {
 
             }
-            if (i>j){
+            if (i > j) {
                 break;
             }
             int t = nums[j];
@@ -460,6 +462,7 @@ public class Solution {
 
     /**
      * 输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。
+     *
      * @param nums
      * @return
      */
@@ -473,6 +476,84 @@ public class Solution {
         }
         list.sort((o1, o2) -> (o1 + o2).compareTo(o2 + o1));
         return String.join("", list);
+    }
+
+    /**
+     * 给你一个包含 n 个整数的数nums，判断nums中是否存在三个元素 a，b，c ，使得a + b + c = 0 ？请你找出所有和为 0 且不重复的三元组。
+     *
+     * @param nums
+     * @return
+     */
+    public List<List<Integer>> threeSum(int[] nums) {
+        if (nums.length < 3) {
+            return null;
+        }
+        return null;
+    }
+
+    /**
+     * 给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。
+     *
+     * @param nums
+     * @return
+     */
+    public static int singleNumber(int[] nums) {
+        int nu = 0;
+        for (int num : nums) {
+            nu = nu ^ num;
+        }
+
+        Set<Integer> set = new HashSet<>();
+        for (int num : nums) {
+            if (!set.add(num)) {
+                set.remove(num);
+            }
+        }
+//        return nu;
+        return (int) set.toArray()[0];
+    }
+
+    /**
+     * 给定一个大小为 n 的数组，找到其中的多数元素。多数元素是指在数组中出现次数 大于⌊ n/2 ⌋的元素。
+     * <p>
+     * 你可以假设数组是非空的，并且给定的数组总是存在多数元素。
+     *
+     * @param nums
+     * @return
+     */
+    public static int majorityElement(int[] nums) {
+        int length = nums.length;
+        if (length == 1) {
+            return nums[0];
+        }
+        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        for (int num : nums) {
+            hashMap.put(num, hashMap.getOrDefault(num, 0) + 1);
+            if (hashMap.get(num) > length / 2) {
+                return num;
+            }
+        }
+        return -1;
+    }
+
+    public boolean searchMatrix(int[][] matrix, int target) {
+        if (matrix == null) {
+            return false;
+        }
+        int lo = matrix.length;
+        int li = matrix[0].length;
+        int i = 0;
+        int k = matrix[0].length - 1;
+        while (-1 < i && i < lo && -1 < k && k < li) {
+            if (matrix[i][k] > target) {
+                k--;
+            } else if (matrix[i][k] < target) {
+                i++;
+            } else {
+                return true;
+            }
+        }
+        return false;
     }
 
     public static void main(String[] args) {
@@ -493,5 +574,7 @@ public class Solution {
         System.out.println(lengthOfLastWord("         "));
         System.out.println(lengthOfLastWord("iii "));
         System.out.println(lengthOfLastWord("iiir"));
+        System.out.println(singleNumber(new int[]{-2, -2, 1, -3, -1, -3, 1, 4, 4}));
+        System.out.println(majorityElement(new int[]{-2, -2, -2, -2, -2, -2, 1, 4, 4}));
     }
 }
