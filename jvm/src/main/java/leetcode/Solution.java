@@ -556,6 +556,67 @@ public class Solution {
         return false;
     }
 
+    /**
+     * 给你两个有序整数数组nums1 和 nums2，请你将 nums2 合并到nums1中，使 nums1 成为一个有序数组。
+     * <p>
+     * 初始化nums1 和 nums2 的元素数量分别为m 和 n 。你可以假设nums1 的空间大小等于m + n，这样它就有足够的空间保存来自 nums2 的元素。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+     * 输出：[1,2,2,3,5,6]
+     * 示例 2：
+     * <p>
+     * 输入：nums1 = [1], m = 1, nums2 = [], n = 0
+     * 输出：[1]
+     *
+     * @param nums1
+     * @param m
+     * @param nums2
+     * @param n
+     */
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int temp[] = new int[m + n];
+        int index = 0;
+        int i = 0;
+        int j = 0;
+        while (i < m && j < n) {
+            if (nums1[i] <= nums2[j]) {
+                temp[index++] = nums1[i++];
+            } else {
+                temp[index++] = nums2[j++];
+            }
+        }
+        for (; i < m; ) {
+            temp[index++] = nums1[i++];
+        }
+        for (; j < n; ) {
+            temp[index++] = nums2[j++];
+        }
+        for (int k = 0; k < m + n; k++) {
+            nums1[k] = temp[k];
+        }
+    }
+    public void merge1(int[] nums1, int m, int[] nums2, int n) {
+        int i = m - 1;
+        int j = n - 1;
+        int end = m + n - 1;
+        while (j >= 0) {
+            nums1[end--] = (i >= 0 && nums1[i] > nums2[j]) ? nums1[i--] : nums2[j--];
+        }
+    }
+
+    /**
+     * 给定一个字符串，验证它是否是回文串，只考虑字母和数字字符，可以忽略字母的大小写。
+     * @param s
+     * @return
+     */
+    public boolean isPalindrome(String s) {
+
+    }
+
     public static void main(String[] args) {
         System.out.println(isValid("{}[]()"));
         System.out.println(removeDuplicates(new int[]{1, 2, 3, 4, 4, 5, 6, 6, 7}));
