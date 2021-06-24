@@ -310,7 +310,7 @@ public class Solution {
     public static ListNode reverseList(ListNode head) {
         ListNode curr = head;
         ListNode pre = null;
-        while (curr.next != null) {
+        while (curr != null) {
             ListNode next = curr.next;
             curr.next = pre;
             pre = curr;
@@ -843,6 +843,226 @@ public class Solution {
         } else {
             return false;
         }
+    }
+
+    /**
+     * 给你一个字符串数组 words（下标 从 0 开始 计数）。
+     * <p>
+     * 在一步操作中，需先选出两个 不同 下标 i 和 j，其中 words[i] 是一个非空字符串，接着将 words[i] 中的 任一 字符移动到 words[j] 中的 任一 位置上。
+     * <p>
+     * 如果执行任意步操作可以使 words 中的每个字符串都相等，返回 true ；否则，返回 false 。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：words = ["abc","aabc","bc"]
+     * 输出：true
+     * 解释：将 words[1] 中的第一个 'a' 移动到 words[2] 的最前面。
+     * 使 words[1] = "abc" 且 words[2] = "abc" 。
+     * 所有字符串都等于 "abc" ，所以返回 true 。
+     * 示例 2：
+     * <p>
+     * 输入：words = ["ab","a"]
+     * 输出：false
+     * 解释：执行操作无法使所有字符串都相等。
+     * <p>
+     * <p>
+     * 提示：
+     * <p>
+     * 1 <= words.length <= 100
+     * 1 <= words[i].length <= 100
+     * words[i] 由小写英文字母组成
+     *
+     * @param words
+     * @return
+     */
+    public boolean makeEqual(String[] words) {
+        /**
+         * 这道题表面上是挪动字符使得数组中每个字符都相等，其实我们不难发现，字符串相等就是原数组中每个字符出现的数量都得是数组长度的整数倍，
+         * 这样我们就可以将全部字符平均分给数组中的各个字符串，所以挪动任意字符判断数组中所有字符是否相等的问题就可以转化为求数组中各个字符出现的频率问题了
+         */
+        Map<Character, Integer> letter = new HashMap<Character, Integer>();
+        for (int i = 0; i < words.length; i++) {
+            for (int j = 0; j < words[i].length(); j++) {
+                if (letter.get(words[i].charAt(j)) == null) {
+                    letter.put(words[j].charAt(j), 1);
+                } else {
+                    letter.put(words[i].charAt(j), letter.get(words[i].charAt(j)) + 1);
+                }
+            }
+
+        }
+        for (Integer in : letter.values()) {
+            if (in % words.length != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+    /**
+     * 给你一个字符串 s ，请你根据下面的算法重新构造字符串：
+     * <p>
+     * 从 s 中选出 最小 的字符，将它 接在 结果字符串的后面。
+     * 从 s 剩余字符中选出 最小 的字符，且该字符比上一个添加的字符大，将它 接在 结果字符串后面。
+     * 重复步骤 2 ，直到你没法从 s 中选择字符。
+     * 从 s 中选出 最大 的字符，将它 接在 结果字符串的后面。
+     * 从 s 剩余字符中选出 最大 的字符，且该字符比上一个添加的字符小，将它 接在 结果字符串后面。
+     * 重复步骤 5 ，直到你没法从 s 中选择字符。
+     * 重复步骤 1 到 6 ，直到 s 中所有字符都已经被选过。
+     * 在任何一步中，如果最小或者最大字符不止一个 ，你可以选择其中任意一个，并将其添加到结果字符串。
+     * <p>
+     * 请你返回将 s 中字符重新排序后的 结果字符串 。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：s = "aaaabbbbcccc"
+     * 输出："abccbaabccba"
+     * 解释：第一轮的步骤 1，2，3 后，结果字符串为 result = "abc"
+     * 第一轮的步骤 4，5，6 后，结果字符串为 result = "abccba"
+     * 第一轮结束，现在 s = "aabbcc" ，我们再次回到步骤 1
+     * 第二轮的步骤 1，2，3 后，结果字符串为 result = "abccbaabc"
+     * 第二轮的步骤 4，5，6 后，结果字符串为 result = "abccbaabccba"
+     * 示例 2：
+     * <p>
+     * 输入：s = "rat"
+     * 输出："art"
+     * 解释：单词 "rat" 在上述算法重排序以后变成 "art"
+     * 示例 3：
+     * <p>
+     * 输入：s = "leetcode"
+     * 输出："cdelotee"
+     * 示例 4：
+     * <p>
+     * 输入：s = "ggggggg"
+     * 输出："ggggggg"
+     * 示例 5：
+     * <p>
+     * 输入：s = "spo"
+     * 输出："ops"
+     * <p>
+     * <p>
+     * 提示：
+     * <p>
+     * 1 <= s.length <= 500
+     * s 只包含小写英文字母。
+     *
+     * @param s
+     * @return
+     */
+    public String sortString(String s) {
+        return null;
+    }
+
+    /**
+     * 给你一个二进制字符串 s ，现需要将其转化为一个 交替字符串 。请你计算并返回转化所需的 最小 字符交换次数，如果无法完成转化，返回 -1 。
+     * <p>
+     * 交替字符串 是指：相邻字符之间不存在相等情况的字符串。例如，字符串 "010" 和 "1010" 属于交替字符串，但 "0100" 不是。
+     * <p>
+     * 任意两个字符都可以进行交换，不必相邻 。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：s = "111000"
+     * 输出：1
+     * 解释：交换位置 1 和 4："111000" -> "101010" ，字符串变为交替字符串。
+     * 示例 2：
+     * <p>
+     * 输入：s = "010"
+     * 输出：0
+     * 解释：字符串已经是交替字符串了，不需要交换。
+     * 示例 3：
+     * <p>
+     * 输入：s = "1110"
+     * 输出：-1
+     * <p>
+     * <p>
+     * 提示：
+     * <p>
+     * 1 <= s.length <= 1000
+     * s[i] 的值为 '0' 或 '1'
+     *
+     * @param s
+     * @return
+     */
+    public int minSwaps(String s) {
+        return 0;
+    }
+
+
+    /**
+     * 给定一个二叉树，找出其最小深度。
+     * <p>
+     * 最小深度是从根节点到最近叶子节点的最短路径上的节点数量。
+     * <p>
+     * 说明：叶子节点是指没有子节点的节点。
+     *
+     * @param root
+     * @return
+     */
+    public int minDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        // null节点不参与比较
+        if (root.left == null && root.right != null) {
+            return 1 + minDepth(root.right);
+        }
+        // null节点不参与比较
+        if (root.right == null && root.left != null) {
+            return 1 + minDepth(root.left);
+        }
+        return Math.min(minDepth(root.left), minDepth(root.right)) + 1;
+    }
+
+    /**
+     * 给定一个非负整数numRows，生成杨辉三角的前numRows行。
+     * <p>
+     * <p>
+     * <p>
+     * 在杨辉三角中，每个数是它左上方和右上方的数的和。
+     * <p>
+     * 示例:
+     * <p>
+     * 输入: 5
+     * 输出:
+     * [
+     * [1],
+     * [1,1],
+     * [1,2,1],
+     * [1,3,3,1],
+     * [1,4,6,4,1]
+     * ]
+     * <p>
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/pascals-triangle
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
+     * @param numRows
+     * @return
+     */
+    public List<List<Integer>> generate(int numRows) {
+        if (numRows == 0) {
+            return null;
+        }
+        List<List<Integer>> arrayList = new ArrayList();
+        for (int i = 0; i < numRows; i++) {
+            List<Integer> a = new ArrayList<>();
+            for (int j = 0;j <= i;j++){
+                if (j==0 || i == j){
+                    a.add(0);
+                }else {
+                    a.add(arrayList.get(i - 1).get(j - 1) + arrayList.get(i - 1).get(j + 1));
+                }
+            }
+        }
+        return arrayList;
     }
 
     public static void main(String[] args) {
