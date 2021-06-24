@@ -2,7 +2,6 @@ package leetcode;
 
 import JiangzhiOffer.ConstructBinaryTree.TreeNode;
 import JiangzhiOffer.PrintListInReversedOrder.ListNode;
-import sun.font.TrueTypeFont;
 
 import java.util.*;
 
@@ -1050,12 +1049,12 @@ public class Solution {
      */
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> arrayList = new ArrayList();
-        for (int i = 0; i < numRows; ++i ){
+        for (int i = 0; i < numRows; ++i) {
             List<Integer> a = new ArrayList<>();
-            for (int j = 0;j <= i;++j){
-                if (j==0 || i == j){
+            for (int j = 0; j <= i; ++j) {
+                if (j == 0 || i == j) {
                     a.add(1);
-                }else {
+                } else {
                     a.add(arrayList.get(i - 1).get(j - 1) + arrayList.get(i - 1).get(j));
                 }
             }
@@ -1074,6 +1073,7 @@ public class Solution {
      * 来源：力扣（LeetCode）
      * 链接：https://leetcode-cn.com/problems/pascals-triangle-ii
      * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
      * @param rowIndex
      * @return
      */
@@ -1096,13 +1096,13 @@ public class Solution {
 
         // 注意到对第 i+1i+1 行的计算仅用到了第 ii 行的数据，因此可以使用滚动数组的思想优化空间复杂度。
         List<Integer> pre = new ArrayList<>();
-        for (int i=0;i<= rowIndex;i++){
+        for (int i = 0; i <= rowIndex; i++) {
             List<Integer> cur = new ArrayList<>();
-            for (int j=0;j<=i;j++){
-                if (j==0||j==i){
+            for (int j = 0; j <= i; j++) {
+                if (j == 0 || j == i) {
                     cur.add(1);
-                }else {
-                    cur.add(pre.get(j-1) + pre.get(j));
+                } else {
+                    cur.add(pre.get(j - 1) + pre.get(j));
                 }
             }
             pre = cur;
@@ -1117,29 +1117,30 @@ public class Solution {
      * 来源：力扣（LeetCode）
      * 链接：https://leetcode-cn.com/problems/path-sum
      * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
      * @param root
      * @param targetSum
      * @return
      */
     public static boolean hasPathSum(TreeNode root, int targetSum) {
-        if (root == null || root.val > targetSum){
+        if (root == null || root.val > targetSum) {
             return false;
-        } else if (root.val == targetSum){
+        } else if (root.val == targetSum) {
             return true;
         } else {
             return pathSum(root.right, root.val, targetSum) || pathSum(root.left, root.val, targetSum);
         }
     }
 
-    public static boolean pathSum(TreeNode root,int sum,int targetSum){
-        if (root == null){
+    public static boolean pathSum(TreeNode root, int sum, int targetSum) {
+        if (root == null) {
             return false;
         }
-        if (root.val + sum == targetSum){
+        if (root.val + sum == targetSum) {
             return true;
-        }else if (root.val + sum > targetSum){
+        } else if (root.val + sum > targetSum) {
             return false;
-        }else {
+        } else {
             if (root.left != null && root.right == null) {
                 return pathSum(root.left, root.val + sum, targetSum);
             }
@@ -1154,36 +1155,37 @@ public class Solution {
     }
 
     public static boolean hasPathSum1(TreeNode root, int targetSum) {
-        if (root == null){
+        if (root == null) {
             return false;
         }
-        if (root.left == null && root.right == null){
+        if (root.left == null && root.right == null) {
             return targetSum - root.val == 0;
         }
-        return hasPathSum1(root.left,targetSum - root.val) || hasPathSum1(root.right,targetSum - root.val);
+        return hasPathSum1(root.left, targetSum - root.val) || hasPathSum1(root.right, targetSum - root.val);
     }
 
     /**
      * 给定一个数组 prices ，它的第i 个元素prices[i] 表示一支给定股票第 i 天的价格。
-     *
+     * <p>
      * 你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
-     *
+     * <p>
      * 返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。
-     *
+     * <p>
      * 示例 1：
      * 输入：[7,1,5,3,6,4]
      * 输出：5
      * 解释：在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
-     *      注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。
-     *
+     * 注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。
+     * <p>
      * 示例 2：
      * 输入：prices = [7,6,4,3,1]
      * 输出：0
      * 解释：在这种情况下, 没有交易完成, 所以最大利润为 0。
-     *
+     * <p>
      * 来源：力扣（LeetCode）
      * 链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock
      * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
      * @param prices
      * @return
      */
@@ -1203,89 +1205,144 @@ public class Solution {
         }
         return max;
          */
-        if (prices.length <= 1){
+        if (prices.length <= 1) {
             return 0;
         }
-        int min = prices[0],max = 0;
-        for (int i = 0;i<prices.length;i++){
-            max = Math.max(max,prices[i]-min);
-            min = Math.min(min,prices[i]);
+        int min = prices[0], max = 0;
+        for (int i = 0; i < prices.length; i++) {
+            max = Math.max(max, prices[i] - min);
+            min = Math.min(min, prices[i]);
         }
         return max;
     }
 
     /**
      * 给定一个数组 prices ，其中prices[i] 是一支给定股票第 i 天的价格。
-     *
+     * <p>
      * 设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。
-     *
+     * <p>
      * 注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
-     *
-     *
-     *
+     * <p>
+     * <p>
+     * <p>
      * 示例 1:
-     *
+     * <p>
      * 输入: prices = [7,1,5,3,6,4]
      * 输出: 7
      * 解释: 在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = 4 。
-     *     随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6-3 = 3 。
+     * 随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6-3 = 3 。
      * 示例 2:
-     *
+     * <p>
      * 输入: prices = [1,2,3,4,5]
      * 输出: 4
      * 解释: 在第 1 天（股票价格 = 1）的时候买入，在第 5 天 （股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = 4 。
-     *    注意你不能在第 1 天和第 2 天接连购买股票，之后再将它们卖出。因为这样属于同时参与了多笔交易，你必须在再次购买前出售掉之前的股票。
+     * 注意你不能在第 1 天和第 2 天接连购买股票，之后再将它们卖出。因为这样属于同时参与了多笔交易，你必须在再次购买前出售掉之前的股票。
      * 示例3:
-     *
+     * <p>
      * 输入: prices = [7,6,4,3,1]
      * 输出: 0
      * 解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
-     *
-     *
+     * <p>
+     * <p>
      * 提示：
-     *
+     * <p>
      * 1 <= prices.length <= 3 * 104
      * 0 <= prices[i] <= 104
-     *
+     * <p>
      * 来源：力扣（LeetCode）
      * 链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii
      * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
      * @param prices
      * @return
      */
     public int maxProfit2(int[] prices) {
-        if (prices.length <= 1){
+        if (prices.length <= 1) {
             return 0;
         }
-        int min = prices[0],max = 0;
+        int min = prices[0], max = 0;
         int sum = 0;
-        for (int i = 0;i<prices.length;i++){
-            max = Math.max(max,prices[i]-min);
-            min = Math.min(min,prices[i]);
-            if (max > 0){
+        for (int i = 0; i < prices.length; i++) {
+            max = Math.max(max, prices[i] - min);
+            min = Math.min(min, prices[i]);
+            if (max > 0) {
                 sum += max;
                 max = 0;
                 min = prices[i];
             }
         }
-        return Math.max(max,sum);
+        return Math.max(max, sum);
     }
 
     /**
      * 给定一个链表，判断链表中是否有环。
-     *
+     * <p>
      * 如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。
-     *
+     * <p>
      * 如果链表中存在环，则返回 true 。 否则，返回 false
-     *
+     * <p>
      * 来源：力扣（LeetCode）
      * 链接：https://leetcode-cn.com/problems/linked-list-cycle
      * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
      * @param head
      * @return
      */
     public boolean hasCycle(ListNode head) {
+        /**
+         * 方法一：哈希表
+         * 思路及算法
+         *
+         * 最容易想到的方法是遍历所有节点，每次遍历到一个节点时，判断该节点此前是否被访问过。
+         *
+         * 具体地，我们可以使用哈希表来存储所有已经访问过的节点。每次我们到达一个节点，如果该节点已经存在于哈希表中，则说明该链表是环形链表，否则就将该节点加入哈希表中。重复这一过程，直到我们遍历完整个链表即可。
+         *
+         * 作者：LeetCode-Solution
+         * 链接：https://leetcode-cn.com/problems/linked-list-cycle/solution/huan-xing-lian-biao-by-leetcode-solution/
+         * 来源：力扣（LeetCode）
+         * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
+        HashSet<ListNode> listSet = new HashSet<>();
+        ListNode p = head;
+        while (true) {
+            if (p == null) {
+                return false;
+            }
+            if (listSet.contains(p)) {
+                return true;
+            }
+            listSet.add(p);
+            p = p.next;
+        }
+         */
+        /**
+         * 方法二：快慢指针
+         * 思路及算法
+         *
+         * 本方法需要读者对「Floyd 判圈算法」（又称龟兔赛跑算法）有所了解。
+         *
+         * 假想「乌龟」和「兔子」在链表上移动，「兔子」跑得快，「乌龟」跑得慢。当「乌龟」和「兔子」从链表上的同一个节点开始移动时，如果该链表中没有环，那么「兔子」将一直处于「乌龟」的前方；如果该链表中有环，那么「兔子」会先于「乌龟」进入环，并且一直在环内移动。等到「乌龟」进入环时，由于「兔子」的速度快，它一定会在某个时刻与乌龟相遇，即套了「乌龟」若干圈。
+         *
+         * 我们可以根据上述思路来解决本题。具体地，我们定义两个指针，一快一满。慢指针每次只移动一步，而快指针每次移动两步。初始时，慢指针在位置 head，而快指针在位置 head.next。这样一来，如果在移动的过程中，快指针反过来追上慢指针，就说明该链表为环形链表。否则快指针将到达链表尾部，该链表不为环形链表。
+         *
+         * 作者：LeetCode-Solution
+         * 链接：https://leetcode-cn.com/problems/linked-list-cycle/solution/huan-xing-lian-biao-by-leetcode-solution/
+         * 来源：力扣（LeetCode）
+         * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+         */
+        if (head == null || head.next == null){
+            return false;
+        }
+        ListNode slow = head;
+        ListNode fast = head.next;
+        while (slow != fast){
+            if (fast == null || fast.next == null){
+                return false;
+            }
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return true;
     }
 
     public static void main(String[] args) {

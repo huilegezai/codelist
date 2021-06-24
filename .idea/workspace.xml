@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/ConstructBinaryTree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/ConstructBinaryTree/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jvm/src/main/java/leetcode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/jvm/src/main/java/leetcode/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +67,7 @@
       <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\FindInPartiallySortedMatrix" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="Application.Solution2">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="algorithm.BinarySearch" />
       <module name="jvm" />
@@ -88,19 +87,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="JiangzhiOffer.FindInPartiallySortedMatrix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JiangzhiOffer.PrintListInReversedOrder.Solution" />
-      <module name="jvm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JiangzhiOffer.PrintListInReversedOrder.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,13 +120,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="Solution2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.Solution2" />
+      <module name="jvm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -203,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution2" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.Solution (2)" />
         <item itemvalue="Application.Solution (5)" />
-        <item itemvalue="Application.Solution (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +224,8 @@
       <workItem from="1622167546237" duration="11195000" />
       <workItem from="1622605569087" duration="38901000" />
       <workItem from="1623288807517" duration="3803000" />
-      <workItem from="1623722418223" duration="42835000" />
+      <workItem from="1623722418223" duration="44710000" />
+      <workItem from="1624411336802" duration="27342000" />
     </task>
     <task id="LOCAL-00001" summary="delete code">
       <created>1621587794225</created>
@@ -358,7 +360,28 @@
       <option name="project" value="LOCAL" />
       <updated>1624330922993</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="回文字符">
+      <created>1624355569478</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1624355569478</updated>
+    </task>
+    <task id="LOCAL-00021" summary="杨辉三角">
+      <created>1624514460039</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1624514460039</updated>
+    </task>
+    <task id="LOCAL-00022" summary="杨辉三角">
+      <created>1624526405318</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1624526405318</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +393,8 @@
     <MESSAGE value="add code" />
     <MESSAGE value="输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。" />
     <MESSAGE value="回文字符" />
-    <option name="LAST_COMMIT_MESSAGE" value="回文字符" />
+    <MESSAGE value="杨辉三角" />
+    <option name="LAST_COMMIT_MESSAGE" value="杨辉三角" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1622539765107">
@@ -394,40 +418,40 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="221" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623306858708" />
-    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1624330922124">
+    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1624526404459">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623116060315" />
-    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624330922124" />
-    <state x="2104" y="85" key="DiffContextDialog" timestamp="1624330928163">
+    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624526404459" />
+    <state x="2104" y="85" key="DiffContextDialog" timestamp="1624514437807">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1621846604537" />
-    <state x="2104" y="85" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624330928163" />
+    <state x="2104" y="85" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624514437807" />
     <state x="2521" y="235" key="FileChooserDialogImpl" timestamp="1622538783668">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2521" y="235" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622538783668" />
-    <state width="1877" height="104" key="GridCell.Tab.0.bottom" timestamp="1624352258813">
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom" timestamp="1624439772672">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="195" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623307144210" />
-    <state width="1877" height="104" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624352258813" />
-    <state width="1877" height="104" key="GridCell.Tab.0.center" timestamp="1624352258813">
+    <state width="1877" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624439772672" />
+    <state width="1877" height="313" key="GridCell.Tab.0.center" timestamp="1624439772671">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="195" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623307144210" />
-    <state width="1877" height="104" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624352258813" />
-    <state width="1877" height="104" key="GridCell.Tab.0.left" timestamp="1624352258813">
+    <state width="1877" height="313" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624439772671" />
+    <state width="1877" height="313" key="GridCell.Tab.0.left" timestamp="1624439772671">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="195" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623307144210" />
-    <state width="1877" height="104" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624352258813" />
-    <state width="1877" height="104" key="GridCell.Tab.0.right" timestamp="1624352258813">
+    <state width="1877" height="313" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624439772671" />
+    <state width="1877" height="313" key="GridCell.Tab.0.right" timestamp="1624439772672">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="195" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623307144210" />
-    <state width="1877" height="104" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624352258813" />
+    <state width="1877" height="313" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624439772672" />
     <state width="1877" height="338" key="GridCell.Tab.1.bottom" timestamp="1624351907022">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -456,19 +480,19 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622189482059" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1624330929436">
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1624526406496">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623116166956" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624330929436" />
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624526406496" />
     <state x="2077" y="55" width="1483" height="839" maximized="true" key="dock-window-1" timestamp="1623052938470">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2077" y="55" width="1483" height="839" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623052938470" />
-    <state x="2581" y="252" width="598" height="536" key="find.popup" timestamp="1624325569188">
+    <state x="2581" y="252" width="598" height="536" key="find.popup" timestamp="1624443801339">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2581" y="252" width="598" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624325569188" />
+    <state x="2581" y="252" width="598" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624443801339" />
     <state x="2254" y="180" key="new project wizard" timestamp="1622455335025">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
