@@ -2,6 +2,7 @@ package leetcode;
 
 import JiangzhiOffer.ConstructBinaryTree.TreeNode;
 import JiangzhiOffer.PrintListInReversedOrder.ListNode;
+import sun.font.TrueTypeFont;
 
 import java.util.*;
 
@@ -1036,7 +1037,7 @@ public class Solution {
      * [1],
      * [1,1],
      * [1,2,1],
-     * [1,3,3,1],
+     * [1,3, 3,1],
      * [1,4,6,4,1]
      * ]
      * <p>
@@ -1048,21 +1049,243 @@ public class Solution {
      * @return
      */
     public List<List<Integer>> generate(int numRows) {
-        if (numRows == 0) {
-            return null;
-        }
         List<List<Integer>> arrayList = new ArrayList();
-        for (int i = 0; i < numRows; i++) {
+        for (int i = 0; i < numRows; ++i ){
             List<Integer> a = new ArrayList<>();
-            for (int j = 0;j <= i;j++){
+            for (int j = 0;j <= i;++j){
                 if (j==0 || i == j){
-                    a.add(0);
+                    a.add(1);
                 }else {
-                    a.add(arrayList.get(i - 1).get(j - 1) + arrayList.get(i - 1).get(j + 1));
+                    a.add(arrayList.get(i - 1).get(j - 1) + arrayList.get(i - 1).get(j));
+                }
+            }
+            arrayList.add(a);
+        }
+        return arrayList;
+    }
+
+    /**
+     * 119. 杨辉三角 II
+     * 给定一个非负索引k，其中 k≤33，返回杨辉三角的第 k 行。
+     * 在杨辉三角中，每个数是它左上方和右上方的数的和。
+     * 示例:
+     * 输入: 3
+     * 输出: [1,3,3,1]
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/pascals-triangle-ii
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     * @param rowIndex
+     * @return
+     */
+    public List<Integer> getRow(int rowIndex) {
+        /* 使用上个方法generate
+        List<List<Integer>> arrayList = new ArrayList();
+        for (int i = 0; i <= rowIndex; ++i ){
+            List<Integer> a = new ArrayList<>();
+            for (int j = 0;j <= i;++j){
+                if (j==0 || i == j){
+                    a.add(1);
+                }else {
+                    a.add(arrayList.get(i - 1).get(j - 1) + arrayList.get(i - 1).get(j));
+                }
+            }
+            arrayList.add(a);
+        }
+        return arrayList.get(rowIndex);
+         */
+
+        // 注意到对第 i+1i+1 行的计算仅用到了第 ii 行的数据，因此可以使用滚动数组的思想优化空间复杂度。
+        List<Integer> pre = new ArrayList<>();
+        for (int i=0;i<= rowIndex;i++){
+            List<Integer> cur = new ArrayList<>();
+            for (int j=0;j<=i;j++){
+                if (j==0||j==i){
+                    cur.add(1);
+                }else {
+                    cur.add(pre.get(j-1) + pre.get(j));
+                }
+            }
+            pre = cur;
+        }
+        return pre;
+
+    }
+
+    /**
+     * 给你二叉树的根节点root 和一个表示目标和的整数targetSum ，判断该树中是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和targetSum 。
+     * 叶子节点 是指没有子节点的节点。
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/path-sum
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     * @param root
+     * @param targetSum
+     * @return
+     */
+    public static boolean hasPathSum(TreeNode root, int targetSum) {
+        if (root == null || root.val > targetSum){
+            return false;
+        } else if (root.val == targetSum){
+            return true;
+        } else {
+            return pathSum(root.right, root.val, targetSum) || pathSum(root.left, root.val, targetSum);
+        }
+    }
+
+    public static boolean pathSum(TreeNode root,int sum,int targetSum){
+        if (root == null){
+            return false;
+        }
+        if (root.val + sum == targetSum){
+            return true;
+        }else if (root.val + sum > targetSum){
+            return false;
+        }else {
+            if (root.left != null && root.right == null) {
+                return pathSum(root.left, root.val + sum, targetSum);
+            }
+            if (root.right != null && root.left == null) {
+                return pathSum(root.right, root.val + sum, targetSum);
+            }
+            if (root.left != null && root.right != null) {
+                return pathSum(root.right, root.val + sum, targetSum) || pathSum(root.left, root.val + sum, targetSum);
+            }
+            return false;
+        }
+    }
+
+    public static boolean hasPathSum1(TreeNode root, int targetSum) {
+        if (root == null){
+            return false;
+        }
+        if (root.left == null && root.right == null){
+            return targetSum - root.val == 0;
+        }
+        return hasPathSum1(root.left,targetSum - root.val) || hasPathSum1(root.right,targetSum - root.val);
+    }
+
+    /**
+     * 给定一个数组 prices ，它的第i 个元素prices[i] 表示一支给定股票第 i 天的价格。
+     *
+     * 你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
+     *
+     * 返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。
+     *
+     * 示例 1：
+     * 输入：[7,1,5,3,6,4]
+     * 输出：5
+     * 解释：在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
+     *      注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。
+     *
+     * 示例 2：
+     * 输入：prices = [7,6,4,3,1]
+     * 输出：0
+     * 解释：在这种情况下, 没有交易完成, 所以最大利润为 0。
+     *
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     * @param prices
+     * @return
+     */
+    public int maxProfit(int[] prices) {
+        /*超时
+        int max = 0;
+        for (int i=0;i<prices.length;i++){
+            for (int j=i+1;j<prices.length;j++){
+                int sum = prices[j] - prices[i];
+                if (sum > max){
+                    max = sum;
                 }
             }
         }
-        return arrayList;
+        if (max <0){
+            return 0;
+        }
+        return max;
+         */
+        if (prices.length <= 1){
+            return 0;
+        }
+        int min = prices[0],max = 0;
+        for (int i = 0;i<prices.length;i++){
+            max = Math.max(max,prices[i]-min);
+            min = Math.min(min,prices[i]);
+        }
+        return max;
+    }
+
+    /**
+     * 给定一个数组 prices ，其中prices[i] 是一支给定股票第 i 天的价格。
+     *
+     * 设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。
+     *
+     * 注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
+     *
+     *
+     *
+     * 示例 1:
+     *
+     * 输入: prices = [7,1,5,3,6,4]
+     * 输出: 7
+     * 解释: 在第 2 天（股票价格 = 1）的时候买入，在第 3 天（股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = 4 。
+     *     随后，在第 4 天（股票价格 = 3）的时候买入，在第 5 天（股票价格 = 6）的时候卖出, 这笔交易所能获得利润 = 6-3 = 3 。
+     * 示例 2:
+     *
+     * 输入: prices = [1,2,3,4,5]
+     * 输出: 4
+     * 解释: 在第 1 天（股票价格 = 1）的时候买入，在第 5 天 （股票价格 = 5）的时候卖出, 这笔交易所能获得利润 = 5-1 = 4 。
+     *    注意你不能在第 1 天和第 2 天接连购买股票，之后再将它们卖出。因为这样属于同时参与了多笔交易，你必须在再次购买前出售掉之前的股票。
+     * 示例3:
+     *
+     * 输入: prices = [7,6,4,3,1]
+     * 输出: 0
+     * 解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
+     *
+     *
+     * 提示：
+     *
+     * 1 <= prices.length <= 3 * 104
+     * 0 <= prices[i] <= 104
+     *
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     * @param prices
+     * @return
+     */
+    public int maxProfit2(int[] prices) {
+        if (prices.length <= 1){
+            return 0;
+        }
+        int min = prices[0],max = 0;
+        int sum = 0;
+        for (int i = 0;i<prices.length;i++){
+            max = Math.max(max,prices[i]-min);
+            min = Math.min(min,prices[i]);
+            if (max > 0){
+                sum += max;
+                max = 0;
+                min = prices[i];
+            }
+        }
+        return Math.max(max,sum);
+    }
+
+    /**
+     * 给定一个链表，判断链表中是否有环。
+     *
+     * 如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。
+     *
+     * 如果链表中存在环，则返回 true 。 否则，返回 false
+     *
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/linked-list-cycle
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     * @param head
+     * @return
+     */
+    public boolean hasCycle(ListNode head) {
+
     }
 
     public static void main(String[] args) {
