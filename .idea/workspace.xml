@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/PrintListInReversedOrder/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/PrintListInReversedOrder/ListNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jvm/src/main/java/leetcode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/jvm/src/main/java/leetcode/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,15 +134,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -225,7 +224,8 @@
       <workItem from="1622605569087" duration="38901000" />
       <workItem from="1623288807517" duration="3803000" />
       <workItem from="1623722418223" duration="44710000" />
-      <workItem from="1624411336802" duration="27342000" />
+      <workItem from="1624411336802" duration="28031000" />
+      <workItem from="1624584681714" duration="7936000" />
     </task>
     <task id="LOCAL-00001" summary="delete code">
       <created>1621587794225</created>
@@ -381,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624526405318</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="杨辉三角">
+      <created>1624530722131</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1624530722131</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,11 +425,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="221" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623306858708" />
-    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1624526404459">
+    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1624530721189">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623116060315" />
-    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624526404459" />
+    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624530721189" />
     <state x="2104" y="85" key="DiffContextDialog" timestamp="1624514437807">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -480,11 +487,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622189482059" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1624526406496">
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1624530724098">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623116166956" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624526406496" />
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624530724098" />
     <state x="2077" y="55" width="1483" height="839" maximized="true" key="dock-window-1" timestamp="1623052938470">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

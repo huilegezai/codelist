@@ -1302,18 +1302,18 @@ public class Solution {
          * 来源：力扣（LeetCode）
          * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-        HashSet<ListNode> listSet = new HashSet<>();
-        ListNode p = head;
-        while (true) {
-            if (p == null) {
-                return false;
-            }
-            if (listSet.contains(p)) {
-                return true;
-            }
-            listSet.add(p);
-            p = p.next;
-        }
+         HashSet<ListNode> listSet = new HashSet<>();
+         ListNode p = head;
+         while (true) {
+         if (p == null) {
+         return false;
+         }
+         if (listSet.contains(p)) {
+         return true;
+         }
+         listSet.add(p);
+         p = p.next;
+         }
          */
         /**
          * 方法二：快慢指针
@@ -1330,13 +1330,13 @@ public class Solution {
          * 来源：力扣（LeetCode）
          * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
          */
-        if (head == null || head.next == null){
+        if (head == null || head.next == null) {
             return false;
         }
         ListNode slow = head;
         ListNode fast = head.next;
-        while (slow != fast){
-            if (fast == null || fast.next == null){
+        while (slow != fast) {
+            if (fast == null || fast.next == null) {
                 return false;
             }
             slow = slow.next;
@@ -1345,6 +1345,265 @@ public class Solution {
         return true;
     }
 
+    /**
+     * 给你一个链表，删除链表的倒数第n个结点，并且返回链表的头结点。
+     * <p>
+     * 进阶：你能尝试使用一趟扫描实现吗？
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * <p>
+     * 输入：head = [1,2,3,4,5], n = 2
+     * 输出：[1,2,3,5]
+     * 示例 2：
+     * <p>
+     * 输入：head = [1], n = 1
+     * 输出：[]
+     * 示例 3：
+     * <p>
+     * 输入：head = [1,2], n = 1
+     * 输出：[1]
+     * <p>
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
+     * @param head
+     * @param n
+     * @return
+     */
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        /** 删除链表的第 N 个结点
+        int i = 0;
+        ListNode cur = head;
+        while (cur != null || i < n) {
+            i++;
+        }
+        if (cur == head) {
+            return head.next;
+        }
+        if (cur.next.next == null) {
+            cur.next = null;
+        }
+        cur.next = cur.next.next;
+        return cur;
+         */
+        /** 超时
+        ListNode cur = head;
+        int length = 0;
+        while (cur != null){
+            length++;
+            cur = cur.next;
+        }
+        int i = 0;
+        cur = head;
+        while (cur != null || i < length-n) {
+            i++;
+        }
+        if (cur == head) {
+            return head.next;
+        }
+        if (cur.next.next == null) {
+            cur.next = null;
+        }
+        cur.next = cur.next.next;
+        return cur;
+         */
+        if (head.next == null && n == 1){
+            return null;
+        }
+        if (head.next.next == null && n==1){
+            head.next = null;
+            return head;
+        }
+        if (head.next.next == null && n==2){
+            return head.next;
+        }
+        ListNode cur = head;
+        removeNthFrom(0,cur,n,cur);
+        return cur;
+    }
+
+    /**
+     * 方法一：计算链表长度
+     * 思路与算法
+     *
+     * 一种容易想到的方法是，我们首先从头节点开始对链表进行一次遍历，得到链表的长度 LL。随后我们再从头节点开始对链表进行一次遍历，当遍历到第 L-n+1L−n+1 个节点时，它就是我们需要删除的节点。
+     *
+     * 为了与题目中的 nn 保持一致，节点的编号从 11 开始，头节点为编号 11 的节点。
+     *
+     * 为了方便删除操作，我们可以从哑节点开始遍历 L-n+1L−n+1 个节点。当遍历到第 L-n+1L−n+1 个节点时，它的下一个节点就是我们需要删除的节点，这样我们只需要修改一次指针，就能完成删除操作。
+     *
+     * 作者：LeetCode-Solution
+     * 链接：https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/solution/shan-chu-lian-biao-de-dao-shu-di-nge-jie-dian-b-61/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     * @param head
+     * @param n
+     * @return
+     */
+    public ListNode removeNthFromEnd1(ListNode head, int n) {
+        ListNode dummy = new ListNode(0,head);
+        int length = getLength(head);
+        ListNode cur = dummy;
+        for (int i=1;i<length-n+1;i++){
+            cur = cur.next;
+        }
+        cur.next = cur.next.next;
+        ListNode ans = dummy.next;
+        return ans;
+    }
+    public int getLength(ListNode head){
+        int length = 0;
+        while (head != null){
+            ++length;
+            head = head.next;
+        }
+        return length;
+    }
+
+    /**
+     * 方法二：栈
+     * 思路与算法
+     *
+     * 我们也可以在遍历链表的同时将所有节点依次入栈。根据栈「先进后出」的原则，我们弹出栈的第 nn 个节点就是需要删除的节点，并且目前栈顶的节点就是待删除节点的前驱节点。这样一来，删除操作就变得十分方便了。
+     *
+     * 作者：LeetCode-Solution
+     * 链接：https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/solution/shan-chu-lian-biao-de-dao-shu-di-nge-jie-dian-b-61/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     * @param head
+     * @param n
+     * @return
+     */
+    public ListNode removeNthFromEnd2(ListNode head, int n) {
+       ListNode dummy = new ListNode(0,head);
+       Deque<ListNode> stack = new LinkedList<>();
+       ListNode cur = dummy;
+       while (cur != null){
+           stack.push(cur);
+           cur=cur.next;
+       }
+       for (int i=0;i<n;i++){
+           stack.pop();
+       }
+       ListNode prev = stack.peek();
+       prev.next = prev.next.next;
+       ListNode ans = dummy.next;
+       return ans;
+    }
+
+    /**
+     * 方法三：双指针
+     * 思路与算法
+     *
+     * 我们也可以在不预处理出链表的长度，以及使用常数空间的前提下解决本题。
+     *
+     * 由于我们需要找到倒数第 nn 个节点，因此我们可以使用两个指针 \textit{first}first 和 \textit{second}second 同时对链表进行遍历，并且 \textit{first}first 比 \textit{second}second 超前 nn 个节点。当 \textit{first}first 遍历到链表的末尾时，\textit{second}second 就恰好处于倒数第 nn 个节点。
+     *
+     * 具体地，初始时 \textit{first}first 和 \textit{second}second 均指向头节点。我们首先使用 \textit{first}first 对链表进行遍历，遍历的次数为 nn。此时，\textit{first}first 和 \textit{second}second 之间间隔了 n-1n−1 个节点，即 \textit{first}first 比 \textit{second}second 超前了 nn 个节点。
+     *
+     * 在这之后，我们同时使用 \textit{first}first 和 \textit{second}second 对链表进行遍历。当 \textit{first}first 遍历到链表的末尾（即 \textit{first}first 为空指针）时，\textit{second}second 恰好指向倒数第 nn 个节点。
+     *
+     * 根据方法一和方法二，如果我们能够得到的是倒数第 nn 个节点的前驱节点而不是倒数第 nn 个节点的话，删除操作会更加方便。因此我们可以考虑在初始时将 \textit{second}second 指向哑节点，其余的操作步骤不变。这样一来，当 \textit{first}first 遍历到链表的末尾时，\textit{second}second 的下一个节点就是我们需要删除的节点。
+     *
+     * 作者：LeetCode-Solution
+     * 链接：https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/solution/shan-chu-lian-biao-de-dao-shu-di-nge-jie-dian-b-61/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     * @param head
+     * @param n
+     * @return
+     */
+    public ListNode removeNthFromEnd3(ListNode head, int n) {
+        ListNode dummy = new ListNode(0, head);
+        ListNode first = head;
+        ListNode second = dummy;
+        for (int i = 0; i < n; ++i) {
+            first = first.next;
+        }
+        while (first != null) {
+            first = first.next;
+            second = second.next;
+        }
+        second.next = second.next.next;
+        ListNode ans = dummy.next;
+        return ans;
+    }
+    public int removeNthFrom(int sum ,ListNode head, int n,ListNode cur) {
+        if (head.next.next == null){
+            return 1;
+        }
+        if (n == 1) {
+
+            if (sum == n) {
+                if (cur == head) {
+                    cur = head.next;
+                }
+                if (head.next.next == null) {
+                    head.next = null;
+                } else {
+                    head.next = head.next.next;
+                }
+            }
+            sum = removeNthFrom(sum, head.next, n, cur) + 1;
+        }else {
+            sum = removeNthFrom(sum, head.next, n, cur) + 1;
+            if (sum == n) {
+                if (cur == head) {
+                    cur = head.next;
+                }
+                if (head.next.next == null) {
+                    head.next = null;
+                } else {
+                    head.next = head.next.next;
+                }
+            }
+        }
+        return sum;
+    }
+
+
+    /**
+     * 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
+     *
+     * 示例 1：
+     * 输入：head = [1,2,3,4,5]
+     * 输出：[5,4,3,2,1]
+     *
+     * 示例 2：
+     * 输入：head = [1,2]
+     * 输出：[2,1]
+     *
+     * 示例 3：
+     * 输入：head = []
+     * 输出：[]
+     *
+     * 提示：
+     * 链表中节点的数目范围是 [0, 5000]
+     * -5000 <= Node.val <= 5000
+     *
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/reverse-linked-list
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     * @param head
+     * @return
+     */
+    public ListNode reverseList2(ListNode head) {
+        ListNode pre = null;
+        if (head == null){
+            return null;
+        }
+        while (head.next != null){
+            ListNode temp = head.next;
+            head.next = pre;
+            pre = head;
+            head = temp;
+        }
+        return head;
+    }
     public static void main(String[] args) {
         System.out.println(isValid("{}[]()"));
         System.out.println(removeDuplicates(new int[]{1, 2, 3, 4, 4, 5, 6, 6, 7}));
