@@ -354,6 +354,7 @@ public class Solution2 {
         }
         return a;
     }
+
     public static void main(String[] args) {
         int[] a = new int[]{1, 7, 2, 3, 6, 5, 4, 9, 8};
         for (int i = 0; i < bubbleSort(a).length; i++) {
