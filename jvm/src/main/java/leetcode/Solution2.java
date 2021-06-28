@@ -2,8 +2,7 @@ package leetcode;
 
 import JiangzhiOffer.PrintListInReversedOrder.ListNode;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * 图解算法数据结构leetBook
@@ -347,12 +346,547 @@ public class Solution2 {
 
     public int numWays(int n) {
         int a = 1, b = 1, sum;
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             sum = (a + b) % 1000000007;
             a = b;
             b = sum;
         }
         return a;
+    }
+
+    /**
+     * 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
+     *
+     * @param s
+     * @return
+     */
+    public int lengthOfLongestSubstring(String s) {
+        Map<Character, Integer> dic = new HashMap<>();
+        int res = 0, tmp = 0, len = s.length();
+        for (int j = 0; j < len; j++) {
+            int i = dic.getOrDefault(s.charAt(j), -1);
+            dic.put(s.charAt(j), j);
+            tmp = tmp < j - i ? tmp + 1 : j - i;
+            res = Math.max(res, tmp);
+        }
+        return res;
+    }
+
+    /**
+     * 输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
+     * <p>
+     * 要求时间复杂度为O(n)。
+     *
+     * @param nums
+     * @return
+     */
+    public int maxSubArray(int[] nums) {
+//        int max = nums[0];
+//        for (int i=1;i<nums.length;i++){
+//            if (max + nums[i] > nums[i]){
+//                max += nums[i];
+//            }else {
+//                max = nums[i];
+//            }
+//        }
+//        return max;
+        int res = nums[0];
+        int sum = 0;
+        for (int num : nums) {
+            if (sum + num > num) {
+                sum = sum + num;
+            } else {
+                sum = num;
+            }
+            res = Math.max(res, sum);
+        }
+        return res;
+    }
+
+    /**
+     * 给定一个数字，我们按照如下规则把它翻译为字符串：0 翻译成 “a” ，1 翻译成 “b”，……，11 翻译成 “l”，……，25 翻译成 “z”。一个数字可能有多个翻译。请编程实现一个函数，用来计算一个数字有多少种不同的翻译方法。
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/99wd55/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param num
+     * @return
+     */
+    public int translateNum(int num) {
+        String s = String.valueOf(num);
+        int a = 1, b = 1;
+        for (int i = 2; i <= s.length(); i++) {
+            String tmp = s.substring(i - 2, i);
+            int c = tmp.compareTo("10") >= 0 && tmp.compareTo("25") <= 0 ? a + b : a;
+            b = a;
+            a = c;
+        }
+        return a;
+    }
+
+    /**
+     * 在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及其上面的礼物的价值，请计算你最多能拿到多少价值的礼物？
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5vokvr/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param grid
+     * @return
+     */
+    public int maxValue(int[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == 0 && j == 0) {
+                    continue;
+                }
+                if (i == 0) {
+                    grid[i][j] += grid[i][j - 1];
+                } else if (j == 0) {
+                    grid[i][j] += grid[i - 1][j];
+                } else {
+                    grid[i][j] += Math.max(grid[i][j - 1], grid[i - 1][j]);
+                }
+            }
+        }
+        return grid[m - 1][n - 1];
+        /** 只使用一维数组解决
+         * if(arr==null || arr.length==0)
+         * 			return 0;
+         *
+         * 		int rows = arr.length;
+         * 		int cols = arr[0].length;
+         * 		int[] maxValue = new int[cols];
+         * 		for(int i=0;i<rows;i++) {
+         * 			for(int j=0;j<cols;j++) {
+         * 				int left = 0;
+         * 				int up = 0;
+         * 				if(i>0)
+         * 					up = maxValue[j];
+         * 				if(j>0)
+         * 					left = maxValue[j-1];
+         * 				maxValue[j] = Math.max(up, left)+arr[i][j];
+         *                        }* 		}
+         * 		return maxValue[cols-1];
+         */
+    }
+
+    public int maxProfit(int[] prices) {
+        /*超时
+        int max = 0;
+        for (int i=0;i<prices.length;i++){
+            for (int j=i+1;j<prices.length;j++){
+                int sum = prices[j] - prices[i];
+                if (sum > max){
+                    max = sum;
+                }
+            }
+        }
+        if (max <0){
+            return 0;
+        }
+        return max;
+         */
+        if (prices.length <= 1) {
+            return 0;
+        }
+        int min = prices[0], max = 0;
+        for (int i = 0; i < prices.length; i++) {
+            max = Math.max(max, prices[i] - min);
+            min = Math.min(min, prices[i]);
+        }
+        return max;
+    }
+
+    /**
+     * 把n个骰子扔在地上，所有骰子朝上一面的点数之和为s。输入n，打印出s的所有可能的值出现的概率。
+     * <p>
+     * <p>
+     * <p>
+     * 你需要用一个浮点数数组返回答案，其中第 i 个元素代表这 n 个骰子所能掷出的点数集合中第 i 小的那个的概率。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1:
+     * <p>
+     * 输入: 1
+     * 输出: [0.16667,0.16667,0.16667,0.16667,0.16667,0.16667]
+     * 示例2:
+     * <p>
+     * 输入: 2
+     * 输出: [0.02778,0.05556,0.08333,0.11111,0.13889,0.16667,0.13889,0.11111,0.08333,0.05556,0.02778]
+     * <p>
+     * <p>
+     * 限制：
+     * <p>
+     * 1 <= n <= 11
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/ozzl1r/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param n
+     * @return
+     */
+    public double[] dicesProbability(int n) {
+
+    }
+
+    /**
+     * 我们把只包含质因子 2、3 和 5 的数称作丑数（Ugly Number）。求按从小到大的顺序的第 n 个丑数。
+     * <p>
+     * <p>
+     * <p>
+     * 示例:
+     * <p>
+     * 输入: n = 10
+     * 输出: 12
+     * 解释: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 是前 10 个丑数。
+     * 说明:
+     * <p>
+     * 1是丑数。
+     * n不超过1690。
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/9h3im5/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param n
+     * @return
+     */
+    public int nthUglyNumber(int n) {
+        int a = 0, b = 0, c = 0;
+        int[] dp = new int[n];
+        dp[0] = 1;
+        for (int i = 1; i < n; i++) {
+            int n2 = dp[a] * 2, n3 = dp[b] * 3, n5 = dp[c] * 5;
+            dp[i] = Math.min(Math.min(n2, n3), n5);
+            if (dp[i] == n2) {
+                a++;
+            }
+            if (dp[i] == n3) {
+                b++;
+            }
+            if (dp[i] == n5) {
+                c++;
+            }
+        }
+        return dp[n - 1];
+    }
+
+    /**
+     * 求 1+2+...+n ，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入: n = 3
+     * 输出:6
+     * 示例 2：
+     * <p>
+     * 输入: n = 9
+     * 输出:45
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/9h44cj/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param n
+     * @return
+     */
+    public int sumNums(int n) {
+        return (n + 1) * n / 2;
+    }
+
+
+    /**
+     * 从扑克牌中随机抽5张牌，判断是不是一个顺子，即这5张牌是不是连续的。2～10为数字本身，A为1，J为11，Q为12，K为13，而大、小王为 0 ，可以看成任意数字。A 不能视为 14。
+     * <p>
+     * 示例1:
+     * 输入: [1,2,3,4,5]
+     * 输出: True
+     * <p>
+     * 示例2:
+     * 输入: [0,0,1,2,5]
+     * 输出: True
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/57mpoj/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param nums
+     * @return
+     */
+    public boolean isStraight(int[] nums) {
+        Set<Integer> repeat = new HashSet<>();
+        int max = 0, min = 14;
+        for (int num : nums) {
+            if (num == 0) { // 跳过大小王
+                continue;
+            }
+            max = Math.max(max, num);// 最大牌
+            min = Math.min(min, num);// 最小牌
+            if (repeat.contains(num)) { // 若有重复，提前返回false
+                return false;
+            }
+            repeat.add(num);// 添加此牌至 set
+        }
+        return max - min < 5;// 最大牌-最小牌 < 5 则可构成顺子
+    }
+
+    /**
+     * 找出数组中重复的数字。
+     * <p>
+     * <p>
+     * 在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/59bjss/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param nums
+     * @return
+     */
+    public int findRepeatNumber(int[] nums) {
+        Map<Integer, Integer> repeat = new HashMap<>();
+        for (int num : nums) {
+            if (repeat.getOrDefault(num, -1) == 1) {
+                return num;
+            } else {
+                repeat.put(num, 1);
+            }
+        }
+        return -1;
+        /**
+         *    Set<Integer> dic = new HashSet<>();
+         *         for(int num : nums) {
+         *             if(dic.contains(num)) return num;
+         *             dic.add(num);
+         *         }
+         *         return -1;
+         *
+         */
+    }
+
+    /**
+     * 在一个 n * m 的二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个高效的函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
+     * <p>
+     * 示例:
+     * <p>
+     * 现有矩阵 matrix 如下：
+     * <p>
+     * [
+     * [1,   4,  7, 11, 15],
+     * [2,   5,  8, 12, 19],
+     * [3,   6,  9, 16, 22],
+     * [10, 13, 14, 17, 24],
+     * [18, 21, 23, 26, 30]
+     * ]
+     * 给定 target=5，返回true。
+     * <p>
+     * 给定target=20，返回false。
+     * <p>
+     * <p>
+     * 限制：
+     * <p>
+     * 0 <= n <= 1000
+     * <p>
+     * 0 <= m <= 1000
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5v76yi/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param matrix
+     * @param target
+     * @return
+     */
+    public boolean findNumberIn2DArray(int[][] matrix, int target) {
+        if (matrix == null || matrix.length == 0) {
+            return false;
+        }
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int i = 0, j = n - 1;
+        while (i < m && 0 <= j) {
+            if (matrix[i][j] == target) {
+                return true;
+            } else if (matrix[i][j] > target) {
+                j--;
+            } else {
+                i++;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * 把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。输入一个递增排序的数组的一个旋转，输出旋转数组的最小元素。例如，数组[3,4,5,1,2] 为 [1,2,3,4,5] 的一个旋转，该数组的最小值为1。
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：[3,4,5,1,2]
+     * 输出：1
+     * 示例 2：
+     * <p>
+     * 输入：[2,2,2,0,1]
+     * 输出：0
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/50xofm/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param numbers
+     * @return
+     */
+    public int minArray(int[] numbers) {
+        /**
+         *  int i = 0, j = numbers.length - 1;
+         *         while (i < j) {
+         *             int m = (i + j) / 2;
+         *             if (numbers[m] > numbers[j]) i = m + 1;
+         *             else if (numbers[m] < numbers[j]) j = m;
+         *             else j--;
+         *         }
+         *         return numbers[i];
+         *
+         * 作者：Krahets
+         * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5055b1/
+         * 来源：力扣（LeetCode）
+         * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+         */
+        int min = numbers[0];
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] < min) {
+                return numbers[i];
+            }
+        }
+        return min;
+    }
+
+    /**
+     * 在字符串 s 中找出第一个只出现一次的字符。如果没有，返回一个单空格。 s 只包含小写字母。
+     * <p>
+     * 示例:
+     * <p>
+     * s = "abaccdeff"
+     * 返回 "b"
+     * <p>
+     * s = ""
+     * 返回 " "
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5viisg/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param s
+     * @return
+     */
+    public char firstUniqChar(String s) {
+        /** 没法算出第一个只出现一次的字符，只能算出任意一个
+         char[] chars = s.toCharArray();
+         Map<Character,Integer> map = new HashMap<>();
+         for (int i=0;i<chars.length;i++){
+         if (map.getOrDefault(chars[i],-1) == -1){
+         map.put(chars[i],1);
+         }else {
+         map.put(chars[i],map.get(chars[i])+1);
+         }
+         }
+         for (Character c:map.keySet()){
+         if (map.get(c) == 1){
+         return c;
+         }
+         }
+         return ' ';
+         */
+        /** 没法算出第一个只出现一次的字符，只能算出任意一个
+         char[] chars = s.toCharArray();
+         Arrays.sort(chars);
+         for (int i = 0;i<chars.length-1;i++){
+         if (chars[i] != chars[i+1]){
+         return chars[i];
+         }
+         }
+         return ' ';
+         */
+        /* 有解
+        char[] chars = s.toCharArray();
+        Map<Character,Integer> map = new HashMap<>();
+        for (int i=0;i<chars.length;i++){
+            if (map.getOrDefault(chars[i],-1) == -1){
+                map.put(chars[i],1);
+            }else {
+                map.put(chars[i],map.get(chars[i])+1);
+            }
+        }
+        for (int i=0;i<chars.length;i++){
+            if (map.get(chars[i]) == 1){
+                return chars[i];
+            }
+        }
+        return ' ';
+         */
+        Map<Character, Boolean> dic = new LinkedHashMap<>();
+        char[] sc = s.toCharArray();
+        for (char c : sc) {
+            dic.put(c, !dic.containsKey(c));
+        }
+        for (Map.Entry<Character, Boolean> d : dic.entrySet()) {
+            if (d.getValue()) {
+                return d.getKey();
+            }
+        }
+        return ' ';
+    }
+
+
+    /**
+     * 统计一个数字在排序数组中出现的次数。
+     *
+     *
+     * 示例 1:
+     *
+     * 输入: nums = [5,7,7,8,8,10], target = 8
+     * 输出: 2
+     * 示例2:
+     *
+     * 输入: nums = [5,7,7,8,8,10], target = 6
+     * 输出: 0
+     *
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5874p1/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int search(int[] nums, int target) {
+        /* 暴力解法，遍历数组
+        int sum = 0;
+        for (int i=0;i<nums.length;i++){
+            if (nums[i] == target){
+                sum += 1;
+            }
+        }
+        return sum;
+         */
+
     }
     public static void main(String[] args) {
         int[] a = new int[]{1, 7, 2, 3, 6, 5, 4, 9, 8};
