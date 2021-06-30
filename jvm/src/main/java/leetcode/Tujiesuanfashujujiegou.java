@@ -7,7 +7,7 @@ import java.util.*;
 /**
  * 图解算法数据结构leetBook
  */
-public class Solution2 {
+public class Tujiesuanfashujujiegou {
     /**
      * 冒泡排序
      *
@@ -1355,6 +1355,140 @@ public class Solution2 {
         }
         return ones;
     }
+
+    public class TreeNode {
+     int val;
+      TreeNode left;
+   TreeNode right;
+     TreeNode(int x) { val = x; }
+  }
+    /**
+     * 给定一棵二叉搜索树，请找出其中第k大的节点。
+     *
+     *
+     *
+     * 示例 1:
+     *
+     * 输入: root = [3,1,4,null,2], k = 1
+     *    3
+     *   / \
+     *  1   4
+     *   \
+     *   2
+     * 输出: 4
+     * 示例 2:
+     *
+     * 输入: root = [5,3,6,2,4,null,null,1], k = 3
+     *        5
+     *       / \
+     *      3   6
+     *     / \
+     *    2   4
+     *   /
+     *  1
+     * 输出: 4
+     *
+     *
+     * 限制：
+     *
+     * 1 ≤ k ≤ 二叉搜索树元素个数
+     *
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     * @param root
+     * @param k
+     * @return
+     */
+    public int kthLargest(TreeNode root, int k) {
+        List<Integer> list = new ArrayList();
+        kthLargestOne(root,list);
+        return list.get(list.size()-k);
+    }
+
+    public void kthLargestOne(TreeNode root, List list) {
+       if (root == null) {
+           return;
+       }
+       if (root.left != null){
+           kthLargestOne(root.left,list);
+       }
+       list.add(root.val);
+       if (root.right != null){
+           kthLargestOne(root.right,list);
+       }
+    }
+
+    /**
+     * 输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历结果。如果是则返回true，否则返回false。假设输入的数组的任意两个数字都互不相同。
+     *
+     *
+     *
+     * 参考以下这颗二叉搜索树：
+     *
+     *      5
+     *     / \
+     *    2   6
+     *   / \
+     *  1   3
+     * 示例 1：
+     *
+     * 输入: [1,6,3,2,5]
+     * 输出: false
+     * 示例 2：
+     *
+     * 输入: [1,3,2,6,5]
+     * 输出: true
+     *
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5vwxx5/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     * @param postorder
+     * @return
+     */
+    public boolean verifyPostorder(int[] postorder) {
+        return false;
+    }
+
+
+    /**
+     * 给你一个整数数组 nums 和一个整数 target 。
+     *
+     * 向数组中的每个整数前添加'+' 或 '-' ，然后串联起所有整数，可以构造一个 表达式 ：
+     *
+     * 例如，nums = [2, 1] ，可以在 2 之前添加 '+' ，在 1 之前添加 '-' ，然后串联起来得到表达式 "+2-1" 。
+     * 返回可以通过上述方法构造的、运算结果等于 target 的不同 表达式 的数目。
+     *
+     *
+     *
+     * 示例 1：
+     *
+     * 输入：nums = [1,1,1,1,1], target = 3
+     * 输出：5
+     * 解释：一共有 5 种方法让最终目标和为 3 。
+     * -1 + 1 + 1 + 1 + 1 = 3
+     * +1 - 1 + 1 + 1 + 1 = 3
+     * +1 + 1 - 1 + 1 + 1 = 3
+     * +1 + 1 + 1 - 1 + 1 = 3
+     * +1 + 1 + 1 + 1 - 1 = 3
+     * 示例 2：
+     *
+     * 输入：nums = [1], target = 1
+     * 输出：1
+     *
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/target-sum
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int findTargetSumWays(int[] nums, int target) {
+        return 0;
+    }
+
+
     public static void main(String[] args) {
         int[] a = new int[]{1, 7, 2, 3, 6, 5, 4, 9, 8};
         for (int i = 0; i < bubbleSort(a).length; i++) {
