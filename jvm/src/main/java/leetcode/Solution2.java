@@ -535,7 +535,7 @@ public class Solution2 {
      * @return
      */
     public double[] dicesProbability(int n) {
-
+        return null;
     }
 
     /**
@@ -857,21 +857,22 @@ public class Solution2 {
 
     /**
      * 统计一个数字在排序数组中出现的次数。
-     *
-     *
+     * <p>
+     * <p>
      * 示例 1:
-     *
+     * <p>
      * 输入: nums = [5,7,7,8,8,10], target = 8
      * 输出: 2
      * 示例2:
-     *
+     * <p>
      * 输入: nums = [5,7,7,8,8,10], target = 6
      * 输出: 0
-     *
+     * <p>
      * 作者：Krahets
      * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5874p1/
      * 来源：力扣（LeetCode）
      * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
      * @param nums
      * @param target
      * @return
@@ -886,7 +887,473 @@ public class Solution2 {
         }
         return sum;
          */
+        // 搜索右边界right
+        int i = 0, j = nums.length - 1;
+        while (i <= j) {
+            int m = (i + j) / 2;
+            if (nums[m] <= target) {
+                i = m + 1;
+            } else {
+                j = m - 1;
+            }
+        }
+        int right = i;
+        // 若数组中无target，则提前返回
+        if (j >= 0 && nums[j] != target) {
+            return 0;
+        }
+        // 搜索左边界right
+        i = 0;
+        j = nums.length - 1;
+        while (i <= j) {
+            int m = (i + j) / 2;
+            if (nums[m] < target) {
+                i = m + 1;
+            } else {
+                j = m - 1;
+            }
+        }
+        int left = j;
+        return right - left - 1;
+    }
 
+    /**
+     * 一个长度为n-1的递增排序数组中的所有数字都是唯一的，并且每个数字都在范围0～n-1之内。在范围0～n-1内的n个数字中有且只有一个数字不在该数组中，请找出这个数字。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1:
+     * <p>
+     * 输入: [0,1,3]
+     * 输出: 2
+     * 示例2:
+     * <p>
+     * 输入: [0,1,2,3,4,5,6,7,9]
+     * 输出: 8
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/58iqo5/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param nums
+     * @return
+     */
+    public int missingNumber(int[] nums) {
+        int i = 0, j = nums.length - 1;
+        while (i <= j) {
+            int m = (i + j) / 2;
+            if (nums[m] == m) {
+                i = m + 1;
+            } else {
+                j = m - 1;
+            }
+        }
+        return i;
+    }
+
+    /**
+     * 给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。
+     * <p>
+     * 返回删除后的链表的头节点。
+     * <p>
+     * 注意：此题对比原题有改动
+     * <p>
+     * 示例 1:
+     * <p>
+     * 输入: head = [4,5,1,9], val = 5
+     * 输出: [4,1,9]
+     * 解释: 给定你链表中值为5的第二个节点，那么在调用了你的函数之后，该链表应变为 4 -> 1 -> 9.
+     * 示例 2:
+     * <p>
+     * 输入: head = [4,5,1,9], val = 1
+     * 输出: [4,5,9]
+     * 解释: 给定你链表中值为1的第三个节点，那么在调用了你的函数之后，该链表应变为 4 -> 5 -> 9.
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/505fc7/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param head
+     * @param val
+     * @return
+     */
+    public ListNode deleteNode(ListNode head, int val) {
+//        if (head.val == val){
+//            return head.next;
+//        }
+//        ListNode pre = head,cur = head.next;
+//        while (cur !=null && cur.val != val){
+//            pre = cur;
+//            cur = cur.next;
+//        }
+//        if (cur != null){
+//            pre.next = cur.next;
+//        }
+//        return head;
+
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode cur = dummy;
+        while (cur.next != null) {
+            if (cur.next.val == val) {
+                cur.next = cur.next.next;
+                break;
+            }
+            cur = cur.next;
+        }
+        return dummy.next;
+    }
+
+    /**
+     * 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有奇数位于数组的前半部分，所有偶数位于数组的后半部分。
+     * <p>
+     * <p>
+     * <p>
+     * 示例：
+     * <p>
+     * 输入：nums =[1,2,3,4]
+     * 输出：[1,3,2,4]
+     * 注：[3,1,2,4] 也是正确的答案之一。
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5v8a6t/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param nums
+     * @return
+     */
+    public int[] exchange(int[] nums) {
+        int i = 0, j = nums.length - 1;
+        while (i < j) {
+            if (nums[i] % 2 == 1) {
+                i++;
+                continue;
+            }
+            if (nums[j] % 2 == 0) {
+                j--;
+                continue;
+            }
+            if (nums[i] % 2 == 0 && nums[j] % 2 == 1) {
+                int tmp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = tmp;
+                i++;
+                j--;
+            }
+        }
+        return nums;
+    }
+
+    /**
+     * 输入一个链表，输出该链表中倒数第k个节点。为了符合大多数人的习惯，本题从1开始计数，即链表的尾节点是倒数第1个节点。
+     * <p>
+     * 例如，一个链表有 6 个节点，从头节点开始，它们的值依次是 1、2、3、4、5、6。这个链表的倒数第 3 个节点是值为 4 的节点。
+     * <p>
+     * <p>
+     * <p>
+     * 示例：
+     * <p>
+     * 给定一个链表: 1->2->3->4->5, 和 k = 2.
+     * <p>
+     * 返回链表 4->5.
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/58tl52/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param head
+     * @param k
+     * @return
+     */
+    public ListNode getKthFromEnd(ListNode head, int k) {
+        ListNode pre = head;
+        ListNode cur = head;
+        int i = 0;
+        while (i < k) {
+            pre = pre.next;
+            i++;
+        }
+        while (pre != null) {
+            pre = pre.next;
+            cur = cur.next;
+        }
+        return cur;
+    }
+
+    /**
+     * 输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。
+     * <p>
+     * 示例1：
+     * <p>
+     * 输入：1->2->4, 1->3->4
+     * 输出：1->1->2->3->4->4
+     * 限制：
+     * <p>
+     * 0 <= 链表长度 <= 1000
+     * <p>
+     * 注意：本题与主站 21 题相同：https://leetcode-cn.com/problems/merge-two-sorted-lists/
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5vq98s/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param l1
+     * @param l2
+     * @return
+     */
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        /**
+         *  ListNode dum = new ListNode(0), cur = dum;
+         *         while(l1 != null && l2 != null) {
+         *             if(l1.val < l2.val) {
+         *                 cur.next = l1;
+         *                 l1 = l1.next;
+         *             }
+         *             else {
+         *                 cur.next = l2;
+         *                 l2 = l2.next;
+         *             }
+         *             cur = cur.next;
+         *         }
+         *         cur.next = l1 != null ? l1 : l2;
+         *         return dum.next;
+         *
+         * 作者：Krahets
+         * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5v6htd/
+         * 来源：力扣（LeetCode）
+         * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+         */
+        ListNode dummy = new ListNode(0), cur = dummy;
+        while (l1 != null && l2 != null) {
+            if (l1.val < l2.val) {
+                dummy.next = l1;
+                l1 = l1.next;
+            } else {
+                dummy.next = l2;
+                l2 = l2.next;
+            }
+            dummy = dummy.next;
+        }
+        if (l1 != null) {
+            dummy.next = l1;
+        }
+        if (l2 != null) {
+            dummy.next = l2;
+        }
+        return cur.next;
+    }
+
+    /**
+     * 输入两个链表，找出它们的第一个公共节点。
+     *
+     * @param headA
+     * @param headB
+     * @return
+     */
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        ListNode a = headA, b = headB;
+        while (a != b) {
+            a = a != null ? a.next : headB;
+            b = b != null ? b.next : headA;
+        }
+        return a;
+    }
+
+    /**
+     * 输入一个递增排序的数组和一个数字s，在数组中查找两个数，使得它们的和正好是s。如果有多对数字的和等于s，则输出任意一对即可。
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：nums = [2,7,11,15], target = 9
+     * 输出：[2,7] 或者 [7,2]
+     * 示例 2：
+     * <p>
+     * 输入：nums = [10,26,30,31,47,60], target = 40
+     * 输出：[10,30] 或者 [30,10]
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5832fi/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int[] twoSum(int[] nums, int target) {
+        int i = 0, j = nums.length - 1;
+        while (i < j) {
+            if (nums[i] + nums[j] == target) {
+                return new int[]{nums[i], nums[j]};
+            } else if (nums[i] + nums[j] > target) {
+                j--;
+            } else {
+                i++;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * 输入一个英文句子，翻转句子中单词的顺序，但单词内字符的顺序不变。为简单起见，标点符号和普通字母一样处理。例如输入字符串"I am a student. "，则输出"student. a am I"。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入: "the sky is blue"
+     * 输出:"blue is sky the"
+     * 示例 2：
+     * <p>
+     * 输入: " hello world! "
+     * 输出:"world! hello"
+     * 解释: 输入字符串可以在前面或者后面包含多余的空格，但是反转后的字符不能包括。
+     * 示例 3：
+     * <p>
+     * 输入: "a good  example"
+     * 输出:"example good a"
+     * 解释: 如果两个单词间有多余的空格，将反转后单词间的空格减少到只含一个。
+     * <p>
+     * <p>
+     * 说明：
+     * <p>
+     * 无空格字符构成一个单词。
+     * 输入字符串可以在前面或者后面包含多余的空格，但是反转后的字符不能包括。
+     * 如果两个单词间有多余的空格，将反转后单词间的空格减少到只含一个。
+     * 注意：本题与主站 151 题相同：https://leetcode-cn.com/problems/reverse-words-in-a-string/
+     * <p>
+     * 注意：此题对比原题有改动
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/586ecg/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param s
+     * @return
+     */
+    public String reverseWords(String s) {
+        s = s.trim();
+        int j = s.length() - 1, i = j;
+        StringBuilder res = new StringBuilder();
+        while (i >= 0) {
+            while (i >= 0 && s.charAt(i) != ' ') {
+                i--;
+            }
+            res.append(s.substring(i + 1, j + 1) + " ");
+            while (i >= 0 && s.charAt(i) == ' ') {
+                i--;
+            }
+            j = i;
+        }
+        return res.toString().trim();
+    }
+
+    /**
+     * 编写一个函数，输入是一个无符号整数（以二进制串的形式），返回其二进制表达式中数字位数为 '1' 的个数（也被称为汉明重量).）。
+     * <p>
+     * <p>
+     * <p>
+     * 提示：
+     * <p>
+     * 请注意，在某些语言（如 Java）中，没有无符号整数类型。在这种情况下，输入和输出都将被指定为有符号整数类型，并且不应影响您的实现，因为无论整数是有符号的还是无符号的，其内部的二进制表示形式都是相同的。
+     * 在 Java 中，编译器使用 二进制补码 记法来表示有符号整数。因此，在上面的示例 3中，输入表示有符号整数 -3。
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：n = 11 (控制台输入 00000000000000000000000000001011)
+     * 输出：3
+     * 解释：输入的二进制串 00000000000000000000000000001011中，共有三位为 '1'。
+     * 示例 2：
+     * <p>
+     * 输入：n = 128 (控制台输入 00000000000000000000000010000000)
+     * 输出：1
+     * 解释：输入的二进制串 00000000000000000000000010000000中，共有一位为 '1'。
+     * 示例 3：
+     * <p>
+     * 输入：n = 4294967293 (控制台输入 11111111111111111111111111111101，部分语言中 n = -3）
+     * 输出：31
+     * 解释：输入的二进制串 11111111111111111111111111111101 中，共有 31 位为 '1'。
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5vk1l3/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param n
+     * @return
+     */
+    public static int hammingWeight(int n) {
+        int sum = 0;
+        while (n != 0) {
+            sum += n & 1;
+            n >>>= 1;
+        }
+        return sum;
+    }
+
+
+    /**
+     * 一个整型数组 nums 里除两个数字之外，其他数字都出现了两次。请写程序找出这两个只出现一次的数字。要求时间复杂度是O(n)，空间复杂度是O(1)。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：nums = [4,1,4,6]
+     * 输出：[1,6] 或 [6,1]
+     * 示例 2：
+     * <p>
+     * 输入：nums = [1,2,10,4,1,4,3,3]
+     * 输出：[2,10] 或 [10,2]
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/eubbnm/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param nums
+     * @return
+     */
+    public int[] singleNumbers(int[] nums) {
+        int x = 0, y = 0, n = 0, m = 1;
+        for (int num : nums) {          // 1. 遍历异或
+            n ^= num;
+        }
+        while ((n & m) == 0) {               // 2. 循环左移，计算 m
+            m <<= 1;
+        }
+        for (int num : nums) {              // 3. 遍历 nums 分组
+            if ((num & m) != 0) {
+                x ^= num;
+            } // 4. 当 num & m != 0
+            else {
+                y ^= num;
+            }                // 4. 当 num & m == 0
+        }
+        return new int[]{x, y};          // 5. 返回出现一次的数字
+
+    }
+
+    /**
+     *
+     * @param nums
+     * @return
+     */
+    public int singleNumber(int[] nums) {
+        int ones = 0, twos = 0;
+        for(int num : nums){
+            ones = ones ^ num & ~twos;
+            twos = twos ^ num & ~ones;
+        }
+        return ones;
     }
     public static void main(String[] args) {
         int[] a = new int[]{1, 7, 2, 3, 6, 5, 4, 9, 8};
