@@ -1343,13 +1343,12 @@ public class Tujiesuanfashujujiegou {
     }
 
     /**
-     *
      * @param nums
      * @return
      */
     public int singleNumber(int[] nums) {
         int ones = 0, twos = 0;
-        for(int num : nums){
+        for (int num : nums) {
             ones = ones ^ num & ~twos;
             twos = twos ^ num & ~ones;
         }
@@ -1357,93 +1356,99 @@ public class Tujiesuanfashujujiegou {
     }
 
     public class TreeNode {
-     int val;
-      TreeNode left;
-   TreeNode right;
-     TreeNode(int x) { val = x; }
-  }
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
+    }
+
     /**
      * 给定一棵二叉搜索树，请找出其中第k大的节点。
-     *
-     *
-     *
+     * <p>
+     * <p>
+     * <p>
      * 示例 1:
-     *
+     * <p>
      * 输入: root = [3,1,4,null,2], k = 1
-     *    3
-     *   / \
-     *  1   4
-     *   \
-     *   2
+     * 3
+     * / \
+     * 1   4
+     * \
+     * 2
      * 输出: 4
      * 示例 2:
-     *
+     * <p>
      * 输入: root = [5,3,6,2,4,null,null,1], k = 3
-     *        5
-     *       / \
-     *      3   6
-     *     / \
-     *    2   4
-     *   /
-     *  1
+     * 5
+     * / \
+     * 3   6
+     * / \
+     * 2   4
+     * /
+     * 1
      * 输出: 4
-     *
-     *
+     * <p>
+     * <p>
      * 限制：
-     *
+     * <p>
      * 1 ≤ k ≤ 二叉搜索树元素个数
-     *
+     * <p>
      * 来源：力扣（LeetCode）
      * 链接：https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof
      * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
      * @param root
      * @param k
      * @return
      */
     public int kthLargest(TreeNode root, int k) {
         List<Integer> list = new ArrayList();
-        kthLargestOne(root,list);
-        return list.get(list.size()-k);
+        kthLargestOne(root, list);
+        return list.get(list.size() - k);
     }
 
     public void kthLargestOne(TreeNode root, List list) {
-       if (root == null) {
-           return;
-       }
-       if (root.left != null){
-           kthLargestOne(root.left,list);
-       }
-       list.add(root.val);
-       if (root.right != null){
-           kthLargestOne(root.right,list);
-       }
+        if (root == null) {
+            return;
+        }
+        if (root.left != null) {
+            kthLargestOne(root.left, list);
+        }
+        list.add(root.val);
+        if (root.right != null) {
+            kthLargestOne(root.right, list);
+        }
     }
 
     /**
      * 输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历结果。如果是则返回true，否则返回false。假设输入的数组的任意两个数字都互不相同。
-     *
-     *
-     *
+     * <p>
+     * <p>
+     * <p>
      * 参考以下这颗二叉搜索树：
-     *
-     *      5
-     *     / \
-     *    2   6
-     *   / \
-     *  1   3
+     * <p>
+     * 5
+     * / \
+     * 2   6
+     * / \
+     * 1   3
      * 示例 1：
-     *
+     * <p>
      * 输入: [1,6,3,2,5]
      * 输出: false
      * 示例 2：
-     *
+     * <p>
      * 输入: [1,3,2,6,5]
      * 输出: true
-     *
+     * <p>
      * 作者：Krahets
      * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5vwxx5/
      * 来源：力扣（LeetCode）
      * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
      * @param postorder
      * @return
      */
@@ -1454,16 +1459,16 @@ public class Tujiesuanfashujujiegou {
 
     /**
      * 给你一个整数数组 nums 和一个整数 target 。
-     *
+     * <p>
      * 向数组中的每个整数前添加'+' 或 '-' ，然后串联起所有整数，可以构造一个 表达式 ：
-     *
+     * <p>
      * 例如，nums = [2, 1] ，可以在 2 之前添加 '+' ，在 1 之前添加 '-' ，然后串联起来得到表达式 "+2-1" 。
      * 返回可以通过上述方法构造的、运算结果等于 target 的不同 表达式 的数目。
-     *
-     *
-     *
+     * <p>
+     * <p>
+     * <p>
      * 示例 1：
-     *
+     * <p>
      * 输入：nums = [1,1,1,1,1], target = 3
      * 输出：5
      * 解释：一共有 5 种方法让最终目标和为 3 。
@@ -1473,13 +1478,14 @@ public class Tujiesuanfashujujiegou {
      * +1 + 1 + 1 - 1 + 1 = 3
      * +1 + 1 + 1 + 1 - 1 = 3
      * 示例 2：
-     *
+     * <p>
      * 输入：nums = [1], target = 1
      * 输出：1
-     *
+     * <p>
      * 来源：力扣（LeetCode）
      * 链接：https://leetcode-cn.com/problems/target-sum
      * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
      * @param nums
      * @param target
      * @return
@@ -1488,6 +1494,168 @@ public class Tujiesuanfashujujiegou {
         return 0;
     }
 
+    /**
+     * 输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：matrix = [[1,2,3],[4,5,6],[7,8,9]]
+     * 输出：[1,2,3,6,9,8,7,4,5]
+     * 示例 2：
+     * <p>
+     * 输入：matrix =[[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+     * 输出：[1,2,3,4,8,12,11,10,9,5,6,7]
+     * <p>
+     * <p>
+     * 限制：
+     * <p>
+     * 0 <= matrix.length <= 100
+     * 0 <= matrix[i].length<= 100
+     * 注意：本题与主站 54 题相同：https://leetcode-cn.com/problems/spiral-matrix/
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5vfh9g/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param matrix
+     * @return
+     */
+    public static int[] spiralOrder(int[][] matrix) {
+//        if (matrix == null) {
+//            return null;
+//        }
+//        int ro = matrix.length,len = matrix[0].length,ro1 = 0,len1 = 0;
+//        if (ro == 0 || len == 0) {
+//            return new int[0];
+//        }
+//        int i=0,j=0;
+//        List<Integer> list = new ArrayList<>();
+//        while (true){
+//            for (;j<len;j++){
+//                list.add(matrix[i][j]);
+//            }
+//            len--;
+//            ro1++;
+//            i++;
+//            j--;
+//            if (ro1 > ro){
+//                break;
+//            }
+//            for (;i<ro;i++){
+//                list.add(matrix[i][j]);
+//            }
+//            ro--;
+//            j--;
+//            i--;
+//            if (ro1 > ro){
+//                break;
+//            }
+//            for (;j>=len1;j--){
+//                list.add(matrix[i][j]);
+//            }
+//            len1++;
+//            i--;
+//            j++;
+//            if (len1>len){
+//                break;
+//            }
+//            for (;i>=ro1;i--){
+//                list.add(matrix[i][j]);
+//            }
+//            ro1 = i+1;
+//            j++;
+//            i++;
+//        }
+//        int[] res = new int[list.size()];
+//        int index = 0;
+//        for (int k = 0; k < list.size(); k++) {
+//            res[index++] = list.get(k);
+//        }
+//        return res;
+        if (matrix.length == 0) {
+            return new int[0];
+        }
+        int l = 0, r = matrix[0].length - 1, t = 0, b = matrix.length - 1, x = 0;
+        int[] res = new int[(r + 1) * (b + 1)];
+        while (true) {
+            for (int i = l; i <= r; i++) {
+                res[x++] = matrix[t][i];
+            } // left to right
+            if (++t > b) {
+                break;
+            }
+            for (int i = t; i <= b; i++) {
+                res[x++] = matrix[i][r];
+            } // top to bottom
+            if (l > --r) {
+                break;
+            }
+            for (int i = r; i >= l; i--) {
+                res[x++] = matrix[b][i];
+            } // right to left
+            if (t > --b) {
+                break;
+            }
+            for (int i = b; i >= t; i--) {
+                res[x++] = matrix[i][l];
+            } // bottom to top
+            if (++l > r) {
+                break;
+            }
+        }
+        return res;
+    }
+
+    /**
+     * 输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出顺序。假设压入栈的所有数字均不相等。例如，序列 {1,2,3,4,5} 是某栈的压栈序列，序列 {4,5,3,2,1} 是该压栈序列对应的一个弹出序列，但 {4,3,5,1,2} 就不可能是该压栈序列的弹出序列。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：pushed = [1,2,3,4,5], popped = [4,5,3,2,1]
+     * 输出：true
+     * 解释：我们可以按以下顺序执行：
+     * push(1), push(2), push(3), push(4), pop() -> 4,
+     * push(5), pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1
+     * 示例 2：
+     * <p>
+     * 输入：pushed = [1,2,3,4,5], popped = [4,3,5,1,2]
+     * 输出：false
+     * 解释：1 不能在 2 之前弹出。
+     * <p>
+     * <p>
+     * 提示：
+     * <p>
+     * 0 <= pushed.length == popped.length <= 1000
+     * 0 <= pushed[i], popped[i] < 1000
+     * pushed是popped的排列。
+     * 注意：本题与主站 946 题相同：https://leetcode-cn.com/problems/validate-stack-sequences/
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/5wh1hj/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param pushed
+     * @param popped
+     * @return
+     */
+    public boolean validateStackSequences(int[] pushed, int[] popped) {
+        Stack<Integer> stack = new Stack<>();
+        int i=0;
+        for (int num:pushed){
+            stack.push(num);// num 入栈
+            while (!stack.isEmpty() && stack.peek() == popped[i]){ // 循环判断与出栈
+                stack.pop();
+                i++;
+            }
+        }
+        return stack.isEmpty();
+    }
 
     public static void main(String[] args) {
         int[] a = new int[]{1, 7, 2, 3, 6, 5, 4, 9, 8};
@@ -1510,5 +1678,7 @@ public class Tujiesuanfashujujiegou {
         }
         System.out.println();
         System.out.println(fib(3));
+        int[][] matrix = new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+        int[] re = spiralOrder(matrix);
     }
 }
