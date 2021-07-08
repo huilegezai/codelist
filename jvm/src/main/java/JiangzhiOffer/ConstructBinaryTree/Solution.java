@@ -1,12 +1,12 @@
 package JiangzhiOffer.ConstructBinaryTree;
 
 public class Solution {
-    private static TreeNode reConstructBinaryTree(int[] pre,int[] in) {
-        if (pre == null || in == null || pre.length!=in.length){
+    private static TreeNode reConstructBinaryTree(int[] preorder,int[] inorder) {
+        if (preorder == null || inorder == null || preorder.length == 0 || preorder.length!=inorder.length){
             return null;
         }
-        int n = pre.length;
-        return constructBinaryTree(pre,0,n-1,in,0,n-1);
+        int n = preorder.length;
+        return constructBinaryTree(preorder,0,n-1,inorder,0,n-1);
     }
     private static TreeNode constructBinaryTree(int[] pre,int startPre,int endPre,int[] in,int startIn,int endIn){
         TreeNode node = new TreeNode(pre[startPre]);
