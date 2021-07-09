@@ -2,57 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-cms/cms-common/cms-common.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-cms/cms-common/cms-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-cms/cms-mbg/cms-mbg.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-cms/cms-mbg/cms-mbg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-cms/cms-server/cms-server.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-cms/cms-server/cms-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/codelist.iml" filepath="$PROJECT_DIR$/.idea/codelist.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-content/content-common/content-common.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-content/content-common/content-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-content/content-mbg/content-mbg.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-content/content-mbg/content-mbg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-content/content-server/content-server.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-content/content-server/content-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-coupon/coupon-common/coupon-common.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-coupon/coupon-common/coupon-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-coupon/coupon-mbg/coupon-mbg.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-coupon/coupon-mbg/coupon-mbg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-coupon/coupon-server/coupon-server.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-coupon/coupon-server/coupon-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvm/jvm.iml" filepath="$PROJECT_DIR$/jvm/jvm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-cms/mall-admin-cms.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-cms/mall-admin-cms.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-oms/mall-admin-oms.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-oms/mall-admin-oms.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-pms/mall-admin-pms.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-pms/mall-admin-pms.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-sms/mall-admin-sms.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-sms/mall-admin-sms.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-ums/mall-admin-ums.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-ums/mall-admin-ums.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-monitor/mall-boot-admin/mall-boot-admin.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-monitor/mall-boot-admin/mall-boot-admin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-cloud-alibaba.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-cloud-alibaba.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-common/mall-common.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-common/mall-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-gateway/mall-gateway.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-gateway/mall-gateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-mbg/mall-mbg.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-mbg/mall-mbg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-monitor/mall-monitor.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-monitor/mall-monitor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-content/mall-portal-content.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-content/mall-portal-content.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-coupon/mall-portal-coupon.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-coupon/mall-portal-coupon.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-member/mall-portal-member.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-member/mall-portal-member.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-order/mall-portal-order.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-order/mall-portal-order.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-product/mall-portal-product.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-product/mall-portal-product.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-security/mall-security.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-security/mall-security.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-storage/mall-storage.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-storage/mall-storage.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-member/member-common/member-common.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-member/member-common/member-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-member/member-mbg/member-mbg.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-member/member-mbg/member-mbg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-member/member-server/member-server.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-member/member-server/member-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-oms/oms-common/oms-common.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-oms/oms-common/oms-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-oms/oms-mbg/oms-mbg.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-oms/oms-mbg/oms-mbg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-oms/oms-server/oms-server.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-oms/oms-server/oms-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-order/order-common/order-common.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-order/order-common/order-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-order/order-mbg/order-mbg.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-order/order-mbg/order-mbg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-order/order-server/order-server.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-order/order-server/order-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-pms/pms-common/pms-common.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-pms/pms-common/pms-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-pms/pms-mbg/pms-mbg.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-pms/pms-mbg/pms-mbg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-pms/pms-server/pms-server.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-pms/pms-server/pms-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-product/product-common/product-common.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-product/product-common/product-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-product/product-mbg/product-mbg.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-product/product-mbg/product-mbg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-product/product-server/product-server.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-portal-product/product-server/product-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-sms/sms-common/sms-common.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-sms/sms-common/sms-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-sms/sms-mbg/sms-mbg.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-sms/sms-mbg/sms-mbg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-sms/sms-server/sms-server.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-sms/sms-server/sms-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springcloud-learning-master/springcloud-learning.iml" filepath="$PROJECT_DIR$/springcloud-learning-master/springcloud-learning.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-ums/ums-common/ums-common.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-ums/ums-common/ums-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-ums/ums-mbg/ums-mbg.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-ums/ums-mbg/ums-mbg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-ums/ums-server/ums-server.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-admin-ums/ums-server/ums-server.iml" />
     </modules>
   </component>
 </project>
