@@ -1,6 +1,10 @@
 package dp;
 
-import java.awt.event.FocusEvent;
+import JiangzhiOffer.PrintListInReversedOrder.ListNode;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * 动态规划
@@ -536,51 +540,52 @@ public class Solution {
     /**
      * 740. 删除并获得点数
      * 给你一个整数数组 nums ，你可以对它进行一些操作。
-     *
+     * <p>
      * 每次操作中，选择任意一个 nums[i] ，删除它并获得 nums[i] 的点数。之后，你必须删除 所有 等于 nums[i] - 1 和 nums[i] + 1 的元素。
-     *
+     * <p>
      * 开始你拥有 0 个点数。返回你能通过这些操作获得的最大点数。
-     *
+     * <p>
      * 示例 1：
-     *
+     * <p>
      * 输入：nums = [3,4,2]
      * 输出：6
      * 解释：
      * 删除 4 获得 4 个点数，因此 3 也被删除。
      * 之后，删除 2 获得 2 个点数。总共获得 6 个点数。
      * 示例 2：
-     *
+     * <p>
      * 输入：nums = [2,2,3,3,3,4]
      * 输出：9
      * 解释：
      * 删除 3 获得 3 个点数，接着要删除两个 2 和 4 。
      * 之后，再次删除 3 获得 3 个点数，再次删除 3 获得 3 个点数。
      * 总共获得 9 个点数。
+     *
      * @param nums
      * @return
      */
     public int deleteAndEarn(int[] nums) {
-        if (nums == null || nums.length == 0){
+        if (nums == null || nums.length == 0) {
             return 0;
-        }else if (nums.length == 1){
+        } else if (nums.length == 1) {
             return nums[0];
         }
         int len = nums.length;
         int max = nums[0];
-        for (int i=0;i<len;i++){
-            max = Math.max(max,nums[i]);
+        for (int i = 0; i < len; i++) {
+            max = Math.max(max, nums[i]);
         }
         // 构造一个新的数组all
-        int[] all = new int[max+1];
-        for (int item:nums){
+        int[] all = new int[max + 1];
+        for (int item : nums) {
             all[item]++;
         }
 
-        int[] dp = new int[max+1];
-        dp[1] = all[1] *1;
-        dp[2] = Math.max(dp[1],all[2]*2);
-        for (int i=2;i<=max;++i){
-            dp[i] = Math.max(dp[i-1],dp[i-2] + i*all[i]);
+        int[] dp = new int[max + 1];
+        dp[1] = all[1] * 1;
+        dp[2] = Math.max(dp[1], all[2] * 2);
+        for (int i = 2; i <= max; ++i) {
+            dp[i] = Math.max(dp[i - 1], dp[i - 2] + i * all[i]);
         }
         return dp[max];
     }
@@ -590,30 +595,31 @@ public class Solution {
      * 若旋转 4 次，则可以得到 [4,5,6,7,0,1,2]
      * 若旋转 7 次，则可以得到 [0,1,2,4,5,6,7]
      * 注意，数组 [a[0], a[1], a[2], ..., a[n-1]] 旋转一次 的结果为数组 [a[n-1], a[0], a[1], a[2], ..., a[n-2]] 。
-     *
+     * <p>
      * 给你一个元素值 互不相同 的数组 nums ，它原来是一个升序排列的数组，并按上述情形进行了多次旋转。请你找出并返回数组中的 最小元素 。
-     *
-     *
-     *
+     * <p>
+     * <p>
+     * <p>
      * 示例 1：
-     *
+     * <p>
      * 输入：nums = [3,4,5,1,2]
      * 输出：1
      * 解释：原数组为 [1,2,3,4,5] ，旋转 3 次得到输入数组。
      * 示例 2：
-     *
+     * <p>
      * 输入：nums = [4,5,6,7,0,1,2]
      * 输出：0
      * 解释：原数组为 [0,1,2,4,5,6,7] ，旋转 4 次得到输入数组。
      * 示例 3：
-     *
+     * <p>
      * 输入：nums = [11,13,15,17]
      * 输出：11
      * 解释：原数组为 [11,13,15,17] ，旋转 4 次得到输入数组。
-     *
+     * <p>
      * 来源：力扣（LeetCode）
      * 链接：https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array
      * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
      * @param nums
      * @return
      */
@@ -633,8 +639,8 @@ public class Solution {
             int mid = left + (right - left) / 2;
             if (nums[mid] < nums[right]) {
                 right = mid;
-            }else {
-                left = mid+1;
+            } else {
+                left = mid + 1;
             }
         }
         return nums[left];
@@ -644,34 +650,359 @@ public class Solution {
     /**
      * 162. 寻找峰值
      * 峰值元素是指其值大于左右相邻值的元素。
-     *
+     * <p>
      * 给你一个输入数组 nums，找到峰值元素并返回其索引。数组可能包含多个峰值，在这种情况下，返回 任何一个峰值 所在位置即可。
-     *
+     * <p>
      * 你可以假设 nums[-1] = nums[n] = -∞ 。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：nums = [1,2,3,1]
+     * 输出：2
+     * 解释：3 是峰值元素，你的函数应该返回其索引 2。
+     * 示例 2：
+     * <p>
+     * 输入：nums = [1,2,1,3,5,6,4]
+     * 输出：1 或 5
+     * 解释：你的函数可以返回索引 1，其峰值元素为 2；
+     * 或者返回索引 5， 其峰值元素为 6。
+     *
+     * @param nums
+     * @return
+     */
+    public int findPeakElement(int[] nums) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i + 1] < nums[i]) {
+                return i;
+            }
+        }
+        return nums.length - 1;
+    }
+
+    /**
+     * 给定一个m x n 二维字符网格board 和一个字符串单词word 。如果word 存在于网格中，返回 true ；否则，返回 false 。
+     * <p>
+     * 单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。
+     * <p>
+     * <p>
+     * <p>
+     * 例如，在下面的 3×4 的矩阵中包含单词 "ABCCED"（单词中的字母已标出）。
+     * <p>
+     * <p>
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
+     * 输出：true
+     * 示例 2：
+     * <p>
+     * 输入：board = [["a","b"],["c","d"]], word = "abcd"
+     * 输出：false
+     * <p>
+     * 作者：Krahets
+     * 链接：https://leetcode-cn.com/leetbook/read/illustration-of-algorithm/58wowd/
+     * 来源：力扣（LeetCode）
+     * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+     *
+     * @param board
+     * @param word
+     * @return
+     */
+    public boolean exist(char[][] board, String word) {
+        return false;
+    }
+
+    /**
+     * 55. 跳跃游戏
+     * 给定一个非负整数数组 nums ，你最初位于数组的 第一个下标 。
+     * <p>
+     * 数组中的每个元素代表你在该位置可以跳跃的最大长度。
+     * <p>
+     * 判断你是否能够到达最后一个下标。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：nums = [2,3,1,1,4]
+     * 输出：true
+     * 解释：可以先跳 1 步，从下标 0 到达下标 1, 然后再从下标 1 跳 3 步到达最后一个下标。
+     * 示例 2：
+     * <p>
+     * 输入：nums = [3,2,1,0,4]
+     * 输出：false
+     * 解释：无论怎样，总会到达下标为 3 的位置。但该下标的最大跳跃长度是 0 ， 所以永远不可能到达最后一个下标。
+     *
+     * @param nums
+     * @return
+     */
+    public boolean canJump(int[] nums) {
+        int len = nums.length;
+        if (len <= 1) {
+            return true;
+        }
+        int maxDis = nums[0];
+        for (int i = 1; i < len - 1; i++) {
+            if (i <= maxDis) {
+                maxDis = Math.max(maxDis, nums[i] + i);
+            } else {
+                return false;
+            }
+        }
+        return maxDis >= len - 1;
+    }
+
+    /**
+     * 给定一个非负整数数组，你最初位于数组的第一个位置。
+     * <p>
+     * 数组中的每个元素代表你在该位置可以跳跃的最大长度。
+     * <p>
+     * 你的目标是使用最少的跳跃次数到达数组的最后一个位置。
+     * <p>
+     * 假设你总是可以到达数组的最后一个位置。
+     * <p>
+     * 示例 1:
+     * <p>
+     * 输入: [2,3,1,1,4]
+     * 输出: 2
+     * 解释: 跳到最后一个位置的最小跳跃数是 2。
+     * 从下标为 0 跳到下标为 1 的位置，跳1步，然后跳3步到达数组的最后一个位置。
+     * 示例 2:
+     * <p>
+     * 输入: [2,3,0,1,4]
+     * 输出: 2
+     * <p>
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/jump-game-ii
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     *
+     * @param nums
+     * @return
+     */
+    public int jump(int[] nums) {
+//        int position = nums.length - 1;
+//        int steps = 0;
+//        while (position > 0) {
+//            for (int i = 0; i < position; i++) {
+//                if (i + nums[i] >= position) {
+//                    position = i;
+//                    steps++;
+//                    break;
+//                }
+//            }
+//        }
+//        return steps;
+        int length = nums.length;
+        int end = 0;
+        int maxPosition = 0;
+        int steps = 0;
+        for (int i = 0; i < length - 1; i++) {
+            maxPosition = Math.max(maxPosition, i + nums[i]);
+            if (i == end) {
+                end = maxPosition;
+                steps++;
+            }
+        }
+        return steps;
+
+    }
+
+
+    /**
+     * 82. 删除排序链表中的重复元素 II
+     * 存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 没有重复出现 的数字。
+     * <p>
+     * 返回同样按升序排列的结果链表。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * <p>
+     * 输入：head = [1,2,3,3,4,4,5]
+     * 输出：[1,2,5]
+     * 示例 2：
+     * <p>
+     * <p>
+     * 输入：head = [1,1,1,2,3]
+     * 输出：[2,3]
+     *
+     * @param head
+     * @return
+     */
+    public ListNode deleteDuplicates(ListNode head) {
+//        做不出来
+//        ListNode dummy = new ListNode(0, head);
+//        ListNode cur = dummy;
+//        while (cur!= null && cur.next != null) {
+//            ListNode first = cur.next;
+//            ListNode second = cur.next.next;
+//            int val = first.val;
+//            while (second != null && second.val == val) {
+//                second = second.next;
+//                first = second.next;
+//            }
+//            cur.next = first;
+//            cur = first;
+//        }
+//        return dummy.next;
+
+        /**
+         * 方法一：一次遍历
+         * 思路与算法
+         *
+         * 由于给定的链表是排好序的，因此重复的元素在链表中出现的位置是连续的，因此我们只需要对链表进行一次遍历，就可以删除重复的元素。由于链表的头节点可能会被删除，因此我们需要额外使用一个哑节点（dummy node）指向链表的头节点。
+         *
+         * 具体地，我们从指针 \textit{cur}cur 指向链表的哑节点，随后开始对链表进行遍历。如果当前 \textit{cur.next}cur.next 与 \textit{cur.next.next}cur.next.next 对应的元素相同，那么我们就需要将 \textit{cur.next}cur.next 以及所有后面拥有相同元素值的链表节点全部删除。我们记下这个元素值 xx，随后不断将 \textit{cur.next}cur.next 从链表中移除，直到 \textit{cur.next}cur.next 为空节点或者其元素值不等于 xx 为止。此时，我们将链表中所有元素值为 xx 的节点全部删除。
+         *
+         * 如果当前 \textit{cur.next}cur.next 与 \textit{cur.next.next}cur.next.next 对应的元素不相同，那么说明链表中只有一个元素值为 \textit{cur.next}cur.next 的节点，那么我们就可以将 \textit{cur}cur 指向 \textit{cur.next}cur.next。
+         *
+         * 当遍历完整个链表之后，我们返回链表的的哑节点的下一个节点 \textit{dummy.next}dummy.next 即可。
+         *
+         * 细节
+         *
+         * 需要注意 \textit{cur.next}cur.next 以及 \textit{cur.next.next}cur.next.next 可能为空节点，如果不加以判断，可能会产生运行错误。
+         *
+         * 代码
+         *
+         * 注意下面 \texttt{C++}C++ 代码中并没有释放被删除的链表节点以及哑节点的空间。如果在面试中遇到本题，读者需要针对这一细节与面试官进行沟通。
+         *
+         * 作者：LeetCode-Solution
+         * 链接：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/solution/shan-chu-pai-xu-lian-biao-zhong-de-zhong-oayn/
+         * 来源：力扣（LeetCode）
+         * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+         */
+
+        if (head == null) {
+            return head;
+        }
+
+        ListNode dummy = new ListNode(0, head);
+
+        ListNode cur = dummy;
+        while (cur.next != null && cur.next.next != null) {
+            if (cur.next.val == cur.next.next.val) {
+                int x = cur.next.val;
+                while (cur.next != null && cur.next.val == x) {
+                    cur.next = cur.next.next;
+                }
+            } else {
+                cur = cur.next;
+            }
+        }
+
+        return dummy.next;
+    }
+
+
+    /**
+     * 15. 三数之和
+     * 给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有和为 0 且不重复的三元组。
+     * <p>
+     * 注意：答案中不可以包含重复的三元组。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：nums = [-1,0,1,2,-1,-4]
+     * 输出：[[-1,-1,2],[-1,0,1]]
+     * 示例 2：
+     * <p>
+     * 输入：nums = []
+     * 输出：[]
+     * 示例 3：
+     * <p>
+     * 输入：nums = [0]
+     * 输出：[]
+     *
+     * @param nums
+     * @return
+     */
+    public List<List<Integer>> threeSum(int[] nums) {
+        int n = nums.length;
+        Arrays.sort(nums);
+        List<List<Integer>> ans = new ArrayList<List<Integer>>();
+        // 枚举 a
+        for (int first = 0; first < n; ++first) {
+            // 需要和上一次枚举的数不相同
+            if (first > 0 && nums[first] == nums[first - 1]) {
+                continue;
+            }
+            // c 对应的指针初始指向数组的最右端
+            int third = n - 1;
+            int target = -nums[first];
+            // 枚举 b
+            for (int second = first + 1; second < n; ++second) {
+                // 需要和上一次枚举的数不相同
+                if (second > first + 1 && nums[second] == nums[second - 1]) {
+                    continue;
+                }
+                // 需要保证 b 的指针在 c 的指针的左侧
+                while (second < third && nums[second] + nums[third] > target) {
+                    --third;
+                }
+                // 如果指针重合，随着 b 后续的增加
+                // 就不会有满足 a+b+c=0 并且 b<c 的 c 了，可以退出循环
+                if (second == third) {
+                    break;
+                }
+                if (nums[second] + nums[third] == target) {
+                    List<Integer> list = new ArrayList<Integer>();
+                    list.add(nums[first]);
+                    list.add(nums[second]);
+                    list.add(nums[third]);
+                    ans.add(list);
+                }
+            }
+        }
+        return ans;
+    }
+
+
+    /**
+     * 930. 和相同的二元子数组
+     * 给你一个二元数组 nums ，和一个整数 goal ，请你统计并返回有多少个和为 goal 的 非空 子数组。
+     *
+     * 子数组 是数组的一段连续部分。
      *
      *
      *
      * 示例 1：
      *
-     * 输入：nums = [1,2,3,1]
-     * 输出：2
-     * 解释：3 是峰值元素，你的函数应该返回其索引 2。
+     * 输入：nums = [1,0,1,0,1], goal = 2
+     * 输出：4
+     * 解释：
+     * 有 4 个满足题目要求的子数组：[1,0,1]、[1,0,1,0]、[0,1,0,1]、[1,0,1]
      * 示例 2：
      *
-     * 输入：nums = [1,2,1,3,5,6,4]
-     * 输出：1 或 5
-     * 解释：你的函数可以返回索引 1，其峰值元素为 2；
-     *      或者返回索引 5， 其峰值元素为 6。
+     * 输入：nums = [0,0,0,0,0], goal = 0
+     * 输出：15
      * @param nums
+     * @param goal
      * @return
      */
-    public int findPeakElement(int[] nums) {
-        for (int i=0;i<nums.length-1;i++){
-            if (nums[i+1] < nums[i]){
-                return i;
+    public int numSubarraysWithSum(int[] nums, int goal) {
+        int sun = 0;
+        for (int i = 0;i<nums.length;i++){
+            int sum = nums[i];
+            if (sum == goal){
+                sun++;
+            }
+            for (int j= i+1;j<nums.length;j++){
+                sum += nums[j];
+                if (sum == goal){
+                    sun++;
+                }else if (sum > goal){
+                    break;
+                }
             }
         }
-        return nums.length-1;
+        return sun;
     }
 
     public static void main(String[] args) {
