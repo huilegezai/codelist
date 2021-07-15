@@ -2,9 +2,7 @@ package dp;
 
 import JiangzhiOffer.PrintListInReversedOrder.ListNode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * 动态规划
@@ -967,42 +965,373 @@ public class Solution {
     /**
      * 930. 和相同的二元子数组
      * 给你一个二元数组 nums ，和一个整数 goal ，请你统计并返回有多少个和为 goal 的 非空 子数组。
-     *
+     * <p>
      * 子数组 是数组的一段连续部分。
-     *
-     *
-     *
+     * <p>
+     * <p>
+     * <p>
      * 示例 1：
-     *
+     * <p>
      * 输入：nums = [1,0,1,0,1], goal = 2
      * 输出：4
      * 解释：
      * 有 4 个满足题目要求的子数组：[1,0,1]、[1,0,1,0]、[0,1,0,1]、[1,0,1]
      * 示例 2：
-     *
+     * <p>
      * 输入：nums = [0,0,0,0,0], goal = 0
      * 输出：15
+     *
      * @param nums
      * @param goal
      * @return
      */
     public int numSubarraysWithSum(int[] nums, int goal) {
         int sun = 0;
-        for (int i = 0;i<nums.length;i++){
+        for (int i = 0; i < nums.length; i++) {
             int sum = nums[i];
-            if (sum == goal){
+            if (sum == goal) {
                 sun++;
             }
-            for (int j= i+1;j<nums.length;j++){
+            for (int j = i + 1; j < nums.length; j++) {
                 sum += nums[j];
-                if (sum == goal){
+                if (sum == goal) {
                     sun++;
-                }else if (sum > goal){
+                } else if (sum > goal) {
                     break;
                 }
             }
         }
         return sun;
+    }
+
+    /**
+     * 918. 环形子数组的最大和
+     * 给定一个由整数数组 A 表示的环形数组 C，求 C 的非空子数组的最大可能和。
+     * <p>
+     * 在此处，环形数组意味着数组的末端将会与开头相连呈环状。（形式上，当0 <= i < A.length 时 C[i] = A[i]，且当 i >= 0 时 C[i+A.length] = C[i]）
+     * <p>
+     * 此外，子数组最多只能包含固定缓冲区 A 中的每个元素一次。（形式上，对于子数组 C[i], C[i+1], ..., C[j]，不存在 i <= k1, k2 <= j 其中 k1 % A.length = k2 % A.length）
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：[1,-2,3,-2]
+     * 输出：3
+     * 解释：从子数组 [3] 得到最大和 3
+     * 示例 2：
+     * <p>
+     * 输入：[5,-3,5]
+     * 输出：10
+     * 解释：从子数组 [5,5] 得到最大和 5 + 5 = 10
+     * 示例 3：
+     * <p>
+     * 输入：[3,-1,2,-1]
+     * 输出：4
+     * 解释：从子数组 [2,-1,3] 得到最大和 2 + (-1) + 3 = 4
+     * 示例 4：
+     * <p>
+     * 输入：[3,-2,2,-3]
+     * 输出：3
+     * 解释：从子数组 [3] 和 [3,-2,2] 都可以得到最大和 3
+     * 示例 5：
+     * <p>
+     * 输入：[-2,-3,-1]
+     * 输出：-1
+     * 解释：从子数组 [-1] 得到最大和 -1
+     * <p>
+     * <p>
+     * 提示：
+     * <p>
+     * -30000 <= A[i] <= 30000
+     * 1 <= A.length <= 30000
+     *
+     * @param nums
+     * @return
+     */
+    public int maxSubarraySumCircular(int[] nums) {
+        // int res = nums[0];
+        // int sum = 0;
+        // for (int num:nums){
+        //     if (sum > 0){
+        //         sum += num;
+        //     }else {
+        //         sum = num;
+        //     }
+        //     res = Math.max(res,sum);
+        // }
+        // return res;
+
+
+        // Kadane算法扫描一次整个数列的所有数值，
+        // 在每一个扫描点计算以该点数值为结束点的子数列的最大和（正数和）。
+        // 该子数列由两部分组成：以前一个位置为结束点的最大子数列、该位置的数值。
+        // 因为该算法用到了“最佳子结构”（以每个位置为终点的最大子数列都是基于其前一位置的最大子数列计算得出,
+        // 该算法可看成动态规划的一个例子。
+        // 状态转移方程：sum[i] = max{sum[i-1]+a[i],a[i]}
+        // 其中(sum[i]记录以a[i]为子序列末端的最大序子列连续和)
+        int max_ending_here = nums[0];
+        int max_so_far = nums[0];
+        int min_ending_here = nums[0];
+        int min_so_far = nums[0];
+        int sum = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            sum += nums[i];
+            // 以每个位置为终点的最大子数列 都是基于其前一位置的最大子数列计算得出,
+            max_ending_here = Math.max(nums[i], max_ending_here + nums[i]);
+            max_so_far = Math.max(max_so_far, max_ending_here);
+            min_ending_here = Math.min(nums[i], min_ending_here + nums[i]);
+            min_so_far = Math.min(min_so_far, min_ending_here);
+        }
+        if (max_so_far < 0) {
+            return max_so_far;
+        }
+        return Math.max(sum - min_so_far, max_so_far);
+    }
+
+
+    /**
+     * 844. 比较含退格的字符串
+     * 给定 S 和 T 两个字符串，当它们分别被输入到空白的文本编辑器后，判断二者是否相等，并返回结果。 # 代表退格字符。
+     * <p>
+     * 注意：如果对空文本输入退格字符，文本继续为空。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * 输入：S = "ab#c", T = "ad#c"
+     * 输出：true
+     * 解释：S 和 T 都会变成 “ac”。
+     * 示例 2：
+     * <p>
+     * 输入：S = "ab##", T = "c#d#"
+     * 输出：true
+     * 解释：S 和 T 都会变成 “”。
+     * 示例 3：
+     * <p>
+     * 输入：S = "a##c", T = "#a#c"
+     * 输出：true
+     * 解释：S 和 T 都会变成 “c”。
+     * 示例 4：
+     * <p>
+     * 输入：S = "a#c", T = "b"
+     * 输出：false
+     * 解释：S 会变成 “c”，但 T 仍然是 “b”。
+     *
+     * @param s
+     * @param t
+     * @return
+     */
+    public boolean backspaceCompare(String s, String t) {
+        Deque sQ = getD(s);
+        Deque tQ = getD(t);
+        while (!sQ.isEmpty() && !tQ.isEmpty()) {
+            if (sQ.poll() != tQ.poll()) {
+                return false;
+            }
+        }
+        if (sQ.isEmpty() && tQ.isEmpty()) {
+            return true;
+        }
+        return false;
+    }
+
+    public Deque getD(String s) {
+        Deque sQ = new LinkedList();
+        for (char c : s.toCharArray()) {
+            if (c == '#') {
+                if (!sQ.isEmpty()) {
+                    sQ.poll();
+                }
+            } else {
+                sQ.push(c);
+            }
+        }
+        return sQ;
+    }
+
+    /**
+     * 986. 区间列表的交集
+     * 给定两个由一些 闭区间 组成的列表，firstList 和 secondList ，其中 firstList[i] = [starti, endi] 而 secondList[j] = [startj, endj] 。每个区间列表都是成对 不相交 的，并且 已经排序 。
+     * <p>
+     * 返回这 两个区间列表的交集 。
+     * <p>
+     * 形式上，闭区间 [a, b]（其中 a <= b）表示实数 x 的集合，而 a <= x <= b 。
+     * <p>
+     * 两个闭区间的 交集 是一组实数，要么为空集，要么为闭区间。例如，[1, 3] 和 [2, 4] 的交集为 [2, 3] 。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * <p>
+     * 输入：firstList = [[0,2],[5,10],[13,23],[24,25]], secondList = [[1,5],[8,12],[15,24],[25,26]]
+     * 输出：[[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]
+     * 示例 2：
+     * <p>
+     * 输入：firstList = [[1,3],[5,9]], secondList = []
+     * 输出：[]
+     * 示例 3：
+     * <p>
+     * 输入：firstList = [], secondList = [[4,8],[10,12]]
+     * 输出：[]
+     * 示例 4：
+     * <p>
+     * 输入：firstList = [[1,7]], secondList = [[3,10]]
+     * 输出：[[3,7]]
+     *
+     * @param firstList
+     * @param secondList
+     * @return
+     */
+    public int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
+        if (firstList.length == 0 || secondList.length == 0) {
+            return new int[][]{};
+        }
+        List<int[]> ans = new ArrayList<>();
+        int i = 0, j = 0;
+        while (i < firstList.length && j < secondList.length) {
+            int lo = Math.max(firstList[i][0], secondList[j][0]);
+            int li = Math.min(firstList[i][1], secondList[j][1]);
+            if (lo <= li) {
+                ans.add(new int[]{lo, li});
+            }
+            if (firstList[i][1] < secondList[j][1]) {
+                i++;
+            } else {
+                j++;
+            }
+        }
+        return ans.toArray(new int[ans.size()][]);
+    }
+
+    /**
+     * 11. 盛最多水的容器
+     * 给你 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0) 。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
+     * <p>
+     * 说明：你不能倾斜容器。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1：
+     * <p>
+     * <p>
+     * <p>
+     * 输入：[1,8,6,2,5,4,8,3,7]
+     * 输出：49
+     * 解释：图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。
+     * 示例 2：
+     * <p>
+     * 输入：height = [1,1]
+     * 输出：1
+     * 示例 3：
+     * <p>
+     * 输入：height = [4,3,2,1,4]
+     * 输出：16
+     * 示例 4：
+     * <p>
+     * 输入：height = [1,2,1]
+     * 输出：2
+     *
+     * @param height
+     * @return
+     */
+    public int maxArea(int[] height) {
+        /* 超时
+        int sum = 0;
+        for (int i=0;i<height.length-1;i++){
+            for (int j=i+1;j<height.length;j++){
+                sum = Math.max(sum,(j-i) * Math.min(height[i],height[j]));
+            }
+        }
+        return sum;
+         */
+        int sum = 0;
+        int i = 0, j = height.length - 1;
+        while (i < j) {
+            sum = Math.max(sum, (j - i) * Math.min(height[i], height[j]));
+            if (height[i] > height[j]) {
+                j--;
+            } else {
+                i++;
+            }
+        }
+        return sum;
+    }
+
+    /**
+     * 152. 乘积最大子数组
+     * 给你一个整数数组 nums ，请你找出数组中乘积最大的连续子数组（该子数组中至少包含一个数字），并返回该子数组所对应的乘积。
+     * <p>
+     * <p>
+     * <p>
+     * 示例 1:
+     * <p>
+     * 输入: [2,3,-2,4]
+     * 输出: 6
+     * 解释: 子数组 [2,3] 有最大乘积 6。
+     * 示例 2:
+     * <p>
+     * 输入: [-2,0,-1]
+     * 输出: 0
+     * 解释: 结果不能为 2, 因为 [-2,-1] 不是子数组。
+     *
+     * @param nums
+     * @return
+     */
+    public int maxProduct(int[] nums) {
+        int max_ending_here = nums[0];
+        int min_ending_here = nums[0];
+        int max_so_far = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            int mx = max_ending_here,mn = min_ending_here;
+            max_ending_here = Math.max(mx * nums[i], Math.max(nums[i], mn * nums[i]));
+            min_ending_here = Math.min(mn * nums[i], Math.min(nums[i], mx * nums[i]));
+            max_so_far = Math.max(max_so_far, max_ending_here);
+        }
+        return max_so_far;
+    }
+
+    /**
+     * 1567. 乘积为正数的最长子数组长度
+     * 给你一个整数数组 nums ，请你求出乘积为正数的最长子数组的长度。
+     *
+     * 一个数组的子数组是由原数组中零个或者更多个连续数字组成的数组。
+     *
+     * 请你返回乘积为正数的最长子数组长度。
+     *
+     *
+     *
+     * 示例  1：
+     *
+     * 输入：nums = [1,-2,-3,4]
+     * 输出：4
+     * 解释：数组本身乘积就是正数，值为 24 。
+     * 示例 2：
+     *
+     * 输入：nums = [0,1,-2,-3,-4]
+     * 输出：3
+     * 解释：最长乘积为正数的子数组为 [1,-2,-3] ，乘积为 6 。
+     * 注意，我们不能把 0 也包括到子数组中，因为这样乘积为 0 ，不是正数。
+     * 示例 3：
+     *
+     * 输入：nums = [-1,-2,-3,0,1]
+     * 输出：2
+     * 解释：乘积为正数的最长子数组是 [-1,-2] 或者 [-2,-3] 。
+     * 示例 4：
+     *
+     * 输入：nums = [-1,2]
+     * 输出：1
+     * 示例 5：
+     *
+     * 输入：nums = [1,2,3,5,-6,4,0,10]
+     * 输出：4
+     * @param nums
+     * @return
+     */
+    public int getMaxLen(int[] nums) {
+        return 0;
     }
 
     public static void main(String[] args) {
@@ -1015,5 +1344,7 @@ public class Solution {
         solution.searchRange(new int[]{2, 2}, 2);
         System.out.println(solution.search(new int[]{4, 5, 6, 7, 8, 1, 2, 3}, 8));
         System.out.println(solution.searchMatrix(new int[][]{{1}}, 1));
+        System.out.println(solution.backspaceCompare("ab#c", "ad#c"));
+        System.out.println(solution.maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7}));
     }
 }

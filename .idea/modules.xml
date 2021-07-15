@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/codelist.iml" filepath="$PROJECT_DIR$/.idea/codelist.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvm/jvm.iml" filepath="$PROJECT_DIR$/jvm/jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-cloud-alibaba-master/mall-cloud-alibaba.iml" filepath="$PROJECT_DIR$/mall-cloud-alibaba-master/mall-cloud-alibaba.iml" />
     </modules>
   </component>
 </project>
