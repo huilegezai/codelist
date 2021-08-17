@@ -6,6 +6,179 @@
   <component name="ChangeListManager">
     <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/ConstructBinaryTree/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/ConstructBinaryTree/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/ConstructBinaryTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/ConstructBinaryTree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/ConstructBinaryTree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/ConstructBinaryTree/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/DuplicationInArray/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/DuplicationInArray/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/DuplicationInArray/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/DuplicationInArray/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/DuplicationInArrayNoEdit/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/DuplicationInArrayNoEdit/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/DuplicationInArrayNoEdit/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/DuplicationInArrayNoEdit/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/FindInPartiallySortedMatrix/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/FindInPartiallySortedMatrix/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/FindInPartiallySortedMatrix/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/FindInPartiallySortedMatrix/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/NextNodeInBinaryTrees/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/NextNodeInBinaryTrees/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/PrintListInReversedOrder/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/PrintListInReversedOrder/ListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/PrintListInReversedOrder/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/PrintListInReversedOrder/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/PrintListInReversedOrder/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/PrintListInReversedOrder/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/ReplaceSpaces/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/ReplaceSpaces/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/ReplaceSpaces/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/ReplaceSpaces/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/doc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/doc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/VolatileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/VolatileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/algorithm/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/algorithm/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/dp/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/dp/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/leetcode/CQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/leetcode/CQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/leetcode/Chujisuanfa.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/leetcode/Chujisuanfa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/leetcode/MaxQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/leetcode/MaxQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/leetcode/MinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/leetcode/MinStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/leetcode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/leetcode/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/java/leetcode/Tujiesuanfashujujiegou.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/java/leetcode/Tujiesuanfashujujiegou.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/03_01_DuplicationInArray/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/03_01_DuplicationInArray/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/03_01_DuplicationInArray/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/03_01_DuplicationInArray/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/03_02_DuplicationInArrayNoEdit/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/03_02_DuplicationInArrayNoEdit/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/03_02_DuplicationInArrayNoEdit/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/03_02_DuplicationInArrayNoEdit/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/04_FindInPartiallySortedMatrix/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/04_FindInPartiallySortedMatrix/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/04_FindInPartiallySortedMatrix/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/04_FindInPartiallySortedMatrix/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/05_ReplaceSpaces/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/05_ReplaceSpaces/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/05_ReplaceSpaces/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/05_ReplaceSpaces/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/06_PrintListInReversedOrder/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/06_PrintListInReversedOrder/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/06_PrintListInReversedOrder/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/06_PrintListInReversedOrder/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/07_ConstructBinaryTree/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/07_ConstructBinaryTree/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/07_ConstructBinaryTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/07_ConstructBinaryTree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/08_NextNodeInBinaryTrees/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/08_NextNodeInBinaryTrees/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/08_NextNodeInBinaryTrees/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/08_NextNodeInBinaryTrees/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/09_01_QueueWithTwoStacks/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/09_01_QueueWithTwoStacks/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/09_01_QueueWithTwoStacks/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/09_01_QueueWithTwoStacks/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/09_02_StackWithTwoQueues/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/09_02_StackWithTwoQueues/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/09_02_StackWithTwoQueues/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/09_02_StackWithTwoQueues/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_01_Fibonacci/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/10_01_Fibonacci/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_01_Fibonacci/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/10_01_Fibonacci/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_02_JumpFloor/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/10_02_JumpFloor/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_02_JumpFloor/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/10_02_JumpFloor/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_03_JumpFloorII/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/10_03_JumpFloorII/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_03_JumpFloorII/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/10_03_JumpFloorII/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_04_RectCover/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/10_04_RectCover/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/10_04_RectCover/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/10_04_RectCover/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/11_MinNumberInRotatedArray/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/11_MinNumberInRotatedArray/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/11_MinNumberInRotatedArray/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/11_MinNumberInRotatedArray/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/12_StringPathInMatrix/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/12_StringPathInMatrix/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/12_StringPathInMatrix/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/12_StringPathInMatrix/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/13_RobotMove/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/13_RobotMove/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/13_RobotMove/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/13_RobotMove/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/14_CuttingRope/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/14_CuttingRope/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/14_CuttingRope/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/14_CuttingRope/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/15_NumberOf1InBinary/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/15_NumberOf1InBinary/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/15_NumberOf1InBinary/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/15_NumberOf1InBinary/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/16_Power/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/16_Power/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/16_Power/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/16_Power/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/17_Print1ToMaxOfNDigits/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/17_Print1ToMaxOfNDigits/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/17_Print1ToMaxOfNDigits/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/17_Print1ToMaxOfNDigits/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/18_01_DeleteNodeInList/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/18_01_DeleteNodeInList/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/18_01_DeleteNodeInList/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/18_01_DeleteNodeInList/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/18_02_DeleteDuplicatedNode/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/18_02_DeleteDuplicatedNode/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/18_02_DeleteDuplicatedNode/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/18_02_DeleteDuplicatedNode/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/19_RegularExpressionsMatching/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/19_RegularExpressionsMatching/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/19_RegularExpressionsMatching/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/19_RegularExpressionsMatching/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/20_NumericStrings/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/20_NumericStrings/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/20_NumericStrings/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/20_NumericStrings/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/20_NumericStrings/Solution1.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/20_NumericStrings/Solution1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/21_ReorderArray/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/21_ReorderArray/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/21_ReorderArray/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/21_ReorderArray/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/22_KthNodeFromEnd/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/22_KthNodeFromEnd/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/22_KthNodeFromEnd/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/22_KthNodeFromEnd/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/23_EntryNodeInListLoop/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/23_EntryNodeInListLoop/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/23_EntryNodeInListLoop/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/23_EntryNodeInListLoop/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/24_ReverseList/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/24_ReverseList/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/24_ReverseList/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/24_ReverseList/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/25_MergeSortedLists/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/25_MergeSortedLists/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/25_MergeSortedLists/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/25_MergeSortedLists/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/26_SubstructureInTree/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/26_SubstructureInTree/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/26_SubstructureInTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/26_SubstructureInTree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/27_MirrorOfBinaryTree/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/27_MirrorOfBinaryTree/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/27_MirrorOfBinaryTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/27_MirrorOfBinaryTree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/28_SymmetricalBinaryTree/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/28_SymmetricalBinaryTree/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/28_SymmetricalBinaryTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/28_SymmetricalBinaryTree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/29_PrintMatrix/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/29_PrintMatrix/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/29_PrintMatrix/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/29_PrintMatrix/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/30_MinInStack/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/30_MinInStack/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/30_MinInStack/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/30_MinInStack/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/31_StackPushPopOrder/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/31_StackPushPopOrder/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/31_StackPushPopOrder/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/31_StackPushPopOrder/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/32_01_PrintTreeFromTopToBottom/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/32_01_PrintTreeFromTopToBottom/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/32_01_PrintTreeFromTopToBottom/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/32_01_PrintTreeFromTopToBottom/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/32_02_PrintTreesInLines/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/32_02_PrintTreesInLines/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/32_02_PrintTreesInLines/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/32_02_PrintTreesInLines/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/32_03_PrintTreesInZigzag/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/32_03_PrintTreesInZigzag/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/32_03_PrintTreesInZigzag/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/32_03_PrintTreesInZigzag/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/33_SquenceOfBST/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/33_SquenceOfBST/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/33_SquenceOfBST/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/33_SquenceOfBST/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/34_PathInTree/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/34_PathInTree/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/34_PathInTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/34_PathInTree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/35_CopyComplexList/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/35_CopyComplexList/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/35_CopyComplexList/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/35_CopyComplexList/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/36_ConvertBinarySearchTree/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/36_ConvertBinarySearchTree/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/36_ConvertBinarySearchTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/36_ConvertBinarySearchTree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/37_SerializeBinaryTrees/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/37_SerializeBinaryTrees/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/37_SerializeBinaryTrees/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/37_SerializeBinaryTrees/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/38_StringPermutation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/38_StringPermutation/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/38_StringPermutation/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/38_StringPermutation/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/39_MoreThanHalfNumber/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/39_MoreThanHalfNumber/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/39_MoreThanHalfNumber/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/39_MoreThanHalfNumber/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/40_KLeastNumbers/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/40_KLeastNumbers/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/40_KLeastNumbers/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/40_KLeastNumbers/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/41_StreamMedian/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/41_StreamMedian/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/41_StreamMedian/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/41_StreamMedian/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/42_GreatestSumOfSubarrays/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/42_GreatestSumOfSubarrays/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/42_GreatestSumOfSubarrays/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/42_GreatestSumOfSubarrays/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/43_NumberOf1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/43_NumberOf1/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/43_NumberOf1/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/43_NumberOf1/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/44_DigitsInSequence/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/44_DigitsInSequence/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/44_DigitsInSequence/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/44_DigitsInSequence/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/45_SortArrayForMinNumber/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/45_SortArrayForMinNumber/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/45_SortArrayForMinNumber/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/45_SortArrayForMinNumber/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/46_TranslateNumbersToStrings/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/46_TranslateNumbersToStrings/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/46_TranslateNumbersToStrings/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/46_TranslateNumbersToStrings/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/47_MaxValueOfGifts/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/47_MaxValueOfGifts/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/47_MaxValueOfGifts/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/47_MaxValueOfGifts/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/48_LongestSubstringWithoutDup/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/48_LongestSubstringWithoutDup/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/48_LongestSubstringWithoutDup/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/48_LongestSubstringWithoutDup/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/49_UglyNumber/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/49_UglyNumber/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/49_UglyNumber/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/49_UglyNumber/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/50_01_FirstNotRepeatingChar/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/50_01_FirstNotRepeatingChar/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/50_01_FirstNotRepeatingChar/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/50_01_FirstNotRepeatingChar/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/50_02_FristCharacterInStream/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/50_02_FristCharacterInStream/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/50_02_FristCharacterInStream/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/50_02_FristCharacterInStream/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/52_FirstCommonNodesInLists/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/52_FirstCommonNodesInLists/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/52_FirstCommonNodesInLists/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/52_FirstCommonNodesInLists/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/53_01_NumberOfK/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/53_01_NumberOfK/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/53_01_NumberOfK/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/53_01_NumberOfK/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/53_02_MissingNumber/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/53_02_MissingNumber/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/53_02_MissingNumber/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/53_02_MissingNumber/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/53_03_IntegerIdenticalToIndex/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/53_03_IntegerIdenticalToIndex/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/53_03_IntegerIdenticalToIndex/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/53_03_IntegerIdenticalToIndex/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/54_KthNodeInBST/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/54_KthNodeInBST/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/54_KthNodeInBST/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/54_KthNodeInBST/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/55_01_TreeDepth/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/55_01_TreeDepth/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/55_01_TreeDepth/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/55_01_TreeDepth/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/55_02_BalancedBinaryTree/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/55_02_BalancedBinaryTree/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/55_02_BalancedBinaryTree/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/55_02_BalancedBinaryTree/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/56_01_NumbersAppearOnce/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/56_01_NumbersAppearOnce/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/56_01_NumbersAppearOnce/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/56_01_NumbersAppearOnce/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/56_02_NumberAppearingOnce/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/56_02_NumberAppearingOnce/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/56_02_NumberAppearingOnce/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/56_02_NumberAppearingOnce/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/57_01_TwoNumbersWithSum/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/57_01_TwoNumbersWithSum/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/57_01_TwoNumbersWithSum/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/57_01_TwoNumbersWithSum/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/57_02_ContinuousSquenceWithSum/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/57_02_ContinuousSquenceWithSum/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/57_02_ContinuousSquenceWithSum/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/57_02_ContinuousSquenceWithSum/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/58_01_ReverseWordsInSentence/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/58_01_ReverseWordsInSentence/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/58_01_ReverseWordsInSentence/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/58_01_ReverseWordsInSentence/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/58_02_LeftRotateString/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/58_02_LeftRotateString/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/58_02_LeftRotateString/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/58_02_LeftRotateString/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/59_01_MaxInSlidingWindow/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/59_01_MaxInSlidingWindow/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/59_01_MaxInSlidingWindow/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/59_01_MaxInSlidingWindow/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/61_ContinousCards/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/61_ContinousCards/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/61_ContinousCards/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/61_ContinousCards/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jvm/src/main/resources/offer/剑指offer.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/src/main/resources/offer/剑指offer.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,6 +405,9 @@
       <workItem from="1625794481944" duration="17817000" />
       <workItem from="1626398522094" duration="595000" />
       <workItem from="1627003512437" duration="592000" />
+      <workItem from="1627538425034" duration="608000" />
+      <workItem from="1627905247611" duration="594000" />
+      <workItem from="1628731825641" duration="2350000" />
     </task>
     <task id="LOCAL-00001" summary="delete code">
       <created>1621587794225</created>
@@ -464,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626320402961</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="学习计划">
+      <created>1627538435308</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1627538435308</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,11 +687,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="221" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623306858708" />
-    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1626320402087">
+    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1627538434664">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638257422" />
-    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626320402087" />
+    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1627538434664" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1625542789758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -566,11 +749,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622189482059" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1626320404313">
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1627538436625">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638259668" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626320404313" />
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1627538436625" />
     <state x="2077" y="55" width="1483" height="839" maximized="true" key="dock-window-1" timestamp="1623052938470">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -593,82 +776,82 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/VolatileTest.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/VolatileTest.java</url>
           <line>23</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/VolatileTest.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/VolatileTest.java</url>
           <line>22</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/VolatileTest.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/VolatileTest.java</url>
           <line>20</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/leetcode/Solution.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Solution.java</url>
           <line>32</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/leetcode/Solution.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Solution.java</url>
           <line>30</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/leetcode/Solution.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Solution.java</url>
           <line>24</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/leetcode/Solution.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Solution.java</url>
           <line>25</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/leetcode/Solution.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Solution.java</url>
           <line>833</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/leetcode/Chujisuanfa.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Chujisuanfa.java</url>
           <line>275</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/leetcode/Tujiesuanfashujujiegou.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Tujiesuanfashujujiegou.java</url>
           <line>1681</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/leetcode/Tujiesuanfashujujiegou.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Tujiesuanfashujujiegou.java</url>
           <line>1576</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/leetcode/Tujiesuanfashujujiegou.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Tujiesuanfashujujiegou.java</url>
           <line>1546</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/dp/Solution.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/dp/Solution.java</url>
           <line>373</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/dp/Solution.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/dp/Solution.java</url>
           <line>351</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/dp/Solution.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/dp/Solution.java</url>
           <line>1241</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/JiangzhiOffer/DuplicationInArray/Solution.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/DuplicationInArray/Solution.java</url>
           <line>74</line>
           <properties class="JiangzhiOffer.DuplicationInArray.Solution" method="main">
             <option name="EMULATED" value="true" />
@@ -676,7 +859,7 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/jvm/src/main/java/leetcode/Tujiesuanfashujujiegou.java</url>
+          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Tujiesuanfashujujiegou.java</url>
           <line>1659</line>
           <properties class="leetcode.Tujiesuanfashujujiegou" method="main">
             <option name="EMULATED" value="true" />
