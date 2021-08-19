@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/note/image/20c142a633e23736e6eb9c02cc01ef65.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/2f432b77999bd3df8bdfcc2ebcaf41bf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/6d876a4328196e8c1bbcd9e0d7af8991.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/73287494655810e6cb5daa156412cd7a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/84b783b53a91a99322aac484a877d914.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/9fe4186a6e2b6d65354362f4b7e28c16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/cd1cf0ae5271d038efafcd9d6f31cc15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/dc9069655990ed070f7666bde8be5d62.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/f7fbd283391c6c3730d4ddb42349d201.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/redis/Redis为什么这么快.md" afterDir="false" />
+    <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="redis为啥这么快">
+      <change afterPath="$PROJECT_DIR$/note/redis/AOF.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/redis/RDB.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -244,7 +236,7 @@
       <workItem from="1627003512437" duration="592000" />
       <workItem from="1627538425034" duration="608000" />
       <workItem from="1627905247611" duration="594000" />
-      <workItem from="1628731825641" duration="15335000" />
+      <workItem from="1628731825641" duration="17997000" />
     </task>
     <task id="LOCAL-00001" summary="delete code">
       <created>1621587794225</created>
@@ -498,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629258903664</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="redis为啥这么快">
+      <created>1629342788643</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1629342788643</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +515,8 @@
     <MESSAGE value="学习计划" />
     <MESSAGE value="算法项目" />
     <MESSAGE value="redis 源码注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis 源码注释" />
+    <MESSAGE value="redis为啥这么快" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis为啥这么快" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1622539765107">
@@ -540,11 +540,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="221" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623306858708" />
-    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1629258902517">
+    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1629342857639">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638257422" />
-    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629258902517" />
+    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629342857639" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1625542789758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -602,11 +602,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622189482059" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1629264963924">
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1629342873622">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638259668" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629264963924" />
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629342873622" />
     <state x="2077" y="55" width="1483" height="839" maximized="true" key="dock-window-1" timestamp="1623052938470">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
