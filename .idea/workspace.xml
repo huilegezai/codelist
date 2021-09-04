@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/note/image/0648d654d33994a48b934268329c830d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/1921b665c6b3a60ebc4f71000c4052a0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/46a8242344ecf7d3b687b07f1b93377b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/8598923104fdf9de19a13721ceeeac75.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/b22ece678fb81ff7b8c711f648fb00d4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/fce9601db2a96c24c82ef8cdb33e4a54.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/redis/RocketMQ 消息丢失场景分析及如何解决.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/redis/消息被重复消费，怎么避免？有什么好的解决方案.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/redis/Redis基础数据结构.md" beforeDir="false" afterPath="$PROJECT_DIR$/note/redis/Redis基础数据结构.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="06ef4518-0511-47ef-9294-677ba471c3a8" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -51,12 +59,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\github\codelist\note\image" />
-      <recent name="D:\github\codelist" />
-      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\NextNodeInBinaryTrees" />
-      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\ConstructBinaryTree" />
-      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\PrintListInReversedOrder" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github\codelist\jvm\src\main\resources" />
+      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\03_01_DuplicationInArray" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="JiangzhiOffer.NextNodeInBinaryTrees" />
@@ -65,9 +70,12 @@
       <recent name="JiangzhiOffer.ReplaceSpaces" />
       <recent name="JiangzhiOffer.FindInPartiallySortedMatrix" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\github\codelist\jvm\src\main\resources" />
-      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\03_01_DuplicationInArray" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\codelist\note\image" />
+      <recent name="D:\github\codelist" />
+      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\NextNodeInBinaryTrees" />
+      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\ConstructBinaryTree" />
+      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\PrintListInReversedOrder" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Solution (1)">
@@ -136,15 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -238,7 +244,9 @@
       <workItem from="1627538425034" duration="608000" />
       <workItem from="1627905247611" duration="594000" />
       <workItem from="1628731825641" duration="24967000" />
-      <workItem from="1629943072924" duration="1193000" />
+      <workItem from="1629943072924" duration="1879000" />
+      <workItem from="1630043919017" duration="2125000" />
+      <workItem from="1630567414230" duration="8832000" />
     </task>
     <task id="LOCAL-00001" summary="delete code">
       <created>1621587794225</created>
@@ -513,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629352674227</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="redis为啥这么快">
+      <created>1629970177996</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1629970177996</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,11 +571,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="221" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623306858708" />
-    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1629352673568">
+    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1629970177287">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638257422" />
-    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629352673568" />
+    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629970177287" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1625542789758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -618,11 +633,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622189482059" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1629352682508">
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1629970179435">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638259668" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629352682508" />
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629970179435" />
     <state x="2077" y="55" width="1483" height="839" maximized="true" key="dock-window-1" timestamp="1623052938470">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
