@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/note/image/0648d654d33994a48b934268329c830d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/1921b665c6b3a60ebc4f71000c4052a0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/46a8242344ecf7d3b687b07f1b93377b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/8598923104fdf9de19a13721ceeeac75.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/b22ece678fb81ff7b8c711f648fb00d4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/fce9601db2a96c24c82ef8cdb33e4a54.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/redis/RocketMQ 消息丢失场景分析及如何解决.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/redis/消息被重复消费，怎么避免？有什么好的解决方案.md" afterDir="false" />
+    <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="Rocke 消息重复消费和消息丢失的场景">
+      <change afterPath="$PROJECT_DIR$/note/image/08dbb613707697df7b58aba04ef58707.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/47bfbe32bbedee856622ac2501e7a593.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/504b11c77f6a8609f09f23fac659c4da.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/69fe5712c096ade14e2e3b9b1270fcf2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/6b47b2cc304a3705df3db18a492c5130.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/7060774686fe44c6755b545e62f9a88c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/7b8ca8721e5f7da70376875f14e96cfb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/9d78be4b0ac44a52c9ce629e8f63bf2d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/9fe12b61c540cd6435a45d1603e5f727.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/b93293bab20f7503950b730594703a53.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/ca24c554ef22b6a588f42b1713d3409f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/e7086f8b018dcb7ea80d43db054dfccc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/f5f48a95c05200d1ce561868be682ed3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/image/fb33e93d464712d06b8b7c1b5b771ba8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/redis/Redis 与 MySQL 双写一致性如何保证.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +253,7 @@
       <workItem from="1628731825641" duration="24967000" />
       <workItem from="1629943072924" duration="1879000" />
       <workItem from="1630043919017" duration="2125000" />
-      <workItem from="1630567414230" duration="8832000" />
+      <workItem from="1630567414230" duration="19354000" />
     </task>
     <task id="LOCAL-00001" summary="delete code">
       <created>1621587794225</created>
@@ -528,7 +535,21 @@
       <option name="project" value="LOCAL" />
       <updated>1629970177996</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Rocke 消息重复消费和消息丢失的场景">
+      <created>1630724784100</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1630724784100</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Rocke 消息重复消费和消息丢失的场景">
+      <created>1630725328379</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1630725328379</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,7 +568,8 @@
     <MESSAGE value="算法项目" />
     <MESSAGE value="redis 源码注释" />
     <MESSAGE value="redis为啥这么快" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis为啥这么快" />
+    <MESSAGE value="Rocke 消息重复消费和消息丢失的场景" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rocke 消息重复消费和消息丢失的场景" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1622539765107">
@@ -571,11 +593,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="221" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623306858708" />
-    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1629970177287">
+    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1630725327734">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638257422" />
-    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629970177287" />
+    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1630725327734" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1625542789758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -633,11 +655,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622189482059" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1629970179435">
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1630725331506">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638259668" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629970179435" />
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1630725331506" />
     <state x="2077" y="55" width="1483" height="839" maximized="true" key="dock-window-1" timestamp="1623052938470">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
