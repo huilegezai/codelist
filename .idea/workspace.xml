@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/note/image/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/1630916153(1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/1630917847(1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/1630918424(1).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/image/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/mysql/MySQL索引背后的数据结构及算法原理.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/rocketmq/说说延时队列实现的几种姿势.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/mysql/到底可不可以使用join.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="06ef4518-0511-47ef-9294-677ba471c3a8" />
+  <component name="JupyterTrust" id="958b87e0-ab3a-4f53-b596-96090f2c5f2b" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -55,25 +37,31 @@
     </option>
   </component>
   <component name="ProjectId" id="1sq6OBzESfQJdvahTZTv4KDx4EB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/note/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/note/mysql/MySQL实战PPT整理" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\codelist\note\mysql\MySQL实战PPT整理" />
+      <recent name="D:\github\codelist\note\mysql" />
       <recent name="D:\github\codelist\note\image" />
-      <recent name="D:\github\codelist\jvm\src\main\resources" />
-      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\03_01_DuplicationInArray" />
+      <recent name="D:\github\codelist" />
+      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\NextNodeInBinaryTrees" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="JiangzhiOffer.NextNodeInBinaryTrees" />
@@ -82,12 +70,10 @@
       <recent name="JiangzhiOffer.ReplaceSpaces" />
       <recent name="JiangzhiOffer.FindInPartiallySortedMatrix" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\github\codelist\note\image" />
-      <recent name="D:\github\codelist" />
-      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\NextNodeInBinaryTrees" />
-      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\ConstructBinaryTree" />
-      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\PrintListInReversedOrder" />
+      <recent name="D:\github\codelist\jvm\src\main\resources" />
+      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\03_01_DuplicationInArray" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Solution (1)">
@@ -258,7 +244,9 @@
       <workItem from="1628731825641" duration="24967000" />
       <workItem from="1629943072924" duration="1879000" />
       <workItem from="1630043919017" duration="2125000" />
-      <workItem from="1630567414230" duration="27079000" />
+      <workItem from="1630567414230" duration="27979000" />
+      <workItem from="1631005086861" duration="2318000" />
+      <workItem from="1632736440024" duration="1969000" />
     </task>
     <task id="LOCAL-00001" summary="delete code">
       <created>1621587794225</created>
@@ -561,13 +549,21 @@
       <option name="project" value="LOCAL" />
       <updated>1630910304705</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="说说延时队列实现的几种姿势">
+      <created>1630919168330</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1630919168330</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="delete code" />
     <MESSAGE value="add c 语音" />
     <MESSAGE value="add code" />
@@ -582,7 +578,8 @@
     <MESSAGE value="redis为啥这么快" />
     <MESSAGE value="Rocke 消息重复消费和消息丢失的场景" />
     <MESSAGE value="Redis 与 MySQL 双写一致性如何保证？" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redis 与 MySQL 双写一致性如何保证？" />
+    <MESSAGE value="说说延时队列实现的几种姿势" />
+    <option name="LAST_COMMIT_MESSAGE" value="说说延时队列实现的几种姿势" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2506" y="198" key="#Inspections" timestamp="1622539765107">
@@ -606,11 +603,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="221" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623306858708" />
-    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1630910303971">
+    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1630919167568">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638257422" />
-    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1630910303971" />
+    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1630919167568" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1625542789758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -668,11 +665,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622189482059" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1630910358562">
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1630919169737">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638259668" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1630910358562" />
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1630919169737" />
     <state x="2077" y="55" width="1483" height="839" maximized="true" key="dock-window-1" timestamp="1623052938470">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
