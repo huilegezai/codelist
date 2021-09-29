@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/note/mysql/到底可不可以使用join.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/linux/selectpollepoll.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/mysql/面霸篇：万字 MySQL 面试终结（30 问与答）.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/redis/Redis核心技术与实战.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/redis/面试官Redis夺命连坏20问.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/mysql/到底可不可以使用join.md" beforeDir="false" afterPath="$PROJECT_DIR$/note/mysql/到底可不可以使用join.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +249,7 @@
       <workItem from="1630043919017" duration="2125000" />
       <workItem from="1630567414230" duration="27979000" />
       <workItem from="1631005086861" duration="2318000" />
-      <workItem from="1632736440024" duration="1969000" />
+      <workItem from="1632736440024" duration="3210000" />
     </task>
     <task id="LOCAL-00001" summary="delete code">
       <created>1621587794225</created>
@@ -556,7 +559,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630919168330</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="MySQL笔记">
+      <created>1632819870063</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1632819870063</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -579,35 +589,15 @@
     <MESSAGE value="Rocke 消息重复消费和消息丢失的场景" />
     <MESSAGE value="Redis 与 MySQL 双写一致性如何保证？" />
     <MESSAGE value="说说延时队列实现的几种姿势" />
-    <option name="LAST_COMMIT_MESSAGE" value="说说延时队列实现的几种姿势" />
+    <MESSAGE value="MySQL笔记" />
+    <option name="LAST_COMMIT_MESSAGE" value="MySQL笔记" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2506" y="198" key="#Inspections" timestamp="1622539765107">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2506" y="198" key="#Inspections/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622539765107" />
-    <state x="440" y="94" key="#Project_Structure" timestamp="1622785669711">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1622785669711" />
-    <state x="2360" y="94" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622455850176" />
-    <state x="2334" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622456004716">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2334" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622456004716" />
-    <state x="2610" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1622188758004">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2610" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622188758004" />
-    <state x="715" y="221" key="#xdebugger.evaluate" timestamp="1623306858708">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="715" y="221" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623306858708" />
-    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1630919167568">
+    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1632819869379">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638257422" />
-    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1630919167568" />
+    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632819869379" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1625542789758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -657,32 +647,16 @@
     </state>
     <state width="1877" height="338" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625800400101" />
     <state width="1877" height="315" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625122115793" />
-    <state x="2460" y="254" key="IDE.errors.dialog" timestamp="1623147678092">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2460" y="254" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1623147678092" />
-    <state x="2360" y="94" key="SettingsEditor" timestamp="1622189482059">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622189482059" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1630919169737">
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1632819871429">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638259668" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1630919169737" />
-    <state x="2077" y="55" width="1483" height="839" maximized="true" key="dock-window-1" timestamp="1623052938470">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2077" y="55" width="1483" height="839" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1623052938470" />
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632819871429" />
     <state x="2581" y="252" width="598" height="536" key="find.popup" timestamp="1626053245697">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="252" width="598" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625712525776" />
     <state x="2581" y="252" width="598" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626053245697" />
-    <state x="2254" y="180" key="new project wizard" timestamp="1622455335025">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2254" y="180" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1622455335025" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1629339951194">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
