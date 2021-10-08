@@ -152,7 +152,9 @@ Redis 支持多种数据数据类型，每种基本类型，可能对多种数�
 
 **I/O 多路复用**
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/PoF8jo1Pmpz5ftMEn1xpdGVqjkEhEQD5PIdxxXhX2DFlnJtL5E2pssomwYZB2ibvz0YXmjK8OpPv0jUb6GnyibxQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)I/O 多路复用
+![图片](https://mmbiz.qpic.cn/mmbiz_png/PoF8jo1Pmpz5ftMEn1xpdGVqjkEhEQD5PIdxxXhX2DFlnJtL5E2pssomwYZB2ibvz0YXmjK8OpPv0jUb6GnyibxQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+​                         																								I/O 多路复用
 
 > 多路I/O复用技术可以让单个线程高效的处理多个连接请求，而Redis使用用epoll作为I/O多路复用技术的实现。并且，Redis自身的事件处理模型将epoll中的连接、读写、关闭都转换为事件，不在网络I/O上浪费过多的时间。
 
@@ -182,7 +184,11 @@ Redis直接自己构建了VM机制 ，不会像一般的系统会调用系统函
 
 先来看一个常见的缓存使用方式：读请求来了，先查下缓存，缓存有值命中，就直接返回；缓存没命中，就去查数据库，然后把数据库的值更新到缓存，再返回。
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/PoF8jo1Pmpz5ftMEn1xpdGVqjkEhEQD5AWpGbywxZXaFZ6b5WRBy1PPcbMtGnpNIDcHa133PlLVJcIcwriaCjNA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)读取缓存
+
+
+![图片](https://mmbiz.qpic.cn/mmbiz_png/PoF8jo1Pmpz5ftMEn1xpdGVqjkEhEQD5AWpGbywxZXaFZ6b5WRBy1PPcbMtGnpNIDcHa133PlLVJcIcwriaCjNA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+​                                                                                                                           读取缓存
 
 **缓存穿透**：指查询一个一定不存在的数据，由于缓存是不命中时需要从数据库查询，查不到数据则不写入缓存，这将导致这个不存在的数据每次请求都要到数据库去查询，进而给数据库带来压力。
 
@@ -202,18 +208,18 @@ Redis直接自己构建了VM机制 ，不会像一般的系统会调用系统函
 
 > 布隆过滤器原理：它由初始值为0的位图数组和N个哈希函数组成。一个对一个key进行N个hash算法获取N个值，在比特数组中将这N个值散列后设定为1，然后查的时候如果特定的这几个位置都为1，那么布隆过滤器判断该key存在。
 
-### 4.2 缓存雪奔问题
+### 4.2 缓存雪崩问题
 
-**缓存雪奔：** 指缓存中数据大批量到过期时间，而查询数据量巨大，请求都直接访问数据库，引起数据库压力过大甚至down机。
+**缓存雪崩：** 指缓存中数据大批量到过期时间，而查询数据量巨大，请求都直接访问数据库，引起数据库压力过大甚至down机。
 
-- 缓存雪奔一般是由于大量数据同时过期造成的，对于这个原因，可通过均匀设置过期时间解决，即让过期时间相对离散一点。如采用一个较大固定值+一个较小的随机值，5小时+0到1800秒酱紫。
-- Redis 故障宕机也可能引起缓存雪奔。这就需要构造Redis高可用集群啦。
+- 缓存雪崩一般是由于大量数据同时过期造成的，对于这个原因，可通过均匀设置过期时间解决，即让过期时间相对离散一点。如采用一个较大固定值+一个较小的随机值，5小时+0到1800秒酱紫。
+- Redis 故障宕机也可能引起缓存雪崩。这就需要构造Redis高可用集群啦。
 
 ### 4.3 缓存击穿问题
 
 **缓存击穿：** 指热点key在某个时间点过期的时候，而恰好在这个时间点对这个Key有大量的并发请求过来，从而大量的请求打到db。
 
-缓存击穿看着有点像，其实它两区别是，缓存雪奔是指数据库压力过大甚至down机，缓存击穿只是大量并发请求到了DB数据库层面。可以认为击穿是缓存雪奔的一个子集吧。有些文章认为它俩区别，是区别在于击穿针对某一热点key缓存，雪奔则是很多key。
+缓存击穿看着有点像，其实它两区别是，缓存雪崩是指数据库压力过大甚至down机，缓存击穿只是大量并发请求到了DB数据库层面。可以认为击穿是缓存雪奔的一个子集吧。有些文章认为它俩区别，是区别在于击穿针对某一热点key缓存，雪奔则是很多key。
 
 解决方案就有两种：
 

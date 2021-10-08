@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/note/linux/selectpollepoll.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/mysql/面霸篇：万字 MySQL 面试终结（30 问与答）.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/redis/Redis核心技术与实战.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/redis/面试官Redis夺命连坏20问.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/note/mysql/到底可不可以使用join.md" beforeDir="false" afterPath="$PROJECT_DIR$/note/mysql/到底可不可以使用join.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/redis/Redis为什么这么快.md" beforeDir="false" afterPath="$PROJECT_DIR$/note/redis/Redis为什么这么快.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note/redis/面试官Redis夺命连坏20问.md" beforeDir="false" afterPath="$PROJECT_DIR$/note/redis/面试官Redis夺命连坏20问.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +246,7 @@
       <workItem from="1630043919017" duration="2125000" />
       <workItem from="1630567414230" duration="27979000" />
       <workItem from="1631005086861" duration="2318000" />
-      <workItem from="1632736440024" duration="3210000" />
+      <workItem from="1632736440024" duration="3840000" />
     </task>
     <task id="LOCAL-00001" summary="delete code">
       <created>1621587794225</created>
@@ -566,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632819870063</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="MySQL笔记">
+      <created>1632903991119</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1632903991119</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,11 +597,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="MySQL笔记" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1632819869379">
+    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1632903990378">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638257422" />
-    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632819869379" />
+    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632903990378" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1625542789758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -647,11 +651,11 @@
     </state>
     <state width="1877" height="338" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625800400101" />
     <state width="1877" height="315" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625122115793" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1632819871429">
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1632903992438">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625638259668" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632819871429" />
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1632903992438" />
     <state x="2581" y="252" width="598" height="536" key="find.popup" timestamp="1626053245697">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
