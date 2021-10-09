@@ -526,7 +526,9 @@ redis集群通过ping/pong消息，实现故障发现。这个环境包括**主�
 
 流程如下：
 
-![图片](https://mmbiz.qpic.cn/mmbiz_png/PoF8jo1Pmpz5ftMEn1xpdGVqjkEhEQD57IuSiaVBOicKRKsfH0NfXgJiaTSaibZlQf7NBReBmYelEHklRn5dB1icGRQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)客观下线
+![图片](https://mmbiz.qpic.cn/mmbiz_png/PoF8jo1Pmpz5ftMEn1xpdGVqjkEhEQD57IuSiaVBOicKRKsfH0NfXgJiaTSaibZlQf7NBReBmYelEHklRn5dB1icGRQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+​                                                                                                                                       客观下线
 
 **故障恢复**：故障发现后，如果下线节点的是主节点，则需要在它的从节点中选一个替换它，以保证集群的高可用。流程如下：
 
