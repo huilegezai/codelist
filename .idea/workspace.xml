@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/note/mysql/MVCC原理详解.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/note/算法/一次搞透，面试中的TopK问题！.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="怎么解决消息重复消费问题？.md" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="958b87e0-ab3a-4f53-b596-96090f2c5f2b" />
+  <component name="JupyterTrust" id="4f555acc-e579-40e5-85e1-99c53074a481" />
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -143,15 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -250,6 +244,7 @@
       <workItem from="1630567414230" duration="27979000" />
       <workItem from="1631005086861" duration="2318000" />
       <workItem from="1632736440024" duration="6372000" />
+      <workItem from="1634544024254" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="delete code">
       <created>1621587794225</created>
@@ -587,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633773662045</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="怎么解决消息重复消费问题？.md">
+      <created>1634544086337</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1634544086337</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,72 +614,27 @@
     <MESSAGE value="说说延时队列实现的几种姿势" />
     <MESSAGE value="MySQL笔记" />
     <MESSAGE value="Redis为什么变慢了？一文讲透如何排查Redis性能问题.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redis为什么变慢了？一文讲透如何排查Redis性能问题.md" />
+    <MESSAGE value="怎么解决消息重复消费问题？.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="怎么解决消息重复消费问题？.md" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="86" key="CommitChangelistDialog2" timestamp="1633773661403">
+    <state x="558" y="86" key="CommitChangelistDialog2" timestamp="1634544122621">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1633773661403" />
+    <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634544122621" />
     <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633659532971" />
-    <state x="184" y="85" key="DiffContextDialog" timestamp="1625542789758">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625542789758" />
-    <state x="2104" y="85" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1624514437807" />
     <state x="2521" y="235" key="FileChooserDialogImpl" timestamp="1629194296745">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2521" y="235" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629194296745" />
-    <state width="1877" height="338" key="GridCell.Tab.0.bottom" timestamp="1625800400101">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1634544128807">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625800400101" />
-    <state width="1877" height="315" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625122044201" />
-    <state width="1877" height="338" key="GridCell.Tab.0.center" timestamp="1625800400101">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625800400101" />
-    <state width="1877" height="315" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625122044201" />
-    <state width="1877" height="338" key="GridCell.Tab.0.left" timestamp="1625800400101">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625800400101" />
-    <state width="1877" height="315" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625122044201" />
-    <state width="1877" height="338" key="GridCell.Tab.0.right" timestamp="1625800400101">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="338" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625800400101" />
-    <state width="1877" height="315" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625122044201" />
-    <state width="1877" height="338" key="GridCell.Tab.1.bottom" timestamp="1625800400102">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625800400102" />
-    <state width="1877" height="315" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625122115793" />
-    <state width="1877" height="338" key="GridCell.Tab.1.center" timestamp="1625800400101">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625800400101" />
-    <state width="1877" height="315" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625122115793" />
-    <state width="1877" height="338" key="GridCell.Tab.1.left" timestamp="1625800400101">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625800400101" />
-    <state width="1877" height="315" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625122115793" />
-    <state width="1877" height="338" key="GridCell.Tab.1.right" timestamp="1625800400101">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="338" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625800400101" />
-    <state width="1877" height="315" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625122115793" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1633773663527">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1633773663527" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634544128807" />
     <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633659535116" />
     <state x="2581" y="252" width="598" height="536" key="find.popup" timestamp="1626053245697">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="661" y="252" width="598" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1625712525776" />
     <state x="2581" y="252" width="598" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626053245697" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1629339951194">
       <screen x="1920" y="0" width="1920" height="1040" />
