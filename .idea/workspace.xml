@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/note/redis/缓存和数据库一致性问题，看这篇就够了.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/note/redis/颠覆认知——Redis会遇到的15个「坑」，你踩过几个？.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,14 +250,7 @@
       <workItem from="1632736440024" duration="6372000" />
       <workItem from="1634544024254" duration="309000" />
       <workItem from="1634701111873" duration="2582000" />
-      <workItem from="1634781091143" duration="604000" />
-    </task>
-    <task id="LOCAL-00002" summary="add code">
-      <created>1621588326413</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1621588326413</updated>
+      <workItem from="1634781091143" duration="1778000" />
     </task>
     <task id="LOCAL-00003" summary="add c 语音">
       <created>1621846616443</created>
@@ -596,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634701125707</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="缓存和数据库一致性问题，看这篇就够了.md">
+      <created>1634794763269</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1634794763269</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -622,14 +621,15 @@
     <MESSAGE value="MySQL笔记" />
     <MESSAGE value="Redis为什么变慢了？一文讲透如何排查Redis性能问题.md" />
     <MESSAGE value="怎么解决消息重复消费问题？.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="怎么解决消息重复消费问题？.md" />
+    <MESSAGE value="缓存和数据库一致性问题，看这篇就够了.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="缓存和数据库一致性问题，看这篇就够了.md" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="558" y="86" key="CommitChangelistDialog2" timestamp="1634701125024">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1634794762699">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634701125024" />
-    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633659532971" />
+    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1634794762699" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1634701120554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -638,11 +638,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2521" y="235" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629194296745" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1634707083466">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1634794765165">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634707083466" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1633659535116" />
+    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1634794765165" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1629339951194">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
