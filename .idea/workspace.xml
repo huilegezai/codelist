@@ -1,756 +1,287 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/note/redis/秒杀系统如何设计.md" afterDir="false" />
+    <list default="true" id="070c3c3f-affc-440f-9229-cfec40cf8748" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codelist.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin File" />
-        <option value="Kotlin Class" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="master" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="-694">
+                <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="4f555acc-e579-40e5-85e1-99c53074a481" />
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\idea\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
     </option>
   </component>
-  <component name="ProjectId" id="1sq6OBzESfQJdvahTZTv4KDx4EB" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="codelist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codelist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="codelist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="codelist" type="462c0819:PsiDirectoryNode" />
+              <item name="note" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.2.0/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/note/mysql/MySQL实战PPT整理" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\github\codelist\note\mysql\MySQL实战PPT整理" />
-      <recent name="D:\github\codelist\note\mysql" />
-      <recent name="D:\github\codelist\note\image" />
-      <recent name="D:\github\codelist" />
-      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\NextNodeInBinaryTrees" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="JiangzhiOffer.NextNodeInBinaryTrees" />
-      <recent name="JiangzhiOffer.ConstructBinaryTree" />
-      <recent name="JiangzhiOffer.PrintListInReversedOrder" />
-      <recent name="JiangzhiOffer.ReplaceSpaces" />
-      <recent name="JiangzhiOffer.FindInPartiallySortedMatrix" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\github\codelist\note\image" />
-      <recent name="D:\github\codelist\jvm\src\main\resources" />
-      <recent name="D:\github\codelist\jvm\src\main\java\JiangzhiOffer\03_01_DuplicationInArray" />
-    </key>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
-  <component name="RunManager" selected="Application.Solution (1)">
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithm.BinarySearch" />
-      <module name="jvm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
     </configuration>
-    <configuration name="Chujisuanfa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.Chujisuanfa" />
-      <module name="jvm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
     </configuration>
-    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.Solution" />
-      <module name="jvm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.Solution" />
-      <module name="jvm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tujiesuanfashujujiegou" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.Tujiesuanfashujujiegou" />
-      <module name="jvm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
       </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
       <properties />
       <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
-    <configuration name="CmsAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="cms-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mtcarpenter.mall.CmsAdminApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MallGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="mall-gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mtcarpenter.mall.MallGatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MallPortalMemberApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="member-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mtcarpenter.mall.portal.MallPortalMemberApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OmsAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="oms-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mtcarpenter.mall.OmsAdminApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PmsAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="pms-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mtcarpenter.mall.PmsAdminApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SmsAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="sms-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mtcarpenter.mall.SmsAdminApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StorageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="mall-storage" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mtcarpenter.mall.StorageApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UmsAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="ums-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mtcarpenter.mall.UmsAdminApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Solution (1)" />
-        <item itemvalue="Application.Tujiesuanfashujujiegou" />
-        <item itemvalue="Application.Chujisuanfa" />
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.BinarySearch" />
-      </list>
-    </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f8faed9e-17ce-4b65-abb3-eb574a0af99f" name="Default Changelist" comment="" />
-      <created>1621587738542</created>
+      <changelist id="070c3c3f-affc-440f-9229-cfec40cf8748" name="Default" comment="" />
+      <created>1637828727740</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1621587738542</updated>
-      <workItem from="1621587740138" duration="5154000" />
-      <workItem from="1622167546237" duration="11195000" />
-      <workItem from="1622605569087" duration="38901000" />
-      <workItem from="1623288807517" duration="3803000" />
-      <workItem from="1623722418223" duration="44710000" />
-      <workItem from="1624411336802" duration="28031000" />
-      <workItem from="1624584681714" duration="22216000" />
-      <workItem from="1624845148283" duration="48015000" />
-      <workItem from="1625103346438" duration="57578000" />
-      <workItem from="1625794481944" duration="17817000" />
-      <workItem from="1626398522094" duration="595000" />
-      <workItem from="1627003512437" duration="592000" />
-      <workItem from="1627538425034" duration="608000" />
-      <workItem from="1627905247611" duration="594000" />
-      <workItem from="1628731825641" duration="24967000" />
-      <workItem from="1629943072924" duration="1879000" />
-      <workItem from="1630043919017" duration="2125000" />
-      <workItem from="1630567414230" duration="27979000" />
-      <workItem from="1631005086861" duration="2318000" />
-      <workItem from="1632736440024" duration="6372000" />
-      <workItem from="1634544024254" duration="309000" />
-      <workItem from="1634701111873" duration="2582000" />
-      <workItem from="1634781091143" duration="7424000" />
+      <updated>1637828727740</updated>
+      <workItem from="1637828735018" duration="185000" />
     </task>
-    <task id="LOCAL-00006" summary="add code">
-      <created>1622798241265</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1622798241265</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add code">
-      <created>1622801043849</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1622801043849</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add code">
-      <created>1623032357533</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1623032357533</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add code">
-      <created>1623033763828</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1623033763828</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add code">
-      <created>1623116061470</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1623116061470</updated>
-    </task>
-    <task id="LOCAL-00011" summary="add code">
-      <created>1623202255646</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1623202255646</updated>
-    </task>
-    <task id="LOCAL-00012" summary="add code">
-      <created>1623722447408</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1623722447408</updated>
-    </task>
-    <task id="LOCAL-00013" summary="add code">
-      <created>1623754132096</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1623754132096</updated>
-    </task>
-    <task id="LOCAL-00014" summary="add code">
-      <created>1623827686479</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1623827686479</updated>
-    </task>
-    <task id="LOCAL-00015" summary="add code">
-      <created>1624239591285</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1624239591285</updated>
-    </task>
-    <task id="LOCAL-00016" summary="输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。">
-      <created>1624245417384</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1624245417384</updated>
-    </task>
-    <task id="LOCAL-00017" summary="输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。">
-      <created>1624325373873</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1624325373873</updated>
-    </task>
-    <task id="LOCAL-00018" summary="输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。">
-      <created>1624329872792</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1624329872792</updated>
-    </task>
-    <task id="LOCAL-00019" summary="回文字符">
-      <created>1624330922993</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1624330922993</updated>
-    </task>
-    <task id="LOCAL-00020" summary="回文字符">
-      <created>1624355569478</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1624355569478</updated>
-    </task>
-    <task id="LOCAL-00021" summary="杨辉三角">
-      <created>1624514460039</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1624514460039</updated>
-    </task>
-    <task id="LOCAL-00022" summary="杨辉三角">
-      <created>1624526405318</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1624526405318</updated>
-    </task>
-    <task id="LOCAL-00023" summary="杨辉三角">
-      <created>1624530722131</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1624530722131</updated>
-    </task>
-    <task id="LOCAL-00024" summary="杨辉三角">
-      <created>1624599881886</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1624599881886</updated>
-    </task>
-    <task id="LOCAL-00025" summary="杨辉三角">
-      <created>1624613965529</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1624613965529</updated>
-    </task>
-    <task id="LOCAL-00026" summary="杨辉三角">
-      <created>1624876931198</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1624876931198</updated>
-    </task>
-    <task id="LOCAL-00027" summary="杨辉三角">
-      <created>1625021097626</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1625021097626</updated>
-    </task>
-    <task id="LOCAL-00028" summary="初级算法">
-      <created>1625043425722</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1625043425722</updated>
-    </task>
-    <task id="LOCAL-00029" summary="初级算法">
-      <created>1625132650100</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1625132650100</updated>
-    </task>
-    <task id="LOCAL-00030" summary="动态规划">
-      <created>1625542805744</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1625542805744</updated>
-    </task>
-    <task id="LOCAL-00031" summary="动态规划">
-      <created>1625638258315</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1625638258315</updated>
-    </task>
-    <task id="LOCAL-00032" summary="学习计划">
-      <created>1625794535132</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1625794535132</updated>
-    </task>
-    <task id="LOCAL-00033" summary="学习计划">
-      <created>1626320402961</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1626320402961</updated>
-    </task>
-    <task id="LOCAL-00034" summary="学习计划">
-      <created>1627538435308</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1627538435308</updated>
-    </task>
-    <task id="LOCAL-00035" summary="算法项目">
-      <created>1629194352710</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1629194352710</updated>
-    </task>
-    <task id="LOCAL-00036" summary="redis 源码注释">
-      <created>1629258903664</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1629258903664</updated>
-    </task>
-    <task id="LOCAL-00037" summary="redis为啥这么快">
-      <created>1629342788643</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1629342788643</updated>
-    </task>
-    <task id="LOCAL-00038" summary="redis为啥这么快">
-      <created>1629352242700</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1629352242700</updated>
-    </task>
-    <task id="LOCAL-00039" summary="redis为啥这么快">
-      <created>1629352674227</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1629352674227</updated>
-    </task>
-    <task id="LOCAL-00040" summary="redis为啥这么快">
-      <created>1629970177996</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1629970177996</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Rocke 消息重复消费和消息丢失的场景">
-      <created>1630724784100</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1630724784100</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Rocke 消息重复消费和消息丢失的场景">
-      <created>1630725328379</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1630725328379</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Redis 与 MySQL 双写一致性如何保证？">
-      <created>1630910304705</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1630910304705</updated>
-    </task>
-    <task id="LOCAL-00044" summary="说说延时队列实现的几种姿势">
-      <created>1630919168330</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1630919168330</updated>
-    </task>
-    <task id="LOCAL-00045" summary="MySQL笔记">
-      <created>1632819870063</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1632819870063</updated>
-    </task>
-    <task id="LOCAL-00046" summary="MySQL笔记">
-      <created>1632903991119</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1632903991119</updated>
-    </task>
-    <task id="LOCAL-00047" summary="MySQL笔记">
-      <created>1633659533695</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1633659533695</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Redis为什么变慢了？一文讲透如何排查Redis性能问题.md">
-      <created>1633773662045</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1633773662045</updated>
-    </task>
-    <task id="LOCAL-00049" summary="怎么解决消息重复消费问题？.md">
-      <created>1634544086337</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1634544086337</updated>
-    </task>
-    <task id="LOCAL-00050" summary="怎么解决消息重复消费问题？.md">
-      <created>1634701125707</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1634701125707</updated>
-    </task>
-    <task id="LOCAL-00051" summary="缓存和数据库一致性问题，看这篇就够了.md">
-      <created>1634794763269</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1634794763269</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Redis会遇到的15个坑">
-      <created>1635125893308</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1635125893308</updated>
-    </task>
-    <task id="LOCAL-00053" summary="把Redis当作队列来用，真的合适吗？.md">
-      <created>1635131182290</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1635131182290</updated>
-    </task>
-    <task id="LOCAL-00054" summary="深度剖析:Redis分布式锁到底安全吗">
-      <created>1635146810022</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1635146810022</updated>
-    </task>
-    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="185000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="delete code" />
-    <MESSAGE value="add c 语音" />
-    <MESSAGE value="add code" />
-    <MESSAGE value="输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。" />
-    <MESSAGE value="回文字符" />
-    <MESSAGE value="杨辉三角" />
-    <MESSAGE value="初级算法" />
-    <MESSAGE value="动态规划" />
-    <MESSAGE value="学习计划" />
-    <MESSAGE value="算法项目" />
-    <MESSAGE value="redis 源码注释" />
-    <MESSAGE value="redis为啥这么快" />
-    <MESSAGE value="Rocke 消息重复消费和消息丢失的场景" />
-    <MESSAGE value="Redis 与 MySQL 双写一致性如何保证？" />
-    <MESSAGE value="说说延时队列实现的几种姿势" />
-    <MESSAGE value="MySQL笔记" />
-    <MESSAGE value="Redis为什么变慢了？一文讲透如何排查Redis性能问题.md" />
-    <MESSAGE value="怎么解决消息重复消费问题？.md" />
-    <MESSAGE value="缓存和数据库一致性问题，看这篇就够了.md" />
-    <MESSAGE value="Redis会遇到的15个坑" />
-    <MESSAGE value="把Redis当作队列来用，真的合适吗？.md" />
-    <MESSAGE value="深度剖析:Redis分布式锁到底安全吗" />
-    <option name="LAST_COMMIT_MESSAGE" value="深度剖析:Redis分布式锁到底安全吗" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2478" y="86" key="CommitChangelistDialog2" timestamp="1635146809397">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634701125024" />
-    <state x="2478" y="86" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1635146809397" />
-    <state x="184" y="85" key="DiffContextDialog" timestamp="1634701120554">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634701120554" />
-    <state x="2521" y="235" key="FileChooserDialogImpl" timestamp="1629194296745">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2521" y="235" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629194296745" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2" timestamp="1635152829621">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634707083466" />
-    <state x="2472" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1635152829621" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1629339951194">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629339951194" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/VolatileTest.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/VolatileTest.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/VolatileTest.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Solution.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Solution.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Solution.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Solution.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Solution.java</url>
-          <line>833</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Chujisuanfa.java</url>
-          <line>275</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Tujiesuanfashujujiegou.java</url>
-          <line>1681</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Tujiesuanfashujujiegou.java</url>
-          <line>1576</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Tujiesuanfashujujiegou.java</url>
-          <line>1546</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/dp/Solution.java</url>
-          <line>373</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/dp/Solution.java</url>
-          <line>351</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/dp/Solution.java</url>
-          <line>1241</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/JiangzhiOffer/DuplicationInArray/Solution.java</url>
-          <line>74</line>
-          <properties class="JiangzhiOffer.DuplicationInArray.Solution" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/algorithm/src/main/java/leetcode/Tujiesuanfashujujiegou.java</url>
-          <line>1659</line>
-          <properties class="leetcode.Tujiesuanfashujujiegou" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="tQ.isEmpty()" language="JAVA" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-694">
+            <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
